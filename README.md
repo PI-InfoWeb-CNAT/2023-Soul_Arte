@@ -21,5 +21,5 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
 * Documentação da arquitetura
 
 ### Autores
-| [<img src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Iara Monyke</sub>](https://https://github.com/iaramonyke) |  [<img src="https://avatars.githubusercontent.com/u/30351153?v=4" width=115><br><sub>Iraikare Rodrigues</sub>](https://github.com/iraikare) |  [<img src="https://avatars.githubusercontent.com/u/8989346?v=4" width=115><br><sub>Luiza Varella</sub>](https://https://github.com/luvarella) | [<img src="https://avatars.githubusercontent.com/u/8989346?v=4" width=115><br><sub>Renan Balbino</sub>](https://https://https://github.com/balbii) |
+| [<img src="https://avatars.githubusercontent.com/u/99852137?v=4" width=115><br><sub>Iara Monyke</sub>](https://https://github.com/iaramonyke) |  [<img src="https://avatars.githubusercontent.com/u/101957823?v=4" width=115><br><sub>Iraikare Rodrigues</sub>](https://github.com/iraikare) |  [<img src="https://avatars.githubusercontent.com/u/102320472?v=4" width=115><br><sub>Luiza Varella</sub>](https://https://github.com/luvarella) | [<img src="https://avatars.githubusercontent.com/u/93939187?v=4" width=115><br><sub>Renan Balbino</sub>](https://https://https://github.com/balbii) |
 | :---: | :---: | :---: | :---: |
