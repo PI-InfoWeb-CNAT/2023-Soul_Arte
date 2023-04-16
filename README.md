@@ -1,6 +1,9 @@
 # Projeto Integrador InfoWeb - IFRN
 
 ## Soul Arte - 1.0
+
+Em resumo, nosso projeto consiste em um ambiente virtual específico para venda de itens confeccionados por pequenos negócios ou artesãos próximos a localidade dos possíveis compradores, visando também o reconhecimento dos artistas em questão.
+
 Este projeto tem como objetivo ser uma aplicação  modelo (_blueprint_) para a disicplina de Análise e Projeto Orientado a Objeto.
 
 Atualmente o projeto não possui uma implementação como modelo de projeto do Microsoft Visual Studio que está aberto a receber contribuições de código que representem as especificação aqui presente.
