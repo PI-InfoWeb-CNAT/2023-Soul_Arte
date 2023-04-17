@@ -15,8 +15,7 @@ Este projeto tem como objetivo criar uma plataforma virtual para pequenos negóc
 |:-|:-|
 | **_O problema de_**    | Dificuldade na divulgação e venda dos artefatos produzidos por pequenos negócios, principalmente os que não possuem uma loja física. |
 | **_afetando_**      | Os próprios pequenos negócios citados e também o público interessado em consumir esse artesanato local mas não consegue achar uma boa variedade num só lugar. |
-| **_cujo impacto é_**| 
-Diminuição de vendas e reconhecimento dos confeccionadores.                                |
+| **_cujo impacto é_**| Diminuição de vendas e reconhecimento dos confeccionadores. |
 | **_uma boa solução seria_** | Criar uma aplicação web capaz de reunir vários desses produtos em diversas categorias em um único local, focando também no reconhecimento dos artistas que os produzem. |
 | | |
 
@@ -56,8 +55,7 @@ Em resumo, nosso projeto consiste em um ambiente virtual específico para venda 
 ## 8.	Requisitos funcionais
 | Código | Nome | Descrição |
 |:---  |:--- |:--- |
-| F01	| Adicionar, remover ou alterar produtos.| 
-O vendedor tem à sua disponibilidade a função de adicionar, remover ou alterar produtos comercializados na sua loja, estabelecendo ainda seus preços de venda.
+| F01	| Adicionar, remover ou alterar produtos.| O vendedor tem à sua disponibilidade a função de adicionar, remover ou alterar produtos comercializados na sua loja, estabelecendo ainda seus preços de venda.
 | F02	| Adicionar, remover ou alterar categorias de produtos.	| O administrador tem à sua disponibilidade a função de adicionar, remover ou alterar categorias de produtos comercializados no site.
 | F03	| Remover ou alterar lojas.	| O administrador tem à sua disponibilidade a função de remover ou alterar lojas cadastradas.
 | F04	| Disponibilizar ou bloquear a apresentação do produto no site de venda.	| O administrador tem à sua disponibilidade a função de liberar ou bloquear a apresentação de produtos à venda.
