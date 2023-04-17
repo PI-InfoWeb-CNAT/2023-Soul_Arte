@@ -1,69 +1,80 @@
 # Documento de visão
 
-## Comércio Eletrônico
+## Soul Arte
 
 ### Histórico da Revisão 
 |  Data  | Versão | Descrição | Autor |
 |:-------|:-------|:----------|:------|
-| 01/06/2021 | **1.00** | Versão Inicial  | George Azevedo |
+| 16/04/2023 | **1.00** | Versão Inicial  | Iara Monyke, Iraikare Rodrigues, Luiza Varella, Renan Balbino |
 
 ## 1. Objetivo do Projeto 
-`A ser desenvolvido pelo aluno.` Este projeto tem objetivo de desenvolver um site que implemente as funcionalidades de uma loja on-line.
+Este projeto tem como objetivo criar uma plataforma virtual para pequenos negócios e artesãos realizarem suas vendas. 
  
 ## 2. Descrição do problema 
 | | |
 |:-|:-|
-| **_O problema_**    | O lojista que atua no comércio convencional deseja resolver o problema de volume reduzido de vendas de seus produtos agravado pela situação de Pandemia  |
-| **_afetando_**      | a capacidade de venda da loja                      |
-| **_cujo impacto é_**| expansão ou até capacidade de existência da loja                                    |
-| **_uma boa solução seria_** | Realizar vendas via internet e gerenciar o processo de entrega dos produtos |
+| **_O problema de_**    | Dificuldade na divulgação e venda dos artefatos produzidos por pequenos negócios, principalmente os que não possuem uma loja física. |
+| **_afetando_**      | Os próprios pequenos negócios citados e também o público interessado em consumir esse artesanato local mas não consegue achar uma boa variedade num só lugar. |
+| **_cujo impacto é_**| 
+Diminuição de vendas e reconhecimento dos confeccionadores.                                |
+| **_uma boa solução seria_** | Criar uma aplicação web capaz de reunir vários desses produtos em diversas categorias em um único local, focando também no reconhecimento dos artistas que os produzem. |
 | | |
 
 ## 3. Descrição dos usuários
 | Nome | Descrição | Responsabilidades |
 |:- |:- |:- |
-| Administrador  | Gestor da Loja; Usuário responsável pelos processos que irão permitir que os clientes adquiram os produtos com uso no site de vendas e acompanhem o processo de entrega dos pedidos realizados | Cadastrar os produtos e seus preços de venda; Cadastrar grupo de produtos e fabricantes; Disponibilizar ou bloquear a apresentação do produto no site de venda; Verificar as vendas realizados no período que ainda não foram remetidas aos clientes; Registra informações de envio dos pedidos aos clientes; Registra informação de controle de pagamento de pedidos|
-| Usuário   | Usuário que visualiza o site; O usuário deve ter a possibilidade de obter informações acerca dos produtos vendidos e seus preços, sem a necessidade de registrar suas informações cadastrais no site | O usuário deve poder consultar os produtos por várias opções de  busca de forma a facilitar que ele encontre os produtos desejados; Deverá ser possível também montar uma cesta de compras com os itens que deseja adquirir; Caso deseje, poderá criar um registro de usuário com senha de forma a possibilitar o acesso a área de realização de pedidos de produtos e acompanhamento de entrega |
-| Cliente | Usuário cadastrado; O usuário, após realizar seu cadastro no site, poderá realizar compras | Após a realização a inclusão de dados cadastrais tais como login, senha e endereço, o usuário passa a ser visto como cliente e poderá registrar seus pedidos. Os pedidos poderão ser compostos por um ou mais produtos e deverão incluir suas respectivas quantidades adquiridas. O valor total do pedido deve ser apresentado. O cliente deve ter acesso às seguintes funcionalidades no site: Alterar seus dados cadastrais informando novo endereço; Visualizar seu histórico de pedidos e observar a situação dos mesmos; Visualizar a situação da entrega dos pedidos; Cancelar o pedido; Avaliar os produtos adquiridos|
+| Administrador  | Gestor da plataforma; Usuário responsável pelo monitoramento dos processos que irão permitir o cadastro de lojas e compras de materiais. | Moderar as lojas cadastradas podendo excluir vendedores e produtos caso necessário.|
+| Vendedor | loja cadastrada que pode vender e se comunicar com seus clientes por meio do sistema. | Pode adicionar novos produtos em sua loja, se comunicar com possíveis compradores, alterar informações no seu perfil e selecionar que métodos de pagamento ele aceita. |
+| Visitante | Usuário não cadastrado que visualiza o site e pode obter informações sobre os produtos e lojas.  | Usuário não cadastrado que visualiza o site e pode obter informações sobre os produtos e lojas. |
+| cliente | Usuário cadastrado que pode fazer compras no site. | Após o cadastro no site, o cliente pode adicionar produtos e lojas  nos colocar itens no carrinho de compras, selecionar métodos de pagamento e por fim realizar compras. |
 
 ## 4. Descrição do ambiente dos usuários 
-O comércio eletrônico tem dois tipos de usuários. O tipo administrador representa o gestor da loja e seus colaboradores e o tipo Cliente que representa o cliente, seja ele anônimo ou já cadastrado. 
+O comércio teria quatro tipos principais de usuários, os administradores, os vendedores e suas respectivas lojas, e os compradores sejam eles cadastrados ou não.
+O administrador acessará a plataforma e será responsável primordialmente pela aprovação do cadastro de novas lojas.
 
-O administrador acessará o site a partir do ambiente físico da loja e fará a configuração dos produtos a serem vendidos e realizará a logística de atendimento dos pedidos coletados pelo site, registrando a informação de situação de envio dos pedidos. Nesse processo, os produtos que forem identificados fisicamente sem estoque deverão ter sua disponibilidade para venda bloqueada.
+Os vendedores, após terem seus cadastros aprovados e perfis montados, serão responsáveis por adicionar produtos e atualizar as quantidades em estoque, também podem trabalhar sobre demanda então o acesso ao chat seria essencial. Após a coleta dos pedidos ele seria responsável pelo estabelecimento de prazos e por informar quando o envio foi realizado.
 
-O usuário cliente irá acessar o site utilizando  um computador ou celular e realizará a visualização dos produtos vendidos na loja e realizará a compra, caso deseje. Neste caso não há muitas restrições quanto ao ambiente pois ele poderá fazer os pedidos de qualquer local que tenha conexão com internet.
+Os clientes não cadastrados (visitantes) poderão acessar o site e pesquisar por produtos e lojas, sendo capaz de olhar também as avaliações de produtos e lojas.
+Os clientes cadastrados poderão exercer as mesmas funções dos visitantes mas também terão a possibilidade de criar uma lista de favoritos, um carrinho de compras, se comunicar com as lojas através dos chats e também de comprar os produtos. Após a compra, será possível o acompanhamento do produto, e após seu recebimento o cliente pode deixar uma avaliação.
+
 
 
 ## 5. Principais necessidades dos usuários
-Considerando o pronto de vista do lojista, administrador do site, sua principal necessidade é aumentar o volume de vendas de sua loja incorporando em seu negócio a possibilidade de realização de vendas via internet. 
+Considerando o ponto de vista do vendedor, é necessário um maior reconhecimento e divulgação do seu trabalho e também um aumento no seu número de vendas, neste caso, num ambiente virtual.
 
-Considerando o pronto de vista do cliente, ele deseja ter acesso a um site com interface amigável que permita obter informações sobre os produtos comercializados e, caso identifique que estes atendam às suas necessidades, ele possa montar sua relação de compra confirmando a aquisição. Após essa etapa ele desejará visualizar o processo de entrega dos produtos adquiridos.
+Considerando o ponto de vista do cliente, eles sentem falta de um ambiente virtual onde possam achar os produtos em questão em uma alta variedade. Por meio do nosso sistema seria possível uma pesquisa de preços e também uma melhor experiência de compras já que promoveríamos os comerciantes locais.
+
 
 ## 6. Alternativas concorrentes
-Uma alternativa ao comércio eletrônico desenvolvido é a lojas Americanas, que apresenta pesquisa por meio de nome ou categoria do produto, tem o sistema de carrinho de compras, que permite adicionar os produtos selecionados, deixando o pagamento somente para o final quando o cliente tiver selecionado todos os produtos desejados. Também tem o sistema de login, o qual o usuário se cadastra, o que facilita as próximas compras. Além disso em cada produto tem sua descrição, produto similares ao selecionado e uma seção destinada à avaliação dos consumidores. 
+As principais alternativas concorrentes são plataformas de revenda com uma variedade maior de categorias, não contando apenas com pequenos negócios, como por exemplo: Shopee, Aliexpress, Shein, Amazon, Mercado Livre; e também algumas redes sociais como o Facebook e o Instagram muitas vezes em junção do Whatsapp.
+
 
 ## 7.	Visão geral do produto
-Esse projeto consiste em um site voltado para vendas de produtos que pretende funcionar de forma rápida e eficiente, disponibilizando um ambiente acessível a diversos tipos de usuários e possuindo um design confortável. Para tal, o site irá disponibilizar diferentes mecanismos de busca permitindo que o usuário encontre de forma eficiente o que ele precisa. Após a aquisição, o usuário poderá acompanhar o produto comprado, avaliar produtos da loja, comentar e marcar produtos como favoritos. 
+Em resumo, nosso projeto consiste em um ambiente virtual específico para venda de itens confeccionados por pequenos negócios ou artesãos próximos a localidade dos possíveis compradores, contando então com um filtro de localidade, mecanismos de buscas e de chats, em um ambiente acessível onde também será possível acompanhar e avaliar os produtos após a compra. Também prezamos pelo reconhecimento dos artistas então cada loja terá um perfil específico visando isto.
+
 
 ## 8.	Requisitos funcionais
 | Código | Nome | Descrição |
 |:---  |:--- |:--- |
-| F01	| Adicionar, remover ou alterar produtos | O administrador tem à sua disponibilidade a função de adicionar, remover ou alterar produtos comercializados no site estabelecendo ainda seus preços de venda. 
-| F02	| Adicionar, remover ou alterar grupos de produtos.	| O administrador tem à sua disponibilidade a função de adicionar, remover ou alterar grupos de produtos comercializados no site.
-| F03	| Adicionar, remover ou alterar fabricante de produtos.	| O administrador tem à sua disponibilidade a função de adicionar, remover ou alterar fabricantes de produtos comercializados no site.
-| F04	| Disponibilizar ou bloquear a apresentação do produto no site de venda	| O administrador tem à sua disponibilidade a função de liberar ou bloquear a apresentação de produtos a venda 
-| F05	| Consultar pedidos realizados e não enviados.	| O administrador pode acessar os dados de vendas de produtos do site que foram realizados pelos clientes e que ainda não foram remetidos
-| F06	| Registrar recebimento do pagamento do cliente	| O administrador registra no site a identificação do recebimento do pagamento realizado pelo cliente liberando o pedido para envio.
-| F07	| Registrar o envio do pedido.	| O administrador informa no site a forma de envio do pedido ao cliente.
-| F08	| Visualizar produtos	| O usuário visualiza os produtos disponíveis filtrando ou por grupos, fabricante ou através de um trecho do nome do produto
-| F09	| Adicionar ou remover produtos à cesta de compras	| O usuário  pode escolher mais de um produto para realizar a compra e inserir em uma cesta de compras.
-| F10	| Realizar o cadastro e login no site	| O usuário pode se cadastrar no site para poder comprar produtos e acessar outras diversas funcionalidades como avaliar e comentar os produtos.
-| F11	| Realizar a compra de um produto	| Os clientes podem confirmar a compra dos produtos adicionados em sua cesta de compra gerando assim um pedido.
-| F12	| Realizar o cancelamento de pedido solicitado	| Os clientes podem solicitar o cancelamento de um pedido realizado desde que ainda não tenha sido enviado.
-| F13	| Verificar as compras realizadas	| Os clientes podem verificar seu histórico de compra na loja.
-| F14	| Verificar o andamento do pedido	| Os clientes podem acompanhar o andamento da entrega dos pedidos realizados.
-| F15	| Avaliar o Produto	| Os clientes podem avaliar os produtos realizando um comentário e atribuindo uma nota
-| F16 	| Revisar dados cadastrais	| Os clientes podem alterar seus dados cadastrais permitindo assim que façam, por exemplo, alteração do endereço de entrega
+| F01	| Adicionar, remover ou alterar produtos.| 
+O vendedor tem à sua disponibilidade a função de adicionar, remover ou alterar produtos comercializados na sua loja, estabelecendo ainda seus preços de venda.
+| F02	| Adicionar, remover ou alterar categorias de produtos.	| O administrador tem à sua disponibilidade a função de adicionar, remover ou alterar categorias de produtos comercializados no site.
+| F03	| Remover ou alterar lojas.	| O administrador tem à sua disponibilidade a função de remover ou alterar lojas cadastradas.
+| F04	| Disponibilizar ou bloquear a apresentação do produto no site de venda.	| O administrador tem à sua disponibilidade a função de liberar ou bloquear a apresentação de produtos à venda.
+| F05	| Consultar pedidos realizados e não enviados.	| O administrador pode acessar os dados de vendas de produtos do site que foram realizados pelos clientes e que ainda não foram remetidos.
+| F06	| Registrar recebimento do pagamento do cliente.	| O vendedor registra no site a identificação do recebimento do pagamento realizado pelo cliente liberando o pedido para envio.
+| F07	| Registrar o envio do pedido.	| O vendedor informa no site a forma de envio do pedido ao cliente.
+| F08	| Visualizar produtos.	| O usuário visualiza os produtos disponíveis filtrando por categorias ou por um trecho do nome do produto.
+| F09	| Adicionar ou remover produtos à cesta de compras.	| O usuário pode escolher mais de um produto para realizar a compra e inserir em uma cesta de compras.
+| F10	| Realizar o cadastro e login no site como cliente.	| O usuário pode se cadastrar no site para poder comprar produtos e acessar outras diversas funcionalidades como avaliar e comentar os produtos.
+| F11	| Realizar o cadastro e login no site como Vendedor/ loja.	| O vendedor pode se cadastrar no site e após a aprovação da sua conta como loja pode adicionar seus produtos para venda além de outras funcionalidades.
+| F12	| Realizar a compra de um produto.	| Os clientes podem confirmar a compra dos produtos adicionados em sua cesta de compra gerando assim um pedido.
+| F13	| Realizar o cancelamento de pedido solicitado.	| Os clientes podem solicitar o cancelamento de um pedido realizado desde que ainda não tenha sido enviado.
+| F14	| Verificar as compras realizadas.	| Os clientes podem verificar seu histórico de compra na loja.
+| F15	| Verificar o andamento do pedido.	| Os clientes podem acompanhar o andamento da entrega dos pedidos realizados.
+| F16 	| Avaliar o Produto.	| Os clientes podem avaliar os produtos realizando um comentário e atribuindo uma pontuação em estrelas, também podem adicionar fotos do produto recebido.
+| F17 	| Revisar dados cadastrais dos clientes.	| Os clientes podem alterar seus dados cadastrais permitindo assim que façam, por exemplo, alteração do endereço de entrega.
+| F18 	| Alterar dados do perfil da loja.	| Os vendedores podem alterar informações do seu perfil público ou dados cadastrais caso necessário.
 | | | | 
 
 ## 9.	Requisitos não-funcionais
