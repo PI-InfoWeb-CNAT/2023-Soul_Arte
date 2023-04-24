@@ -59,7 +59,7 @@ Em resumo, nosso projeto consiste em um ambiente virtual específico para venda 
 | F02	| Adicionar, remover ou alterar categorias de produtos.	| O administrador tem à sua disponibilidade a função de adicionar, remover ou alterar categorias de produtos comercializados no site.
 | F03	| Remover ou alterar lojas.	| O administrador tem à sua disponibilidade a função de remover ou alterar lojas cadastradas.
 | F04	| Disponibilizar ou bloquear a apresentação do produto no site de venda.	| O administrador tem à sua disponibilidade a função de liberar ou bloquear a apresentação de produtos à venda.
-| F05	| Consultar pedidos realizados e não enviados.	| O administrador pode acessar os dados de vendas de produtos do site que foram realizados pelos clientes e que ainda não foram remetidos.
+| F05	| Consultar pedidos realizados e não enviados.	| O vendedor pode acessar os dados de vendas de produtos do site que foram realizados pelos clientes e que ainda não foram remetidos.
 | F06	| Registrar recebimento do pagamento do cliente.	| O vendedor registra no site a identificação do recebimento do pagamento realizado pelo cliente liberando o pedido para envio.
 | F07	| Registrar o envio do pedido.	| O vendedor informa no site a forma de envio do pedido ao cliente.
 | F08	| Visualizar produtos.	| O usuário visualiza os produtos disponíveis filtrando por categorias ou por um trecho do nome do produto.
