@@ -25,7 +25,7 @@ Este projeto tem como objetivo criar uma plataforma virtual para pequenos negóc
 | Administrador  | Gestor da plataforma; Usuário responsável pelo monitoramento dos processos que irão permitir o cadastro de lojas e compras de materiais. | Moderar as lojas cadastradas podendo excluir vendedores e produtos caso necessário.|
 | Vendedor | loja cadastrada que pode vender e se comunicar com seus clientes por meio do sistema. | Pode adicionar novos produtos em sua loja, se comunicar com possíveis compradores, alterar informações no seu perfil e selecionar que métodos de pagamento ele aceita. |
 | Visitante | Usuário não cadastrado que visualiza o site e pode obter informações sobre os produtos e lojas.  | Usuário não cadastrado que visualiza o site e pode obter informações sobre os produtos e lojas. |
-| cliente | Usuário cadastrado que pode fazer compras no site. | Após o cadastro no site, o cliente pode adicionar produtos e lojas  nos colocar itens no carrinho de compras, selecionar métodos de pagamento e por fim realizar compras. |
+| Cliente | Usuário cadastrado que pode fazer compras no site. | Após o cadastro no site, o cliente pode adicionar produtos e lojas  nos colocar itens no carrinho de compras, selecionar métodos de pagamento e por fim realizar compras. |
 
 ## 4. Descrição do ambiente dos usuários 
 O comércio teria quatro tipos principais de usuários, os administradores, os vendedores e suas respectivas lojas, e os compradores sejam eles cadastrados ou não.
@@ -78,7 +78,7 @@ Em resumo, nosso projeto consiste em um ambiente virtual específico para venda 
 ## 9.	Requisitos não-funcionais
 | Código | Nome | Descrição | Categoria | Classificação |
 |:---  |:--- |:--- |:--- |:--- |
-| NF01	| Design responsivo	| O site apresentará responsividade, deixando-o mais confortável para o usuário | Usabilidade	| obrigatório
+| NF01	| Design responsivo	| O site apresentará responsividade, deixando-o mais confortável para o usuário | Usabilidade	| Obrigatório
 | NF02	| Acesso somente com internet	| É necessário um acesso contínuo à Internet para poder acessar os dados do site e suas funcionalidades, como comprar produtos.	| Disponibilidade	| Obrigatório
 | NF03	| Criptografia das informações sensíveis aos usuários	| Senhas do usuário devem ser gravadas de forma criptografada no banco de dados	| Segurança	| Obrigatório
 | NF04	| Organização do conteúdo de forma objetiva	| O site apresentará o conteúdo de forma objetiva, de modo que o usuário encontre o desejado com facilidade.	| Usabilidade	| Obrigatório
