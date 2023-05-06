@@ -14,3 +14,11 @@
   - Definição da paleta de cores
   - Objetificação manual e digital
 - [Link do Figma](https://www.figma.com/file/smLaO4DKmJeE6GHaLvg4hu/soul-arte?node-id=0%3A1&t=kqMOhRW91GUcHYlU-1)
+
+## 06/05/2023
+- *Pauta*:
+  - Revisar requisitos funcionais
+  - Remoodelar logotipo
+- Atividades planejadas:
+  - Construir o diagrama de casos de uso
+  - Analisar quais usuários são essenciais ao sistema
