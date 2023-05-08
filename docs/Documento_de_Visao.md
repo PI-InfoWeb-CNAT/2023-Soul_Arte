@@ -74,7 +74,10 @@ Em resumo, nosso projeto consiste em um ambiente virtual específico para venda 
 | F17 	| Revisar dados cadastrais dos clientes.	| Os clientes podem alterar seus dados cadastrais permitindo assim que façam, por exemplo, alteração do endereço de entrega.
 | F18 	| Alterar dados do perfil da loja.	| Os vendedores podem alterar informações do seu perfil público ou dados cadastrais caso necessário.
 | F19 | Interação entre cliente e vendedor. | Os usuários podem interagir por meio de um bate-papo para definir métodos de pagamento e entrega.
+| F20 | Favoritar produtos e lojas. | Os clientes podem favoritar produtos e lojas, além de visualizar a lista de favoritos.
 | | | |
+
+
 
 ## 9.	Requisitos não-funcionais
 | Código | Nome | Descrição | Categoria | Classificação |
