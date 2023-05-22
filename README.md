@@ -22,6 +22,7 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
 * [Diagrama de casos de uso](./docs/imagens/DCU-SoulArte.PNG)
 * [Diagrama de classes de domínio](./docs/diagramas/Diagrama_Entidades_e_Relacionamentos.png)
 * Documentação da arquitetura
+* [Mapa do site](./docs/imagens/mapa_do_site.png)
 
 ### Autores
 | [<img src="https://avatars.githubusercontent.com/u/99852137?v=4" width=115><br><sub>Iara Monyke</sub>](https://github.com/iaramonyke) |  [<img src="https://avatars.githubusercontent.com/u/101957823?v=4" width=115><br><sub>Iraikare Rodrigues</sub>](https://github.com/iraikare) |  [<img src="https://avatars.githubusercontent.com/u/102320472?v=4" width=115><br><sub>Luiza Varella</sub>](https://github.com/luvarella) | [<img src="https://avatars.githubusercontent.com/u/93939187?v=4" width=115><br><sub>Renan Balbino</sub>](https://github.com/balbii) |
