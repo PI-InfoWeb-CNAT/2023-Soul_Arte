@@ -10,7 +10,7 @@
 
 ## 1. Diagrama de casos de uso 
 
-![Casos de Uso](imagens/DCU-SoulArte.PNG)
+![Casos de Uso](imagens/dcu-soul_arte.png)
 
 ## 2. Diagrama de entidades e relacionamentos
 
