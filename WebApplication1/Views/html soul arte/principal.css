@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Bahianita&family=Bebas+Neue&family=Inter&display=swap');
+/* 
+font-family: 'Bahiana', cursive;
+font-family: 'Bahianita', cursive;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Inter', sans-serif;
+*/
+*{
+    /* font-family: ; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+
+/* HEADER */
+header{
+    background-image: url(imagens/header/conjunto-de-arte-de-papel-origami-pincel-aquarela-e-palha-em-pano-de-fundo-laranja\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40em;
+    margin: 0 auto;
+    position: relative;
+
+    font-family: 'Bebas Neue', sans-serif;
+}
+.cabecalho{
+    background-color: rgba(242, 84, 27, 0.76);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1em 5em;
+}
+header figure{
+    width: 25%;
+}
+header form{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.busca{
+    background-color: white;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 2px 8px;
+}
+.busca input[type=text]{
+    border: none;
+    outline: none;
+    color: #F2541B;
+    padding: 2px;
+    width: 28em;
+    font-size: 18px;
+}
+#lupa{
+    background-image: url(imagens/header/icon-lupa.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+}
+nav.menu-user{
+    width: 25%;
+}
+.menu-user ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    margin: 0 auto;
+}
+.menu-user li{
+    padding: 15px;
+}
+
+.menu-nav{
+    margin: 0 auto;
+    max-width: 500px;
+}
+.menu-nav ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.menu-nav a{
+    padding: 30px;
+    color: white;
+    font-size: 24px;
+}
+#setaR{
+    position: absolute;
+    top: 60%;
+    right: 1%;
+}
+#setaL{
+    position: absolute;
+    top: 60%;
+    left: 1%;
+}
