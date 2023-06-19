@@ -20,7 +20,7 @@ a, li{
 
 /* HEADER */
 header{
-    background-image: url(imagens/header/conjunto-de-arte-de-papel-origami-pincel-aquarela-e-palha-em-pano-de-fundo-laranja\ 1.png);
+    /* background-image: url(imagens/header/conjunto-de-arte-de-papel-origami-pincel-aquarela-e-palha-em-pano-de-fundo-laranja\ 1.png); */
     background-size: cover;
     background-repeat: no-repeat;
     height: 40em;
@@ -31,13 +31,22 @@ header{
 }
 .cabecalho{
     background-color: rgba(242, 84, 27, 0.76);
-
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     padding: 1em 5em;
+}
+#carrouselExample{
+    z-index: 0;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    visibility: hidden;
 }
 header figure{
     width: 25%;
@@ -95,7 +104,8 @@ nav.menu-user{
     justify-content: space-evenly;
 }
 .menu-nav a{
-    padding: 30px;
+    text-decoration: none;
+    padding: 20px;
     color: white;
     font-size: 24px;
 }
@@ -109,3 +119,5 @@ nav.menu-user{
     top: 60%;
     left: 1%;
 }
+
+/* MAIN */
