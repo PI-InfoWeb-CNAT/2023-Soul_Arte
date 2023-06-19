@@ -45,8 +45,8 @@ header{
 #carrouselExample{
     z-index: 0;
 }
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    visibility: hidden;
+.carousel-control-prev-icon {
+    background-image: url("imagens/header/setaLeft-header.png");
 }
 header figure{
     width: 25%;
@@ -121,3 +121,8 @@ nav.menu-user{
 }
 
 /* MAIN */
+main{
+    max-width: 80em;
+    margin: 0 auto;
+    padding: 10px;
+}
