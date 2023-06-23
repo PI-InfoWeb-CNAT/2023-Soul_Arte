@@ -10,8 +10,8 @@ Atualmente o projeto não possui uma implementação como modelo de projeto do M
 
 Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/licenses/quick-guide-gplv3.pt-br.html).
 
-
 ### Artefatos do Projeto
+
 * [Reuniões da equipe](./reunioes/Reunioes.md)
 * [Documento de visão `/docs/Documento_de_Visao.md`](./docs/Documento_de_Visao.md)
 * Documento de Requisitos
@@ -25,6 +25,12 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
 * [Mapa do site](./docs/imagens/mapa_do_site.png)
 * [Protótipos no figma](https://www.figma.com/file/smLaO4DKmJeE6GHaLvg4hu/soul-arte?type=design&node-id=0%3A1&t=vatgPd0vhpDPREuk-1)
 
+  <div align="center">
+  <img align="center" src=https://github.com/luvarella/SoulArte/blob/b63a1cb79ea4fe9f748b2cd7c3c2313169901b88/Soul%20Arte%20-%20Vinheta.gif width="1000px"/> 
+</div>
+
+
+
 ### Autores
-| [<img src="https://avatars.githubusercontent.com/u/99852137?v=4" width=115><br><sub>Iara Monyke</sub>](https://github.com/iaramonyke) |  [<img src="https://avatars.githubusercontent.com/u/101957823?v=4" width=115><br><sub>Iraikare Rodrigues</sub>](https://github.com/iraikare) |  [<img src="https://avatars.githubusercontent.com/u/102320472?v=4" width=115><br><sub>Luiza Varella</sub>](https://github.com/luvarella) | [<img src="https://avatars.githubusercontent.com/u/93939187?v=4" width=115><br><sub>Renan Balbino</sub>](https://github.com/balbii) |
+| [<img align="center" src="https://avatars.githubusercontent.com/u/99852137?v=4" width=200><br><sub>Iara Monyke</sub>](https://github.com/iaramonyke) |  [<img src="https://avatars.githubusercontent.com/u/101957823?v=4" width=200><br><sub>Iraikare Rodrigues</sub>](https://github.com/iraikare) |  [<img src="https://avatars.githubusercontent.com/u/102320472?v=4" width=200><br><sub>Luiza Varella</sub>](https://github.com/luvarella) | [<img src="https://avatars.githubusercontent.com/u/93939187?v=4" width=200><br><sub>Renan Balbino</sub>](https://github.com/balbii) </div>|
 | :---: | :---: | :---: | :---: |
