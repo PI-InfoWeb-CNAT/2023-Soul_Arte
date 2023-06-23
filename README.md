@@ -25,9 +25,9 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
 * [Mapa do site](./docs/imagens/mapa_do_site.png)
 * [Protótipos no figma](https://www.figma.com/file/smLaO4DKmJeE6GHaLvg4hu/soul-arte?type=design&node-id=0%3A1&t=vatgPd0vhpDPREuk-1)
 
-  <div align="center">
+<!--<div align="center">
   <img align="center" src=https://github.com/luvarella/SoulArte/blob/b63a1cb79ea4fe9f748b2cd7c3c2313169901b88/Soul%20Arte%20-%20Vinheta.gif width="1000px"/> 
-</div>
+</div>-->
 
 
 
