@@ -1,5 +1,5 @@
 <div align="center">
-<h1>Soul Arte</h1>
+<h1>SOUL ARTE</h1>
 </div>
 
 <div align="center">
