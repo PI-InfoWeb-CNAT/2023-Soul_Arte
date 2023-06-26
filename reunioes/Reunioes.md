@@ -1,4 +1,4 @@
-<div align="center">
+<div align="left">
   <img src=https://github.com/luvarella/SoulArte/blob/00ff207b510a2496ff47b59982d1e9a6161e2f0e/Soul%20Arte%20-%20Reuni%C3%B5es.gif width="500px"/>
 </div>
 
