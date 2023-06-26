@@ -1,0 +1,25 @@
+h2{
+  font-family:Bebas Neue ;
+  color:#D97B29;
+  text-align: center;
+}
+h3{
+  font-family:Bebas Neue ;
+  color:#F2541B;
+}
+h4{
+  font-family:Bahiana ;
+  color:#D97B29;
+}
+.card-prod{
+  background-image: url(../imagens/favoritos/bg-card.png);
+  background-repeat:no-repeat; 
+  margin-bottom: 65px;
+}
+.cards{
+  justify-content: center ;
+  display: flex;  
+}
+
+
+

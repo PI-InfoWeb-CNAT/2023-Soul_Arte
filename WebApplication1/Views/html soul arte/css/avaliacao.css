@@ -1,0 +1,65 @@
+.form{    
+    background: #DCD0B1;
+    padding: 2em;
+    font-size: 35px;
+    color: #F2541B;
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+p{
+    font-family: Inter;
+    font-size: 20px;
+}
+label{
+    font-family: Bebas Neue;
+}
+#botao{
+  font-size: 30px;
+    font-family: Bebas Neue;
+    color: white;
+    background: #F2541B;
+    border: none;
+    width: 5em;
+    cursor: pointer;
+    outline: none;
+    margin-top: 2.5em;
+}
+textarea{
+    background-color: transparent;
+    border: 5px solid white;
+    width: 100%;
+    color: white;
+    height: 5em;
+}
+.ava{
+    display: flex;
+    align-items: center;
+}
+.ava img{
+    width: 1em;
+}
+#estre{
+    padding-bottom: 0.6em;
+    padding-left: 0.9em;
+}
+.botao{
+    text-align: center;
+}
+input[type="button"]{
+    font-family: Bebas Neue;
+    color: white;
+    background: transparent;
+    border: 5px solid white;
+    height: 1.5em;
+    width: 1.5em;
+    margin-left: 1em;  
+    font-size: 2em;
+}
+main>section{
+  margin: 0 64px;
+}
+fieldset{
+  width: 90%;
+  margin: 0 auto;
+}

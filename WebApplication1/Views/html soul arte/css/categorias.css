@@ -1,0 +1,274 @@
+p{
+  margin: 0;
+}
+.cabecalho{
+    background-color: #F2541B;
+    position: relative;
+}
+h1{
+  text-align: left;
+  margin-left: 64px;
+}
+h1 a{
+  text-decoration: none;
+  color: #F2541B;
+}
+main h1{
+  text-align: center;
+  margin-left: 0;
+}
+#populares{
+  margin: 0 64px;
+}
+.margem{
+  display: flex;
+  justify-content: space-between;
+}
+#populares figure{
+  background-color: #F23869;
+  padding: 0.3em;
+  transform: rotate(-1.5deg);
+  width: 390px;
+  box-sizing: border-box;
+}
+#populares figure img{
+  width: 380px;
+  transform: rotate(1.5deg);
+}
+#populares div>div{
+  position:relative;
+  width: 410px;
+}
+#populares p{
+  font-size: 20px;
+}
+#populares .classificacao1, #populares .classificacao2, #populares .classificacao3{
+  background-color: #F23869;
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  color: white;
+  font-family: 'Bahiana', cursive;
+  text-align: center;
+  position: absolute;
+  top: -30px;
+  right: 0px;
+}
+#populares .classificacao1 p, #populares .classificacao2 p, #populares .classificacao3 p{
+  font-size: 64px;
+}
+#populares .classificacao1{
+  background-color: #F2B90F;
+}
+#populares .classificacao2{
+  background-color: #AFAFAF;
+}
+#populares .classificacao3{
+  background-color: #F2541B;
+}
+#populares .descricao{
+  position: absolute;
+  background-color: #DCD0B1;
+  width: 290px;
+  height: 195px;
+  bottom: -45px;
+  right: 5px;
+  padding: 5px 20px;
+}
+#populares span{
+  display: flex;
+  font-family: 'Bahiana', cursive;
+  justify-content: space-between;
+}
+#populares span h2{
+  font-size: 60px;
+  color: #f2541b;
+  margin: 0;
+}
+#populares span .ava{
+  font-size: 40px;
+}
+#populares .info{
+  font-family: 'Bebas Neue', sans-serif;
+  color: #D97B29;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+#filtro{
+  width: 20em;
+  margin-right: 64px;
+}
+#filtro span{
+  font-size: 32px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #D97B29;
+}
+#filtro legend{
+  text-align: center;
+  color: #F2541B;
+  font-family: 'Bahiana', cursive;
+  font-size: 48px;
+}
+#filtro fieldset{
+  border: 2px solid #F2541B;
+  padding: 2em;
+}
+#filtro .div-filtro{
+  margin-bottom: 2em;
+}
+#filtro .pri{
+  margin-top: 2em;
+}
+#filtro input[type=checkbox]{
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  margin-right: 10px;
+}
+#filtro label{
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+/*tudo do input de range*/
+input[type=range] {
+    -webkit-appearance: none;
+    border: 1px solid white;
+    width: 210px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #F2541B;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #F2541B;
+    margin-top: -4px;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #F2541B;
+}
+
+input[type=range]::-moz-range-track {
+    width: 300px;
+    height: 5px;
+    background: #F2541B;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #F2541B;
+}
+input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+input[type=range]::-ms-track {
+    width: 300px;
+    height: 5px;
+    background: transparent;
+    border-color: transparent;
+    border-width: 6px 0;
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
+}
+
+#filtro input[type=text]{
+  width: 60px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+#prod-filtro{
+  margin: 64px 64px 0 64px;
+}
+.cards-prod{
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-produto{
+  margin-bottom: 65px;
+}
+#h1-2{
+  margin-top: 210px;
+}
+main nav{
+  width: 173px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+li.page-item a{
+  color: #F2541B;
+  font-family: 'Bahiana', cursive;
+  font-size: 25px;
+}
+li.page-item a:hover{
+  color: #D97B29;
+}
+.pagination{
+  --bs-pagination-bg: none; 
+  --bs-pagination-border-width: none;
+  --bs-pagination-border-color: none;
+}
+.descricao .info b{
+  color: black;
+  font-weight: normal;
+}
+input[type="checkbox"]{
+  position: relative;
+  -webkit-appearance: none;
+  border: 1px solid #F23869;
+   cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+input[type=checkbox]:checked:after {
+   content: "";
+   width: 5px;
+   height: 10px;
+   border: solid black;
+   border-width: 0 2px 2px 0;
+   -webkit-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   transform: rotate(45deg);
+   position: absolute;
+   top: 2px;
+   left: 6px;
+}

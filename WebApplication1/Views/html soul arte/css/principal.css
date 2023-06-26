@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Bahianita&family=Bebas+Neue&family=Inter&display=swap');
+/* 
+font-family: 'Bahiana', cursive;
+font-family: 'Bahianita', cursive;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Inter', sans-serif;
+*/
+*{
+    /* font-family: 'Bahiana', cursive; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, li{
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+  background-color: #f2f2f2;
+}
+
+
+/* HEADER */
+header{
+    /* background-image: url(imagens/header/conjunto-de-arte-de-papel-origami-pincel-aquarela-e-palha-em-pano-de-fundo-laranja\ 1.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: relative;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.cabecalho{
+    background-color: rgba(242, 84, 27, 0.76);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1em 5em;
+    width: 100%;
+}
+header .carousel-control-prev-icon {
+    background-image: url("../imagens/header/setaLeft-header.png");
+    width: 80px;
+    height: 80px;
+    margin-left: -50px;
+}
+header .carousel-control-next-icon {
+    background-image: url("../imagens/header/setaRight-header.png");
+    width: 80px;
+    height: 80px;
+    margin-right: -50px;
+}
+header button[type=button]{
+  height: 5em;
+  margin: auto 0;
+}
+
+header figure{
+    width: 25%;
+}
+header form{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.busca{
+    background-color: white;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 2px 8px;
+}
+.busca input[type=text]{
+    border: none;
+    outline: none;
+    color: #F2541B;
+    padding: 2px;
+    width: 28em;
+    font-size: 18px;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+#lupa{
+    background-image: url(../imagens/header/icon-lupa.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+}
+nav.menu-user{
+    width: 25%;
+}
+.menu-user ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    margin: 0 auto;
+}
+.menu-user li{
+    padding: 15px;
+}
+
+.menu-nav{
+    margin: 0 auto;
+    max-width: 500px;
+}
+.menu-nav ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.menu-nav a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-size: 24px;   
+}
+
+.menu-nav a:hover{
+    color: #FFD39F;
+}
+
+#setaR{
+    position: absolute;
+    top: 60%;
+    right: 1%;
+}
+#setaL{
+    position: absolute;
+    top: 60%;
+    left: 1%;
+}
+ul, ol{
+  padding-left: 0;
+}
+
+/* MAIN */
+main{
+    margin: 10em auto;
+}
+#carousel-cat{
+  margin: 1em 0;
+  background-color: #DCD0B1;
+  padding: 7em;
+}
+#carousel-cat .carousel-control-prev{
+  top: 33%;
+  height: 80px;
+  width: 80px;
+  margin-left: -5em;
+}
+#carousel-cat .carousel-control-next{
+  top: 33%;
+  height: 80px;
+  width: 80px;
+  margin-right: -5em;  
+}
+h1{
+  text-align: center;
+  font-family: 'Bahiana', cursive;
+  font-size: 90px;
+  margin-bottom: 0.5em;
+  color: #F2541B;
+}
+section .carousel-control-prev-icon{
+  background-image: url(../imagens/home/seta-left-cat-index.png);
+    position: absolute;
+    width: 5em;
+    height: 5em;
+}
+section .carousel-control-next-icon{
+    background-image: url(../imagens/home/seta-right-cat-index.png);
+    position: absolute;
+    width: 5em;
+    height: 5em;
+}
+section .col {
+  text-align: center;
+}
+.col p{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
+  color: #D97B29;
+  padding-top: 6px;
+}
+.sobre-nos{
+  margin: 3em auto;
+  background: linear-gradient(to right, #DBDCB1, transparent);
+}
+.sobre-nos .margem{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2em;
+}
+.sobre{
+  width: 50%;
+  color: #F2541B;
+}
+.sobre-nos h2{
+  font-family: 'Bahiana', cursive;
+  font-size: 70px;
+  margin-bottom: 0.5em;
+}
+.sobre-nos p{
+  margin-right: 2em; 
+}
+.sobre-nos img{
+  width: 300px;
+}
+h5{
+  color: #F23869;
+  font-family: 'Bebas Neue', sans serif;
+  font-size: 25px;
+}
+.explorar ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.explorar li{
+  font-style: italic;
+  border-bottom: 0.5px solid #F23869;
+}
+
+/* FOOTER */
+
+footer{
+  background-color: rgba(242, 84, 27, 0.76);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 4em;
+}
+footer p{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 25px;
+  color: white;
+}
+footer div{
+  width: 22%;
+}
+footer div figure img{
+  padding: 5px;
+}
+footer .ajuda a{
+  font-style: italic;
+  border-bottom: 0.5px solid white;
+  color: white;
+}
+footer address{
+  color: white;
+}
+.copyright{
+  margin: auto 0;
+}
+
+/*migalha de pão*/
+#migalha{
+  margin: 0 64px;
+}
+#migalha nav{
+    font-size: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 25px 0 0 0;
+}
+#migalha nav ol li a{
+    text-decoration: none;
+    color: #D97B29;
+}
+#migalha nav ol li{
+    margin-right: 0.5em;
+    color: #D97B29;
+}
+#migalha nav ol li a:hover{
+    color: #F2541B;
+}
+#migalha nav ol{
+    list-style-type: none;
+    display: flex;
+}
+#migalha-margem{
+  display: block;
+}
+#migalha-margem nav, #migalha-margem h1{
+  margin-left: 0;
+}
+ #migalha-margem h1{
+   font-size: 64px;
+ }
+
+/*carossel categoria das outras paginas*/
+#cat-escondido{
+  position: absolute;
+  width: 98.9vw;
+  visibility: hidden;
+}
+#cat-escondido>div>p a{
+  position: absolute;
+  font-size: 40px;
+  font-family: 'Bahiana', cursive;
+  color: #F2541B;
+  right: 64px;
+  top: 40px;
+}
+
+/*card de produto*/
+.card-produto{
+  background-color: #DCD0B1;
+  padding: 30px;
+  margin-bottom: 2em;
+}
+.card-produto p{
+  max-width: 200px;
+}
+.card-produto a{
+  color: black;
+}
+.card-produto h3{
+  font-size: 25px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #F2541B;
+}
+.card-produto h4{
+   font-size: 25px;
+   font-family: 'Bahiana', cursive;
+  color: #D97B29;
+}
+.card-produto div div{
+  width: 5em;
+  text-align: center;
+}
+.card-produto>div, .card-produto a>div{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 10px 0 0px 0;
+}
+.img-prod{
+  width: 215px;
+  text-align: center;
+  background-color: #F23869;
+  padding: 3px;
+  transform: rotate(-1.2deg);
+}
+.img-prod img{
+  width: 205px;
+   transform: rotate(1.2deg);
+}
+.margem{
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.cards-prod{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* margin: 0 auto;
+  max-width: 80em; */
+}

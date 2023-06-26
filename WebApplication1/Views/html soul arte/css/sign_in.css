@@ -1,0 +1,28 @@
+*{
+    /* font-family: 'Bahiana', cursive; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  background-color: #dcd0b1;
+  width: 76em;
+  padding: 1em;
+}
+
+section div{
+  display: flex;
+  justify-content: center;
+  background-image: url(../imagens/sign_inbg.png);
+  width: 431px;
+  height: 411px;
+}
+
+main div{
+  display:flex;
+  justify-content: center;
+}
+

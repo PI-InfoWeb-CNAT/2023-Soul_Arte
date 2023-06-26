@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul Arte - Comércio de Artesanato</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="css/principal.css"/>
+    <link rel="stylesheet" href="css/categorias.css"/>
+    <link rel="stylesheet" href="css/avaliacao.css"/>
+    <script src="js/categorias-menu.js"> </script>
+    <script src="js/avaliacao.js"> </script>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <figure>
+                <a href="index.html"><img src="imagens/logo_.png" alt="logotipo do Soul Arte"/></a>
+            </figure>
+            <form action="resultado.html" method="get">
+                <div class="busca">
+                    <input type="text" name="busca" id="idbusca"/>
+                    <input type="submit" value=" " id="lupa"/>
+                </div>
+            </form>
+            <nav class="menu-user">
+                <ul>
+                    <li>
+                        <a href="login.html"><img src="imagens/header/icon-login.png" alt="entrar ou registrar-se"></a>
+                    </li>
+                    <li>
+                        <a href="favoritos.html"><img src="imagens/header/icon-heart.png" alt="ver favoritos"></a>
+                    </li>
+                    <li>
+                        <a href="carrinho.html"><img src="imagens/header/icon-carrinho-de-compras.png" alt="ver carrinho de compras"></a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="menu-nav">
+                <ul>                   
+                    <li><a href="javascript:abrir()">CATEGORIAS</a></li>
+                    <li><a href="sac.html">SERVIÇO DE ATENDIMENTO AO CLIENTE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+ <section id="cat-escondido">
+    <div class="margem"><p><a href="javascript:fechar()">(fechar)</a></p></div>
+   <section id="carousel-cat">
+        <div class="container">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                <div class="col"><a href="categorias.html"><img src="imagens/home/categoria-roupas.png" width="250px"><p>Roupas</p></a></div>
+                <div class="col"><img src="imagens/home/categoria-acessorios.png" width="250px"><p>Acessórios</p></div>
+                <div class="col"><img src="imagens/home/categoria-ceramicas.png" width="250px"><p>Cerâmica</p></div>
+                <div class="col"><img src="imagens/home/categoria-aromaticos.png" width="250px"><p>Aromáticos</p></div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col"><img src="imagens/home/categoria-pintura.png" width="250px"><p>Pintura</p></div>
+                <div class="col"><img src="imagens/home/categoria-beleza.png" width="250px"><p>Beleza</p></div>
+                <div class="col"><img src="imagens/home/categoria-decoracao.png" width="250px"><p>Decoração</p></div>
+                <div class="col"><img src="imagens/home/categoria-utensilios.png" width="250px"><p>Utensílios</p></div>
+              </div>
+            </div>
+          </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+        </div>
+      </section>
+     </section>
+ <div id="migalha">
+   <div id="migalha-margem" class="margem">
+     <nav>
+         <ol>
+              <li><a href="index.html">HOME</a></li>
+              <li>></li>
+              <li><a href="#">Perfil</a></li>
+              <li>></li>
+              <li><a href="#">pedidos</a></li>
+              <li>></li>
+              <li><a href="avaliacao.html">avaliar produto</a></li>
+            </ol>
+          </nav>
+        <h1><a href="avaliacao.html">avaliar produto</a></h1>
+     </div>
+ </div> 
+    <main>
+        <h1>Deixe sua Avaliação</h1>
+        <section> 
+        <form class="form margem"> 
+            <fieldset> 
+              <div class="ava">
+                <label for="estre">Classificação Geral:</label>
+                <div id="estre">
+              <a href="javascript:void(0)" onclick="Avaliar(1)">
+                <img src="imagens/avaliacao/star0.png" id="s1"></a>
+                
+                <a href="javascript:void(0)" onclick="Avaliar(2)">
+                <img src="imagens/avaliacao/star0.png" id="s2"></a>
+                
+                <a href="javascript:void(0)" onclick="Avaliar(3)">
+                <img src="imagens/avaliacao/star0.png" id="s3"></a>
+                
+                <a href="javascript:void(0)" onclick="Avaliar(4)">
+                <img src="imagens/avaliacao/star0.png" id="s4"></a>
+                
+                <a href="javascript:void(0)" onclick="Avaliar(5)">
+                <img src="imagens/avaliacao/star0.png" id="s5"></a>               
+                </div>
+              </div>
+                           
+              <div class="foto">
+                 <label for="figure">Adicione uma foto ou Vídeo</label>
+                 <p>Fotos e videos podem ser mais úteis</p>
+                 </br>
+                 <input type="button" value="+"/>
+                 </div>           
+                </br> 
+
+              <div>
+                <label for="mensagem">Comentário:</label>
+                <br>
+                <textarea id="mensagem"></textarea>
+             </div>
+
+              <div class="botao">
+                  <input type="submit" value="Enviar" id="botao"/>
+              </div>
+            </fieldset>
+        </form>  
+    </section>
+    </main>
+
+    <footer>
+        <div class="redes">
+          <p>REDES SOCIAIS</p>
+          <figure>
+            <a href="#"><img src="../imagens/footer/mdi_instagram.svg"/></a>
+            <a href="#"><img src="../imagens/footer/mingcute_facebook-line.svg"/></a>
+            <a href="#"><img src="../imagens/footer/ri_twitter-line.svg"/></a>
+          </figure>
+        </div>
+        <div class="ajuda">
+          <p>Ajuda</p>
+          <a href="sac.html">Serviço de atendimento ao cliente</a>
+        </br>
+          <a href="sac.html">Perguntas frequentes</a>
+        </div>
+        <div>
+          <p>NOS CONTACTE</p>
+          <address>soul.arte@gmail.com</address>
+          <address>+55 (84) 9 9999-9999</address>
+        </div>
+        <div class="copyright">
+          <p>© Desenvolvido por Iara Monyke, Iraikare Rodrigues, Luiza Varella e Renan Balbino.</p>
+        </div>
+      </footer>
+  </body>
+  </html>

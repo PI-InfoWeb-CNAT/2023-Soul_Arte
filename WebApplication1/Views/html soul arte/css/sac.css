@@ -1,0 +1,97 @@
+.margem{
+  margin: auto;
+}
+#envio{
+    background-image: url(../imagens/sac/envia.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+}
+form{
+  padding-bottom: 3em;  
+}
+.enviar{
+   background-image: url(../imagens/sac/bg-form.png);
+    padding:3.1em;    
+    margin: 0 auto;
+    width:882.16px ;
+    height:131.42px ; 
+}
+.enviar input[type=text]{
+    border: none;
+    outline: none;
+    background-color: transparent;    
+    width: 32em;
+    font-size: 23px;
+}
+#menu-duv a{
+    text-decoration: none;
+    padding: 0px;
+    color: white;
+    font-family: Bebas Neue;
+}
+nav ol{   
+   display: flex;   
+}
+#menu-duv li{
+    background-color: #F23869;
+    margin: 20px;
+    border-radius: 6px;
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 24px;   
+    text-align: center;  
+    width: 200px;
+    height: 65px;  
+    padding-top: 0.7em; 
+}
+#menu-duv{
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+#per{
+    font-family: Bahiana;
+    color: #F2541B;
+    text-align: start;
+    padding-left: 0.7em;
+}
+#vermais a{
+    color: #D97B29;
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: underline;
+    font-style: italic;
+}
+p#vermais, #vermais2{
+    margin-left: 5%;
+    padding-bottom: 50px;
+}
+#card{
+     border-radius: 1.5em;
+     align-items: center;
+}
+.card-perg{
+    justify-content: center;
+    font-family: Bahiana;
+    flex-wrap: wrap;
+    margin-bottom: 31px;
+    color: black;
+    width: 1241.51px;
+    height: 205.56px;
+    margin: 4em auto;   
+    border-radius: 1em; 
+    background-image: url(../imagens/sac/bg-pergunta.png);
+}
+#par{
+    font-family: Inter;   
+    text-decoration: underline;
+    padding-left: 62px;
+}
+h2{
+    padding-left: 62px;
+    padding-top: 60px;
+}

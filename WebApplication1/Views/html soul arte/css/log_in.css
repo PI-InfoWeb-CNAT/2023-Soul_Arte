@@ -1,0 +1,93 @@
+*{
+    /* font-family: 'Bahiana', cursive; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.log{
+    background-color: #dcd0b1;
+    height: 545px;
+    width: 38em;
+    padding: 4em;
+    display: flex;
+    justify-content: center;
+
+}
+
+.logbox{
+    background-image: url(../imagens/log_inbg.png);
+    width: 330px;
+    height: 417px;
+    text-align: center;
+}
+
+#entrar{
+text-align: center;
+  font-family: 'Bahiana', cursive;
+  font-size: 60px;
+  margin-bottom: 0.5em;
+  padding-top: 0.5em;
+  color: #F2541B;
+}
+
+.info{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    color: #D97B29;
+}
+
+.info input{
+    background-color: #dcd0b1;
+    width: 6em;
+    border: #dcd0b1;
+    height: 1.25em;
+    margin-bottom: 1em;
+}
+
+.laranja{
+    color: #F2541B;
+    margin-bottom: 1em;
+}
+
+.laranja a{
+    color: #F2541B;
+}
+
+.laranja a:hover{
+    color: #D97B29;
+    text-decoration: underline;
+
+}
+
+.sem{
+    display: flex;
+    text-align: center;
+}
+
+#enviar{
+    margin-top: 0.5em;
+    background-color: #F2541B;
+    font-family: calibri;
+    border: 1px solid #F2541B;
+    font-size: 18px;
+    padding: 0.15em;
+    color: white;
+}
+
+#enviar:hover{
+    font-style: bold;
+    background-color: #dcd0b1;
+    border: 1px solid #dcd0b1;
+    color: #F2541B;
+}
+
+form div{
+    display: flex;
+    justify-content: center;
+}
