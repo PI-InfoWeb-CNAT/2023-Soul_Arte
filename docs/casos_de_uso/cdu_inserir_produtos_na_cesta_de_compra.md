@@ -1,53 +1,75 @@
-# Projeto Comercio Eletrônico
+# ECOMMERCE - SOUL ARTE
 
-## Especificação do caso de uso - Inserir produtos na cesta de compra
+## Especificação do caso de uso - Visualizar produtos
 
 ### Histórico da Revisão 
 |  Data  | Versão | Descrição | Autor |
 |:-------|:-------|:----------|:------|
-| 05/04/2023 | **1.00** | Versão modelo  | Leonardo MINORA |
+| 26/06/2023 | **1.00** | CDU Visualizar produtos | Iraikare Rodrigues |
 
 
 ### 1. Resumo 
-Este casos de uso permite que _um papel_ realize _uma tarefa_ com _esse(s) objetivo(s)_.
+Permitir a visualização de produtos cadastrados no sistema.
 
 
 ### 2. Atores 
-- Cliente
-- Usuário não autenticado
-- Vendedor
+- Visitantes
+- Clientes
+- Vendedores
 
 ### 3. Pré-condições
-São pré-condições para iniciar este caso de uso:
-- _item um_
-- _item dois_
-- ...
+- Inexistente
 
 ### 4.Pós-condições
-Após a execução deste casos de uso, espera que o sistema:
-- _guarde (filtrar, excluir, modificar, inserir) dados/informações_
-- _mostre resultado para os atores_
-- ...
+- O produto é visto em sua página específica.
 
 ### 5. Fluxos de evento
 
 #### 5.1. Fluxo Principal 
-`A ser desenvolvido pelo aluno.`
 |  Ator  | Sistema |
 |:-------|:------- |
-|1. O _ator_ faz _alguma ação_. | --- |
-| --- |2. O sistema _avisa que recebeu a ação do ator_.| --- |
-|--- |3. O sistema _processa os dados inseridos pelo ator_. |
-|--- |4. O sistema _mostra que terminou o processamento e seus resultados_. |
-|5. O _ator visualiza o resultado_. | --- |
+|1. [IN] Usuário acessa o site. | --- |
+| --- |2. [OUT] O sistema apresenta a tela inicial.| --- |
+|3. [IN] Usuário clica em algum produto sugerido. | --- |
 
+#### 5.2. Fluxo Alternativo 
+|  Ator  | Sistema |
+|:-------|:------- |
+|1. [IN] Usuário acessa o site. | --- |
+| --- |2. [OUT] O sistema apresenta a tela inicial.| --- |
+|3. [IN] Usuário clica em alguma categoria. | --- |
+| --- |4. [OUT] Sistema apresenta a página da categoria;| --- |
+|5. [IN] Usuário clica em algum produto. | --- |
+
+#### 5.3. Fluxo Alternativo 
+|  Ator  | Sistema |
+|:-------|:------- |
+|1. [IN] Usuário acessa o site. | --- |
+| --- |2. [OUT] O sistema apresenta a tela inicial.| --- |
+|3. [IN] Usuário clica em alguma categoria. | --- |
+| --- |4. [OUT] Sistema apresenta a página da categoria;| --- |
+|5. [IN] Usuário clica nas principais lojas. | --- |
+| --- |6. [OUT] Sistema apresenta a página da loja;| --- |
+|7. [IN] Usuário clica em algum produto. | --- |
 
 #### 5.2. Fluxo de excessão 
-`A ser desenvolvido pelo aluno.`
-a. Dados inválidos para a operação: caso o usuário tente submeter um comentário sem texto, o sistema deve alertá-lo e solicitar os dados novamente.
+--
 
 ### 6. Prototipos de Interface
-`A ser desenvolvido pelo aluno.`
+#### 6.1. Prototipo HOME
+![HOME](https://github.com/PI-InfoWeb-CNAT/2023-Soul_Arte/assets/101957823/db700dc4-4846-40d6-a3cf-ab15594d131f)
+
+#### 6.2. Prototipo CATEGORIAS
+![CATEGORIAS](https://github.com/PI-InfoWeb-CNAT/2023-Soul_Arte/assets/101957823/e7971b88-6bca-4181-a882-8f5f95b4fdd3)
+
+
+#### 6.3. Prototipo LOJA
+![LOJA](https://github.com/PI-InfoWeb-CNAT/2023-Soul_Arte/assets/101957823/230a20d1-e095-4eb9-9d85-670307cf09cb)
+
+
+#### 6.4. Prototipo PRODUTO
+![PRODUTO](https://github.com/PI-InfoWeb-CNAT/2023-Soul_Arte/assets/101957823/8c86f3f4-a6a0-4d1e-912b-376a27599054)
+
 
 ### 7. Diagrama de classe de domínio usados neste caso de uso
-`A ser desenvolvido pelo aluno.`
+--
