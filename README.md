@@ -1,12 +1,12 @@
-<div align="center">
-<h1>Projeto Integrador InfoWeb - IFRN</h1>
+<div align="left">
+<h1>Projeto Integrador - Soul Arte</h1>
 </div>
 
-<div align="center">
+<div align="left">
   <img align="center" src=https://github.com/luvarella/SoulArte/blob/b63a1cb79ea4fe9f748b2cd7c3c2313169901b88/Soul%20Arte%20-%20Vinheta.gif width="500px"/> 
 </div>
 
-## Soul Arte
+## O que é?
 
 Em resumo, nosso projeto consiste em um ambiente virtual específico para venda de itens confeccionados por pequenos negócios ou artesãos próximos a localidade dos possíveis compradores, visando também o reconhecimento dos artistas em questão.
 
@@ -16,7 +16,7 @@ Atualmente o projeto não possui uma implementação como modelo de projeto do M
 
 Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/licenses/quick-guide-gplv3.pt-br.html).
 
-### Artefatos do Projeto
+## Artefatos do Projeto
 
 * [Reuniões da equipe](./reunioes/Reunioes.md)
 * [Documento de visão `/docs/Documento_de_Visao.md`](./docs/Documento_de_Visao.md)
@@ -34,6 +34,6 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
 
 
 
-### Autores
+## Autores
 | [<img align="center" src="https://avatars.githubusercontent.com/u/99852137?v=4" width=150><br><sub>Iara Monyke</sub>](https://github.com/iaramonyke) |  [<img src="https://avatars.githubusercontent.com/u/101957823?v=4" width=150><br><sub>Iraikare Rodrigues</sub>](https://github.com/iraikare) |  [<img src="https://avatars.githubusercontent.com/u/102320472?v=4" width=150><br><sub>Luiza Varella</sub>](https://github.com/luvarella) | [<img src="https://avatars.githubusercontent.com/u/93939187?v=4" width=150><br><sub>Renan Balbino</sub>](https://github.com/balbii) </div>|
 | :---: | :---: | :---: | :---: |
