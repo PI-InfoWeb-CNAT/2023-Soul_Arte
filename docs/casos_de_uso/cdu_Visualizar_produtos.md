@@ -56,18 +56,8 @@ Permitir a visualização de produtos cadastrados no sistema.
 --
 
 ### 6. Prototipos de Interface
-#### 6.1. Prototipo HOME
-![HOME](https://github.com/PI-InfoWeb-CNAT/2023-Soul_Arte/assets/101957823/db700dc4-4846-40d6-a3cf-ab15594d131f)
 
-#### 6.2. Prototipo CATEGORIAS
-![CATEGORIAS](https://github.com/PI-InfoWeb-CNAT/2023-Soul_Arte/assets/101957823/e7971b88-6bca-4181-a882-8f5f95b4fdd3)
-
-
-#### 6.3. Prototipo LOJA
-![LOJA](https://github.com/PI-InfoWeb-CNAT/2023-Soul_Arte/assets/101957823/230a20d1-e095-4eb9-9d85-670307cf09cb)
-
-
-#### 6.4. Prototipo PRODUTO
+#### 6.1. Prototipo PRODUTO
 ![PRODUTO](https://github.com/PI-InfoWeb-CNAT/2023-Soul_Arte/assets/101957823/8c86f3f4-a6a0-4d1e-912b-376a27599054)
 
 
