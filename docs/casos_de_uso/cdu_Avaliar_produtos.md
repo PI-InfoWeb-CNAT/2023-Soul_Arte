@@ -37,7 +37,11 @@ Permitir a avaliação de produtos já comprados.
 
 
 #### 5.2. Fluxo de excessão 
-a. Erro no preenchimento dos dados: cliente tenta enviar o formulário em branco, o sistema emite uma mensagem dizendo que para enviar o formulário é necessário no mínimo avaliar o produto em estrelas.
+#### 5.2.1. Erro no preenchimento dos dados
+|  Ator  | Sistema |
+|:-------|:------- |
+|1. [IN]  Cliente tenta enviar o formulário em branco. | --- |
+| --- |2. O sistema emite uma mensagem dizendo que para enviar o formulário é necessário no mínimo avaliar o produto em estrelas. | --- |
 
 ### 6. Prototipos de Interface
 #### 6.1. prototipo de DEIXAR AVALIAÇÃO
