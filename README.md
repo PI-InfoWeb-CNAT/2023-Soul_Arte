@@ -3,7 +3,7 @@
 </div>
 
 <div align="left">
-  <img align="center" src=https://github.com/luvarella/SoulArte/blob/b63a1cb79ea4fe9f748b2cd7c3c2313169901b88/Soul%20Arte%20-%20Vinheta.gif width="500px"/> 
+  <img align="center" src=https://github.com/luvarella/SoulArte/blob/b63a1cb79ea4fe9f748b2cd7c3c2313169901b88/Soul%20Arte%20-%20Vinheta.gif width="700px"/> 
 </div>
 
 ## O que é?
