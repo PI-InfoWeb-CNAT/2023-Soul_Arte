@@ -1,4 +1,5 @@
 ﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -43,6 +44,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -90,15 +97,55 @@
   <ItemGroup>
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
+    <Content Include="Views\Home\css\principal.css" />
+    <Content Include="Views\Home\imagens\cliente.png" />
+    <Content Include="Views\Home\imagens\header\conjunto-de-arte-de-papel-origami-pincel-aquarela-e-palha-em-pano-de-fundo-laranja 1.png" />
+    <Content Include="Views\Home\imagens\header\icon-carrinho-de-compras.png" />
+    <Content Include="Views\Home\imagens\header\icon-heart.png" />
+    <Content Include="Views\Home\imagens\header\icon-login.png" />
+    <Content Include="Views\Home\imagens\header\icon-lupa.png" />
+    <Content Include="Views\Home\imagens\header\setaLeft-header.png" />
+    <Content Include="Views\Home\imagens\header\setaRight-header.png" />
+    <Content Include="Views\Home\imagens\home\categoria-acessorios.png" />
+    <Content Include="Views\Home\imagens\home\categoria-aromaticos.png" />
+    <Content Include="Views\Home\imagens\home\categoria-beleza.png" />
+    <Content Include="Views\Home\imagens\home\categoria-ceramicas.png" />
+    <Content Include="Views\Home\imagens\home\categoria-decoracao.png" />
+    <Content Include="Views\Home\imagens\home\categoria-pintura.png" />
+    <Content Include="Views\Home\imagens\home\categoria-roupas.png" />
+    <Content Include="Views\Home\imagens\home\categoria-utensilios.png" />
+    <Content Include="Views\Home\imagens\home\coracao-item.png" />
+    <Content Include="Views\Home\imagens\home\estrelas.png" />
+    <Content Include="Views\Home\imagens\home\Group 39.png" />
+    <Content Include="Views\Home\imagens\home\icons8_buy.png" />
+    <Content Include="Views\Home\imagens\home\item1.png" />
+    <Content Include="Views\Home\imagens\home\item2.png" />
+    <Content Include="Views\Home\imagens\home\item3.png" />
+    <Content Include="Views\Home\imagens\home\item4.png" />
+    <Content Include="Views\Home\imagens\home\item5.png" />
+    <Content Include="Views\Home\imagens\home\item6.png" />
+    <Content Include="Views\Home\imagens\home\item7.png" />
+    <Content Include="Views\Home\imagens\home\item8.png" />
+    <Content Include="Views\Home\imagens\home\seta-left-cat-index.png" />
+    <Content Include="Views\Home\imagens\home\seta-right-cat-index.png" />
+    <Content Include="Views\Home\imagens\home\sobre.png" />
+    <Content Include="Views\Home\imagens\logo_%402x.png" />
+    <Content Include="Views\Home\imagens\logo_.png" />
+    <Content Include="Views\Home\imagens\log_inbg.png" />
+    <Content Include="Views\Home\imagens\sign_inbg.png" />
+    <Content Include="Views\Home\imagens\vendedor.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Context\EFContext.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Class1.cs" />
+    <Compile Include="Models\Categoria.cs" />
+    <Compile Include="Models\Home.cs" />
+    <Compile Include="Models\Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -106,7 +153,7 @@
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -147,7 +194,10 @@
       <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
   </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
