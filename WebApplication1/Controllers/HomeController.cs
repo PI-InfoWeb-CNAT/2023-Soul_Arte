@@ -21,5 +21,9 @@ namespace WebApplication1.Controllers
             return View(h);
 
         }
+        public ActionResult ViewPage()
+        {
+            return View();
+        }
     }
 }

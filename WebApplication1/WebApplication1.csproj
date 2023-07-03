@@ -97,7 +97,7 @@
   <ItemGroup>
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
-    <Content Include="Views\Home\css\principal.css" />
+    <Content Include="Views\css\principal.css" />
     <Content Include="Views\Home\imagens\cliente.png" />
     <Content Include="Views\Home\imagens\header\conjunto-de-arte-de-papel-origami-pincel-aquarela-e-palha-em-pano-de-fundo-laranja 1.png" />
     <Content Include="Views\Home\imagens\header\icon-carrinho-de-compras.png" />
@@ -154,6 +154,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\ViewPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -163,6 +164,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Home\css\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
