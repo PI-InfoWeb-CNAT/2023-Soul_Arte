@@ -66,40 +66,28 @@
                 <section class="log">
                     <div class="logbox">
                         <h1 id="entrar">ENTRAR</h1>
-                        <form>
-                            <!-- <div class="info">
-                                <label for="email">E-MAIL:</label>
-                                <br>
-                                <input type="text" id="email" required />
+
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+                            <div class="info">
+                                @Html.LabelFor(m => m.Email)
+                                @Html.TextBoxFor(m => m.Email, "", new { @placeholder = "Email" })
+
                             </div>
                             <div class="info">
-                                <label for="password">SENHA:</label>
-                                <br>
-                                <input type="password" id="password" required />
+                                @Html.LabelFor(m => m.Senha)
+                                @Html.TextBoxFor(m => m.Senha, new { @placeholder = "Senha" })
                             </div>
+
                             <p>* Não tenho uma conta - <br> <a href="sign_in.html">CRIAR CONTA</a></p>
                             <p>* <a href="senha.html">Esqueci minha senha</a></p>
 
-                            <div id="input-enviar">
-                                <input id="enviar" type="submit" value="ENTRAR" />
-                            </div> -->
-                            @using (Html.BeginForm("LoginCliente", "Home", FormMethod.Post))
-                            {
-                                @Html.AntiForgeryToken()
-                                <div class="info">
-                                    @Html.LabelFor(m => m.Email)
-                                    @Html.TextBoxFor(m => m.Email, "", new { @placeholder = "Email" })
+                            <div class="info">
+                                <input id="enviar" type="submit" name="submit" class="btn btn-primary" value="Login" />
+                            </div>
+                        }
 
-                                </div>
-                                <div class="info">
-                                    @Html.LabelFor(m => m.Senha)
-                                    @Html.TextBoxFor(m => m.Senha, new {@placeholder = "Senha" })
-                                </div>
-                                <div class="info">
-                                    <input id="enviar" type="submit" name="submit" class="btn btn-primary" value="Login" />
-                                </div>
-                            }
-                        </form>
                     </div>
                 </section>
             </div>

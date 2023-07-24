@@ -41,20 +41,31 @@ namespace WebApplication1.Controllers
                 Senha = "cliente123",
                 User = "cliente2023"
             };
+            if(context.Clientes.Where(p => p.ClienteId == 1).Count() == 0)
+            {
+                context.Clientes.Add(c);
+                context.SaveChanges();
+
+            }
+            
             return View();
         }
-        public ActionResult LoginCliente(string email, string senha)
+        [HttpPost]
+        public ActionResult Login(string email, string senha)
         {
-            var data = context.Clientes.Where(s => s.Email.Equals(email) && s.Senha.Equals(senha)).ToList();
-            if (data.Count() > 0)
+            if (ModelState.IsValid)
             {
-                return RedirectToAction("Index", "Cliente");
+                var data = context.Clientes.Where(s => s.Email.Equals(email) && s.Senha.Equals(senha)).ToList();
+                if (data.Count() > 0)
+                {
+                    return RedirectToAction("Index", "Cliente");
+                }
+                else
+                {
+                    return RedirectToAction("Login");
+                }
             }
-            else
-            {
-                return RedirectToAction("Login");
-            }
-            return RedirectToAction("Index", "Cliente");
+            return View();
         }
     }
 }
