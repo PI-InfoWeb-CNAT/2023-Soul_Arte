@@ -1,0 +1,94 @@
+* {
+    /* font-family: 'Bahiana', cursive; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.log {
+    background-color: #dcd0b1;
+    height: 100%;
+    width: 100%;
+    padding: 4em;
+    display: flex;
+    justify-content: center;
+}
+
+#log-margem {
+    margin: 0 64px;
+}
+
+.logbox {
+    padding: 40px 55px;
+    background-image: url(imagens/log_inbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 449px;
+    height: 710px;
+}
+
+#entrar {
+    text-align: center;
+    font-family: 'Bahiana', cursive;
+    margin-bottom: 0.5em;
+    color: #F2541B;
+}
+
+.info {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    color: #D97B29;
+    text-align: left;
+}
+
+    .info input {
+        background-color: #dcd0b1;
+        width: 100%;
+        border: #dcd0b1;
+        height: 50px;
+        margin-bottom: 1em;
+        font-size: 20px;
+        font-family: calibri;
+        padding: 0 25px;
+    }
+
+input:focus {
+    outline: none;
+}
+
+main p a:hover {
+    color: #D97B29;
+    text-decoration: underline;
+}
+
+form #input-enviar {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+#enviar {
+    background-color: #F2541B;
+    font-family: calibri;
+    border: 1px solid #F2541B;
+    font-size: 25px;
+    padding: 2px 10px;
+    margin-top: 25px;
+    color: white;
+}
+
+    #enviar:hover {
+        font-style: bold;
+        background-color: #dcd0b1;
+        border: 1px solid #dcd0b1;
+        color: #F2541B;
+    }
+
+main .log p a {
+    color: #F2541B;
+    margin-bottom: 1em;
+}
+
+main .log p {
+    margin: 0 0 25px 0;
+    font-size: 25px;
+}

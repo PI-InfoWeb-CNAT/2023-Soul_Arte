@@ -12,5 +12,6 @@ namespace WebApplication1.Models
         public EFContext() : base("Asp_Net_MVC_CS") { }
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Produto> Produtos { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
     }
 }
