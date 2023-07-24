@@ -35,6 +35,6 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
 
 
 
-## Autores 
+## Autores 📚
 | [<img align="center" src="https://avatars.githubusercontent.com/u/99852137?v=4" width=150><br><sub>Iara Monyke</sub>](https://github.com/iaramonyke) |  [<img src="https://avatars.githubusercontent.com/u/101957823?v=4" width=150><br><sub>Iraikare Rodrigues</sub>](https://github.com/iraikare) |  [<img src="https://avatars.githubusercontent.com/u/102320472?v=4" width=150><br><sub>Luiza Varella</sub>](https://github.com/luvarella) | [<img src="https://avatars.githubusercontent.com/u/93939187?v=4" width=150><br><sub>Renan Balbino</sub>](https://github.com/balbii) </div>|
 | :---: | :---: | :---: | :---: |
