@@ -22,10 +22,11 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
 * [Documento de visão `/docs/Documento_de_Visao.md`](./docs/Documento_de_Visao.md)
 * Documento de Requisitos
 * Detalhamento de casos de uso 
-  1. [Visualizar produtos](./docs/casos_de_uso/cdu_Visualizar_produtos.md)
+  1. [Visualizar produtos](./docs/casos_de_uso/cdu_Visualizar_produto_certo.md)
   2. [Avaliar produtos](./docs/casos_de_uso/cdu_Avaliar_produtos.md)
   3. [Realizar login](./docs/casos_de_uso/cdu_Realizar_login.md)
-  4. continua...
+  4. [Denunciar produto](./docs/casos_de_uso/cdu_Denunciar_produto.md)
+  5. continua...
 * [Diagrama de casos de uso](./docs/imagens/dcu-soul_arte.png)
 * [Diagrama de classes de domínio](./docs/diagramas/Diagrama_Entidades_e_Relacionamentos.png)
 * Documentação da arquitetura
