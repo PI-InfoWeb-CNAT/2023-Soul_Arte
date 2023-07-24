@@ -9,5 +9,6 @@ namespace WebApplication1.Models
     {
         public IEnumerable<Produto> produtos;
         public IEnumerable<Categoria> categorias;
+        public IEnumerable<Cliente> clientes;
     }
 }

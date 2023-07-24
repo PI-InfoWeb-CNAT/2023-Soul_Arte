@@ -1,4 +1,4 @@
-﻿@model WebApplication1.Models.Home
+﻿@model WebApplication1.Models.Cliente
 
 @{
     Layout = null;
@@ -31,7 +31,10 @@
             <nav class="menu-user">
                 <ul>
                     <li>
-                        
+                        @Html.LabelFor(m => m.Nome)
+                    </li>
+                    <li>
+
                         <a href="/Home/Login"><img src="~/Content/imagens/header/icon-login.png" alt="entrar ou registrar-se"></a>
                     </li>
                     <li>

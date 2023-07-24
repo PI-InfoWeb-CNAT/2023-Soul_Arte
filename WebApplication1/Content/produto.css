@@ -1,0 +1,247 @@
+p{
+  margin: 0;
+}
+.cabecalho{
+    background-color: #F2541B;
+    position: relative;
+}
+#carouselExampleAutoplaying .carousel-control-prev-icon{
+  background-image: url(../imagens/home/seta-left-cat-index.png);
+    position: absolute;
+    left: 0em;
+    width: 5em;
+    height: 5em;
+}
+#carouselExampleAutoplaying .carousel-control-next-icon{
+    background-image: url(../imagens/home/seta-right-cat-index.png);
+    position: absolute;
+    right: 0em;
+    width: 5em;
+    height: 5em;
+}
+#imgs-prod{
+  text-align: center;
+  width: 550px;
+  margin: 0 64px 0 0px;
+}
+#carouselExampleAutoplaying figure{
+  text-align: center;
+  margin: 0 auto;
+  width: 335px;
+  height: 444px;
+  background-color: #F23869;
+  transform: rotate(-2deg);
+}
+.w-100 {
+    width: 99%!important;
+  height: 99%!important;
+    margin: 10% auto;
+  transform: rotate(2deg);
+}
+#descricao-produto{
+  margin: 0 64px;
+}
+#descricao-produto .margem{
+  display: flex;
+  align-items: center;
+}
+#descricao-produto h2{
+  font-size: 45px;
+  color: #F2541B;
+  font-family: 'Bahiana', cursive;
+}
+#descricao-produto h4{
+  font-size: 30px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #D97B29;
+  border-left: 2px solid #D97B29;
+  padding-left: 20px;
+  height: 34px;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+#descricao-produto h3{
+  font-size: 60px;
+  color: #F2541B;
+  font-family: 'Bahiana', cursive;
+}
+#descricao-produto p, #descricao-produto span{
+  font-size: 25px;
+  padding: 0 10px;
+}
+#descricao-produto section span{
+  border-left: 1px solid #F23869;
+  border-right: 1px solid #F23869;
+}
+.botao input[type="submit"]{
+  background-color: #F2541B;
+  padding: 0.2em 0.7em;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 25px;
+  margin: 10px 1em 0 0;
+}
+#descricao-produto section>div{
+  display: flex;
+  align-items: center;
+  margin-top: 20px
+}
+#qnt{
+  margin-left: 20px;
+  display: flex;
+  border: 1px solid #F23869;
+  border-radius: 15px;
+}
+#fav-den p{
+  margin-right: 20px;
+}
+#detalhes-produto{
+  margin: 10em 0px;
+  padding: 5em 64px 8em 64px;
+  background-color: #DCD0B1;
+}
+#detalhes-produto h4{
+  font-size: 30px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #D97B29;
+  margin: 1em 0;
+}
+#detalhes-produto p{
+  font-size: 20px;
+}
+#avaliacao-produto section>div{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #DCD0B1;
+  width: 600px;
+  height: 340px;
+  border-radius: 15px;
+}
+#avaliacao-produto section>div>figure img{
+  width: 230px;
+  border-radius: 230px;
+}
+#avaliacao-produto section>div>figure{
+  text-align: center;
+  background-color: #F23869;
+  width: 235px;
+  border-radius: 235px;
+}
+#avaliacao-produto p{
+  max-width: 220px;
+  font-size: 20px;
+  margin: 10px 0;
+}
+#avaliacao-produto{
+  margin: 0 64px;
+}
+#avaliacao-produto a{
+  font-size: 20px;
+  color: black;
+  text-decoration: underline;
+  font-style: italic;
+}
+#avaliacao-produto section{
+  display: flex;
+  justify-content: space-between;
+}
+#vermais a{
+  color: #D97B29;
+  font-size: 30px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+p#vermais, #vermais2{
+  text-align: right;
+  margin: 20px 0 0 auto;
+}
+#vendedor{
+  position: relative;
+  margin: 160px 64px;
+}
+#vendedor .margem{
+  padding: 64px 128px;
+  background-color: #F1ECE0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+#vendedor span{
+  display: flex;
+  font-family: 'Bahiana', cursive;
+}
+#vendedor span h2{
+  font-size: 60px;
+  color: #f2541b;
+  margin: 0 40px 0 0;
+}
+#vendedor span .ava{
+  font-size: 40px;
+}
+#vendedor .info{
+  font-family: 'Bebas Neue', sans-serif;
+  color: #D97B29;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+#vendedor .info b{
+  color: black;
+  font-weight: normal;
+}
+ #vendedor p{
+   font-size: 20px;
+   max-width: 500px;
+ }
+#vendedor figure img{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 400px;
+}
+#vendedor figure{
+  background-image: url(../imagens/produto/bg-img-vendedor.png);
+  width: 434px;
+  height: 419px;
+  text-align: center;
+  padding-top: 1em;
+}
+#mouse{
+  position: absolute;
+  right: -40px;
+  top:330px;
+  animation-name: click;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes click{
+  0%{
+    margin-right: 0;
+     margin-bottom: 0;
+  }
+  50%{
+     margin-right: 100px;
+     margin-top: -50px;
+  }
+  100%{
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+#prod-similares{
+  margin: 0 64px;
+}
+#prod-similares .margem>div{
+  display: flex;
+  justify-content: space-between;
+}
+#vermais2 a{
+  color: #D97B29;
+  font-size: 30px;
+  font-family: 'Bebas Neue', sans-serif;
+  text-decoration: underline;
+  font-style: italic;
+}

@@ -103,6 +103,7 @@
     <Content Include="Content\imagens\log_inbg.png" />
     <Content Include="Content\log_in.css" />
     <Content Include="Content\principal.css" />
+    <Content Include="Content\produto.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\imagens\cliente.png" />
@@ -145,6 +146,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\EFContext.cs" />
+    <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -163,6 +165,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\ViewPage.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Cliente\Index.cshtml" />
+    <Content Include="Views\Home\Produto.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

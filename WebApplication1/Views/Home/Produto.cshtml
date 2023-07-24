@@ -1,0 +1,352 @@
+﻿@model WebApplication1.Models.Home
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul Arte - Comércio de Artesanato</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+    <link href="~/Content/principal.css" rel="stylesheet" />
+    <link href="~/Content/produto.css" rel="stylesheet" />
+    <script src="~/Content/categorias-menu.js"></script>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <figure>
+                <a href="/Home/Index"><img src="~/Content/imagens/logo_.png" alt="logotipo do Soul Arte" /></a>
+            </figure>
+            <form action="resultado.html" method="get">
+                <div class="busca">
+                    <input type="text" name="busca" id="idbusca" />
+                    <input type="submit" value=" " id="lupa" />
+                </div>
+            </form>
+            <nav class="menu-user">
+                <ul>
+                    <li>
+
+                        <a href="/Home/Login"><img src="~/Content/imagens/header/icon-login.png" alt="entrar ou registrar-se"></a>
+                    </li>
+                    <li>
+                        <a href="favoritos.html"><img src="~/Content/imagens/header/icon-heart.png" alt="ver favoritos"></a>
+                    </li>
+                    <li>
+                        <a href="carrinho.html"><img src="~/Content/imagens/header/icon-carrinho-de-compras.png" alt="ver carrinho de compras"></a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="menu-nav">
+                <ul>
+                    <!-- Aqui a gente pode fazer o scroll para a parte de categorias da própria página com JavaScript -->
+                    <li><a href="#cat-link">CATEGORIAS</a></li>
+                    <li><a href="sac.html">SERVIÇO DE ATENDIMENTO AO CLIENTE</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <section id="cat-escondido">
+        <div class="margem"><p><a href="javascript:fechar()">(fechar)</a></p></div>
+        <section id="carousel-cat">
+            <div class="container">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col"><a href="categorias.html"><img src="imagens/home/categoria-roupas.png" width="250px"><p>Roupas</p></a></div>
+                                <div class="col"><img src="imagens/home/categoria-acessorios.png" width="250"><p>Acessórios</p></div>
+                                <div class="col"><img src="imagens/home/categoria-ceramicas.png" width="250"><p>Cerâmica</p></div>
+                                <div class="col"><img src="imagens/home/categoria-aromaticos.png" width="250"><p>Aromáticos</p></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col"><img src="imagens/home/categoria-pintura.png" width="250"><p>Pintura</p></div>
+                                <div class="col"><img src="imagens/home/categoria-beleza.png" width="250"><p>Beleza</p></div>
+                                <div class="col"><img src="imagens/home/categoria-decoracao.png" width="250"><p>Decoração</p></div>
+                                <div class="col"><img src="imagens/home/categoria-utensilios.png" width="250"><p>Utensílios</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <div id="migalha">
+        <div id="migalha-margem" class="margem">
+            <nav>
+                <ol>
+                    <li><a href="index.html">HOME</a></li>
+                    <li>></li>
+                    <li><a href="categorias.html">Acessórios</a></li>
+                    <li>></li>
+                    <li><a href="produto.html">PRODUTO NÃO SEI OQ NÃO SEI OQ LÁ</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <section id="descricao-produto">
+            <div class="margem">
+                <div id="imgs-prod">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="50000">
+                                <figure><img src="imagens/produto/ex-produto.png" class="d-block w-100" alt="..."></figure>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="50000">
+                                <figure><img src="imagens/produto/ex-produto.png" class="d-block w-100" alt="..."></figure>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="50000">
+                                <figure><img src="imagens/produto/ex-produto.png" class="d-block w-100" alt="..."></figure>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <section>
+                    <h2>PRODUTO NÃO SEI OQ NÃO SEI OQ LÁ</h2>
+                    <div>
+                        <figure><img src="imagens/produto/fivestar.png" /></figure>
+                        <h4>3 vendidos</h4>
+                        <h4>2 avaliações</h4>
+                    </div>
+
+                    <div>
+                        <h3>R$ 27,99</h3>
+                        <h4>quantidade:</h4>
+                        <div id="qnt">
+                            <p>-</p>
+                            <span>1</span>
+                            <p>+</p>
+                        </div>
+                        <h4>3 disponíveis</h4>
+                    </div>
+
+                    <div id="fav-den">
+                        <p><img src="imagens/produto/coracao-preenchido.png" width="35px" /> Favoritar</p>
+                        <p><img src="imagens/produto/denunciar.png" width="30px" /> Denunciar</p>
+                    </div>
+
+                    <div>
+                        <div class="botao">
+                            <input type="submit" value="Comprar agora" />
+                        </div>
+                        <div class="botao">
+                            <input type="submit" value="Adcionar ao carrinho" />
+                        </div>
+                    </div>
+                </section>
+        </section>
+        </div>
+
+
+        <section id="detalhes-produto">
+            <div class="margem">
+                <h1>Detalhes</h1>
+                <h4>Descrição:</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a nulla sed dui convallis volutpat nec at sem. Proin sit amet nunc ut urna facilisis malesuada ac sed tortor. Donec ultrices sed nisi ac vehicula. Nullam sed auctor odio. Vestibulum vulputate placerat eros, vitae egestas neque finibus sed. Nam et quam magna. Etiam consectetur sem nec nisl porttitor euismod.</p>
+                <h4>Informações:</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a nulla sed dui convallis volutpat nec at sem. Proin sit amet nunc ut urna facilisis malesuada ac sed tortor. Donec ultrices sed nisi ac vehicula. Nullam sed auctor odio. Vestibulum vulputate placerat eros, vitae egestas neque finibus sed. Nam et quam magna. Etiam consectetur sem nec nisl porttitor euismod.</p>
+            </div>
+        </section>
+
+
+        <section id="avaliacao-produto">
+            <div class="margem">
+                <h1>Avaliações</h1>
+                <section>
+                    <div>
+                        <figure>
+                            <img src="imagens/produto/avaliacao1.png">
+                        </figure>
+                        <div>
+                            <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
+                            <p><a href="#">ver fotos</a></p>
+                            <figure><img src="imagens/produto/fivestar.png" width="165px" /></figure>
+                            <p>10/10/2010</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <figure>
+                            <img src="imagens/produto/avaliacao1.png">
+                        </figure>
+                        <div>
+                            <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
+                            <p><a href="#">ver fotos</a></p>
+                            <figure><img src="imagens/produto/fivestar.png" width="165px" /></figure>
+                            <p>10/10/2010</p>
+                        </div>
+                    </div>
+                </section>
+                <p id="vermais"><a href="#">Ver mais...</a></p>
+            </div>
+        </section>
+
+        <section id="vendedor">
+            <div class="margem">
+                <div>
+                    <span>
+                        <h2>Loja A</h2>
+                        <p class="ava">4.5 <img src="imagens/categorias/star.png" /></p>
+                    </span>
+                    <p class="info">vendas no último mês: <b>140</b></p>
+                    <p class="info">respostas no chat: <b>140</b></p>
+                    <p>Online a 5 minutos atrás</p>
+                    <p class="info">Descrição:</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a nulla sed dui convallis volutpat nec at sem. Proin sit amet nunc ut urna facilisis malesuada ac sed tortor. Donec ultrices sed nisi ac vehicula. Nullam sed auctor odio. Vestibulum vulputate placerat eros, vitae egestas neque finibus sed. Nam et quam magna. Etiam consectetur sem nec nisl porttitor euismod.</p>
+                </div>
+                <figure>
+                    <img src="imagens/categorias/foto-loja.png" />
+                </figure>
+                <img id="mouse" src="imagens/produto/mouse-click.png" />
+            </div>
+        </section>
+
+        <section id="prod-similares">
+            <h1>Similares</h1>
+            <div class="margem">
+                <div>
+                    <div class="card-produto">
+                        <figure class="img-prod">
+                            <img src="imagens/categorias/ex-roupa.png" />
+                        </figure>
+                        <div>
+                            <h3>Nome do Produto</h3>
+                            <h4>R$ 25,00</h4>
+                        </div>
+                        <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
+                        <div>
+                            <figure>
+                                <img src="imagens/categorias/5 estrelas.png" />
+                            </figure>
+                            <div>
+                                <img src="imagens/categorias/coracao-rosa.png" />
+                                <img src="imagens/categorias/add-car.png" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-produto">
+                        <figure class="img-prod">
+                            <img src="imagens/categorias/ex-roupa.png" />
+                        </figure>
+                        <div>
+                            <h3>Nome do Produto</h3>
+                            <h4>R$ 25,00</h4>
+                        </div>
+                        <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
+                        <div>
+                            <figure>
+                                <img src="imagens/categorias/5 estrelas.png" />
+                            </figure>
+                            <div>
+                                <img src="imagens/categorias/coracao-rosa.png" />
+                                <img src="imagens/categorias/add-car.png" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-produto">
+                        <figure class="img-prod">
+                            <img src="imagens/categorias/ex-roupa.png" />
+                        </figure>
+                        <div>
+                            <h3>Nome do Produto</h3>
+                            <h4>R$ 25,00</h4>
+                        </div>
+                        <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
+                        <div>
+                            <figure>
+                                <img src="imagens/categorias/5 estrelas.png" />
+                            </figure>
+                            <div>
+                                <img src="imagens/categorias/coracao-rosa.png" />
+                                <img src="imagens/categorias/add-car.png" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-produto">
+                        <figure class="img-prod">
+                            <img src="imagens/categorias/ex-roupa.png" />
+                        </figure>
+                        <div>
+                            <h3>Nome do Produto</h3>
+                            <h4>R$ 25,00</h4>
+                        </div>
+                        <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
+                        <div>
+                            <figure>
+                                <img src="imagens/categorias/5 estrelas.png" />
+                            </figure>
+                            <div>
+                                <img src="imagens/categorias/coracao-rosa.png" />
+                                <img src="imagens/categorias/add-car.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p id="vermais2"><a href="#">Ver mais...</a></p>
+            </div>
+        </section>
+    </main>
+    <!--<section class="denuncia">
+
+    </section>-->
+
+
+    <footer>
+        <div class="redes">
+            <p>REDES SOCIAIS</p>
+            <figure>
+                <a href="#"><img src="~/Content/imagens/footer/mdi_instagram.svg" /></a>
+                <a href="#"><img src="~/Content/imagens/footer/mingcute_facebook-line.svg" /></a>
+                <a href="#"><img src="~/Content/imagens/footer/ri_twitter-line.svg" /></a>
+            </figure>
+        </div>
+        <div class="ajuda">
+            <p>Ajuda</p>
+            <a href="sac.html">Serviço de atendimento ao cliente</a>
+            </br>
+            <a href="sac.html">Perguntas frequentes</a>
+        </div>
+        <div>
+            <p>NOS CONTACTE</p>
+            <address>soul.arte@gmail.com</address>
+            <address>+55 (84) 9 9999-9999</address>
+        </div>
+        <div class="copyright">
+            <p>© Desenvolvido por Iara Monyke, Iraikare Rodrigues, Luiza Varella e Renan Balbino.</p>
+        </div>
+    </footer>
+</body>
+</html>
