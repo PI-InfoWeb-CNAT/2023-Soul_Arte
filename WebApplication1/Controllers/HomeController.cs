@@ -67,5 +67,18 @@ namespace WebApplication1.Controllers
             }
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Denunciar(Denuncia denuncia)
+        {
+            
+            if (ModelState.IsValid)
+            { 
+                context.Denuncias.Add(denuncia);
+                context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
     }
 }

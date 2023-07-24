@@ -1,4 +1,4 @@
-﻿@model WebApplication1.Models.Home
+﻿@model WebApplication1.Models.Denuncia
 
 @{
     Layout = null;
@@ -16,9 +16,11 @@
     </script>
     <link href="~/Content/principal.css" rel="stylesheet" />
     <link href="~/Content/produto.css" rel="stylesheet" />
+    <link href="~/Content/denunciar.css" rel="stylesheet" />
     <script src="~/Content/categorias-menu.js"></script>
 </head>
 <body>
+    <div id="esmaecer"></div>
     <header>
         <div class="cabecalho">
             <figure>
@@ -62,18 +64,18 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
-                                <div class="col"><a href="categorias.html"><img src="imagens/home/categoria-roupas.png" width="250"><p>Roupas</p></a></div>
-                                <div class="col"><img src="imagens/home/categoria-acessorios.png" width="250"><p>Acessórios</p></div>
-                                <div class="col"><img src="imagens/home/categoria-ceramicas.png" width="250"><p>Cerâmica</p></div>
-                                <div class="col"><img src="imagens/home/categoria-aromaticos.png" width="250"><p>Aromáticos</p></div>
+                                <div class="col"><a href="categorias.html"><img src="~/Content/imagens/home/categoria-roupas.png" width="250"><p>Roupas</p></a></div>
+                                <div class="col"><img src="~/Content/imagens/home/categoria-acessorios.png" width="250"><p>Acessórios</p></div>
+                                <div class="col"><img src="~/Content/imagens/home/categoria-ceramicas.png" width="250"><p>Cerâmica</p></div>
+                                <div class="col"><img src="~/Content/imagens/home/categoria-aromaticos.png" width="250"><p>Aromáticos</p></div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="row">
-                                <div class="col"><img src="imagens/home/categoria-pintura.png" width="250"><p>Pintura</p></div>
-                                <div class="col"><img src="imagens/home/categoria-beleza.png" width="250"><p>Beleza</p></div>
-                                <div class="col"><img src="imagens/home/categoria-decoracao.png" width="250"><p>Decoração</p></div>
-                                <div class="col"><img src="imagens/home/categoria-utensilios.png" width="250"><p>Utensílios</p></div>
+                                <div class="col"><img src="~/Content/imagens/home/categoria-pintura.png" width="250"><p>Pintura</p></div>
+                                <div class="col"><img src="~/Content/imagens/home/categoria-beleza.png" width="250"><p>Beleza</p></div>
+                                <div class="col"><img src="~/Content/imagens/home/categoria-decoracao.png" width="250"><p>Decoração</p></div>
+                                <div class="col"><img src="~/Content/imagens/home/categoria-utensilios.png" width="250"><p>Utensílios</p></div>
                             </div>
                         </div>
                     </div>
@@ -94,11 +96,11 @@
         <div id="migalha-margem" class="margem">
             <nav>
                 <ol>
-                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="/Home/Index">HOME</a></li>
                     <li>></li>
                     <li><a href="categorias.html">Acessórios</a></li>
                     <li>></li>
-                    <li><a href="produto.html">PRODUTO NÃO SEI OQ NÃO SEI OQ LÁ</a></li>
+                    <li><a href="/Home/Index">PRODUTO NÃO SEI OQ NÃO SEI OQ LÁ</a></li>
                 </ol>
             </nav>
         </div>
@@ -111,13 +113,13 @@
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="50000">
-                                <figure><img src="imagens/produto/ex-produto.png" class="d-block w-100" alt="..."></figure>
+                                <figure><img src="~/Content/imagens/produto/ex-produto.png" class="d-block w-100" alt="..."></figure>
                             </div>
                             <div class="carousel-item" data-bs-interval="50000">
-                                <figure><img src="imagens/produto/ex-produto.png" class="d-block w-100" alt="..."></figure>
+                                <figure><img src="~/Content/imagens/produto/ex-produto.png" class="d-block w-100" alt="..."></figure>
                             </div>
                             <div class="carousel-item" data-bs-interval="50000">
-                                <figure><img src="imagens/produto/ex-produto.png" class="d-block w-100" alt="..."></figure>
+                                <figure><img src="~/Content/imagens/produto/ex-produto.png" class="d-block w-100" alt="..."></figure>
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -134,7 +136,7 @@
                 <section>
                     <h2>PRODUTO NÃO SEI OQ NÃO SEI OQ LÁ</h2>
                     <div>
-                        <figure><img src="imagens/produto/fivestar.png" /></figure>
+                        <figure><img src="~/Content/imagens/produto/fivestar.png" /></figure>
                         <h4>3 vendidos</h4>
                         <h4>2 avaliações</h4>
                     </div>
@@ -151,16 +153,18 @@
                     </div>
 
                     <div id="fav-den">
-                        <p><img src="imagens/produto/coracao-preenchido.png" width="35px" /> Favoritar</p>
-                        <p><img src="imagens/produto/denunciar.png" width="30px" /> Denunciar</p>
+                        <p><img src="~/Content/imagens/produto/coracao-preenchido.png" width="35" /> Favoritar</p>
+                        <p><a href="javascript:abrirdenuncia()"><img src="~/Content/imagens/produto/denunciar.png" width="30" /> Denunciar</a></p>
+                        <p><a href="chat.html"><img src="~/Content/imagens/produto/chat-icon.png" /> Chat</a></p>
                     </div>
+
 
                     <div>
                         <div class="botao">
                             <input type="submit" value="Comprar agora" />
                         </div>
                         <div class="botao">
-                            <input type="submit" value="Adcionar ao carrinho" />
+                            <input type="submit" value="Adicionar ao carrinho" />
                         </div>
                     </div>
                 </section>
@@ -185,24 +189,24 @@
                 <section>
                     <div>
                         <figure>
-                            <img src="imagens/produto/avaliacao1.png">
+                            <img src="~/Content/imagens/produto/avaliacao1.png">
                         </figure>
                         <div>
                             <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
                             <p><a href="#">ver fotos</a></p>
-                            <figure><img src="imagens/produto/fivestar.png" width="165px" /></figure>
+                            <figure><img src="~/Content/imagens/produto/fivestar.png" width="165px" /></figure>
                             <p>10/10/2010</p>
                         </div>
                     </div>
 
                     <div>
                         <figure>
-                            <img src="imagens/produto/avaliacao1.png">
+                            <img src="~/Content/imagens/produto/avaliacao1.png">
                         </figure>
                         <div>
                             <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
                             <p><a href="#">ver fotos</a></p>
-                            <figure><img src="imagens/produto/fivestar.png" width="165px" /></figure>
+                            <figure><img src="~/Content/imagens/produto/fivestar.png" width="165px" /></figure>
                             <p>10/10/2010</p>
                         </div>
                     </div>
@@ -216,7 +220,7 @@
                 <div>
                     <span>
                         <h2>Loja A</h2>
-                        <p class="ava">4.5 <img src="imagens/categorias/star.png" /></p>
+                        <p class="ava">4.5 <img src="~/Content/imagens/categorias/star.png" /></p>
                     </span>
                     <p class="info">vendas no último mês: <b>140</b></p>
                     <p class="info">respostas no chat: <b>140</b></p>
@@ -225,9 +229,9 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a nulla sed dui convallis volutpat nec at sem. Proin sit amet nunc ut urna facilisis malesuada ac sed tortor. Donec ultrices sed nisi ac vehicula. Nullam sed auctor odio. Vestibulum vulputate placerat eros, vitae egestas neque finibus sed. Nam et quam magna. Etiam consectetur sem nec nisl porttitor euismod.</p>
                 </div>
                 <figure>
-                    <img src="imagens/categorias/foto-loja.png" />
+                    <img src="~/Content/imagens/categorias/foto-loja.png" />
                 </figure>
-                <img id="mouse" src="imagens/produto/mouse-click.png" />
+                <img id="mouse" src="~/Content/imagens/produto/mouse-click.png" />
             </div>
         </section>
 
@@ -237,7 +241,7 @@
                 <div>
                     <div class="card-produto">
                         <figure class="img-prod">
-                            <img src="imagens/categorias/ex-roupa.png" />
+                            <img src="~/Content/imagens/categorias/ex-roupa.png" />
                         </figure>
                         <div>
                             <h3>Nome do Produto</h3>
@@ -246,18 +250,18 @@
                         <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
                         <div>
                             <figure>
-                                <img src="imagens/categorias/5 estrelas.png" />
+                                <img src="~/Content/imagens/categorias/5 estrelas.png" />
                             </figure>
                             <div>
-                                <img src="imagens/categorias/coracao-rosa.png" />
-                                <img src="imagens/categorias/add-car.png" />
+                                <img src="~/Content/imagens/categorias/coracao-rosa.png" />
+                                <img src="~/Content/imagens/categorias/add-car.png" />
                             </div>
                         </div>
                     </div>
 
                     <div class="card-produto">
                         <figure class="img-prod">
-                            <img src="imagens/categorias/ex-roupa.png" />
+                            <img src="~/Content/imagens/categorias/ex-roupa.png" />
                         </figure>
                         <div>
                             <h3>Nome do Produto</h3>
@@ -266,18 +270,18 @@
                         <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
                         <div>
                             <figure>
-                                <img src="imagens/categorias/5 estrelas.png" />
+                                <img src="~/Content/imagens/categorias/5 estrelas.png" />
                             </figure>
                             <div>
-                                <img src="imagens/categorias/coracao-rosa.png" />
-                                <img src="imagens/categorias/add-car.png" />
+                                <img src="~/Content/imagens/categorias/coracao-rosa.png" />
+                                <img src="~/Content/imagens/categorias/add-car.png" />
                             </div>
                         </div>
                     </div>
 
                     <div class="card-produto">
                         <figure class="img-prod">
-                            <img src="imagens/categorias/ex-roupa.png" />
+                            <img src="~/Content/imagens/categorias/ex-roupa.png" />
                         </figure>
                         <div>
                             <h3>Nome do Produto</h3>
@@ -286,18 +290,18 @@
                         <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
                         <div>
                             <figure>
-                                <img src="imagens/categorias/5 estrelas.png" />
+                                <img src="~/Content/imagens/categorias/5 estrelas.png" />
                             </figure>
                             <div>
-                                <img src="imagens/categorias/coracao-rosa.png" />
-                                <img src="imagens/categorias/add-car.png" />
+                                <img src="~/Content/imagens/categorias/coracao-rosa.png" />
+                                <img src="~/Content/imagens/categorias/add-car.png" />
                             </div>
                         </div>
                     </div>
 
                     <div class="card-produto">
                         <figure class="img-prod">
-                            <img src="imagens/categorias/ex-roupa.png" />
+                            <img src="~/Content/imagens/categorias/ex-roupa.png" />
                         </figure>
                         <div>
                             <h3>Nome do Produto</h3>
@@ -306,11 +310,11 @@
                         <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
                         <div>
                             <figure>
-                                <img src="imagens/categorias/5 estrelas.png" />
+                                <img src="~/Content/imagens/categorias/5 estrelas.png" />
                             </figure>
                             <div>
-                                <img src="imagens/categorias/coracao-rosa.png" />
-                                <img src="imagens/categorias/add-car.png" />
+                                <img src="~/Content/imagens/categorias/coracao-rosa.png" />
+                                <img src="~/Content/imagens/categorias/add-car.png" />
                             </div>
                         </div>
                     </div>
@@ -318,11 +322,62 @@
                 <p id="vermais2"><a href="#">Ver mais...</a></p>
             </div>
         </section>
+
     </main>
     <!--<section class="denuncia">
 
     </section>-->
-
+    <section id="denuncia">
+        <div id="titulo-denuncia">
+            <h2>por qual razão você deseja denunciar este produto?</h2>
+            <p><a href="javascript:fechardenuncia()">x</a></p>
+        </div>
+        <!--
+        <div id="razoes">
+        <label><input type="checkbox" name="razão" value="inapropriado" />Produto inapropriado pipipi</label>
+        <label><input type="checkbox" name="razão" value="inapropriado" />Produto inapropriado pipipi</label>
+        <label><input type="checkbox" name="razão" value="inapropriado" />Produto inapropriado pipipi</label>
+        <label><input type="checkbox" name="razão" value="inapropriado" />Produto inapropriado pipipi</label>
+        <label><input type="checkbox" name="razão" value="inapropriado" />Produto inapropriado pipipi</label>
+        <label><input type="checkbox" name="razão" value="outras" />Outras</label>
+    </div>
+    -->
+        @using (Html.BeginForm("Denunciar", "Home", FormMethod.Post))
+        {
+            <label>
+                @Html.CheckBoxFor(d => d.Razao1)
+                Produto inapropriado pipipi
+            </label>
+            <label>
+                @Html.CheckBoxFor(d => d.Razao2)
+                Produto inapropriado pipipi
+            </label>
+            <label>
+                @Html.CheckBoxFor(d => d.Razao3)
+                Produto inapropriado pipipi
+            </label>
+            <label>
+                @Html.CheckBoxFor(d => d.Razao4)
+                Produto inapropriado pipipi
+            </label>
+            <label>
+                @Html.CheckBoxFor(d => d.Razao5)
+                Produto inapropriado pipipi
+            </label>
+            <label>
+                @Html.CheckBoxFor(d => d.Razao6)
+                Outras
+            </label>
+            <div id="denuncia-textarea">
+                <h2>Dê mais detalhe da sua denuncia:</h2>
+                @Html.TextAreaFor(d => d.Conteudo)
+            </div>
+            <div class="botao">
+                <input type="submit" value="Denunciar" id="botao1" />
+                <input type="submit" value="Cancelar" id="botao2" />
+            </div>
+        }
+    </section>
 
     <footer>
         <div class="redes">

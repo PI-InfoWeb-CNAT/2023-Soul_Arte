@@ -171,13 +171,13 @@ h1{
   color: #F2541B;
 }
 section .carousel-control-prev-icon{
-  background-image: url(../imagens/home/seta-left-cat-index.png);
+  background-image: url(imagens/home/seta-left-cat-index.png);
     position: absolute;
     width: 5em;
     height: 5em;
 }
 section .carousel-control-next-icon{
-    background-image: url(../imagens/home/seta-right-cat-index.png);
+    background-image: url(imagens/home/seta-right-cat-index.png);
     position: absolute;
     width: 5em;
     height: 5em;

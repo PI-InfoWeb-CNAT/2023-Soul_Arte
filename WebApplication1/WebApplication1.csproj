@@ -97,10 +97,21 @@
   <ItemGroup>
     <Content Include="Content\categorias-menu.js" />
     <Content Include="Content\categorias.css" />
+    <Content Include="Content\denunciar.css" />
     <Content Include="Content\imagens\footer\mdi_instagram.svg" />
     <Content Include="Content\imagens\footer\mingcute_facebook-line.svg" />
     <Content Include="Content\imagens\footer\ri_twitter-line.svg" />
     <Content Include="Content\imagens\log_inbg.png" />
+    <Content Include="Content\imagens\produto\add-cart-branco.png" />
+    <Content Include="Content\imagens\produto\avaliacao1.png" />
+    <Content Include="Content\imagens\produto\bg-form-denuncia.png" />
+    <Content Include="Content\imagens\produto\bg-img-vendedor.png" />
+    <Content Include="Content\imagens\produto\chat-icon.png" />
+    <Content Include="Content\imagens\produto\coracao-preenchido.png" />
+    <Content Include="Content\imagens\produto\denunciar.png" />
+    <Content Include="Content\imagens\produto\ex-produto.png" />
+    <Content Include="Content\imagens\produto\fivestar.png" />
+    <Content Include="Content\imagens\produto\mouse-click.png" />
     <Content Include="Content\log_in.css" />
     <Content Include="Content\principal.css" />
     <Content Include="Content\produto.css" />
@@ -153,6 +164,7 @@
     </Compile>
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Denuncia.cs" />
     <Compile Include="Models\Home.cs" />
     <Compile Include="Models\Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
