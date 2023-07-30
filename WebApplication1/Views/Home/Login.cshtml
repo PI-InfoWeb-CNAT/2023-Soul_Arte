@@ -1,4 +1,4 @@
-﻿@model WebApplication1.Models.Cliente
+﻿﻿@model WebApplication1.Models.Cliente
 
 @{
     Layout = null;
@@ -63,10 +63,15 @@
     <main>
         <div id="log-margem">
             <div class="margem">
+                @if (!string.IsNullOrEmpty(ViewData["ErrorMessage"] as string))
+                {
+                    <div class="alert alert-danger">
+                        @ViewData["ErrorMessage"]
+                    </div>
+                }
                 <section class="log">
                     <div class="logbox">
                         <h1 id="entrar">ENTRAR</h1>
-
                         @using (Html.BeginForm())
                         {
                             @Html.AntiForgeryToken()
@@ -83,8 +88,8 @@
                             <p>* Não tenho uma conta - <br> <a href="sign_in.html">CRIAR CONTA</a></p>
                             <p>* <a href="senha.html">Esqueci minha senha</a></p>
 
-                            <div class="info">
-                                <input id="enviar" type="submit" name="submit" class="btn btn-primary" value="Login" />
+                            <div class="info" id="input-enviar">
+                                <input id="enviar" type="submit" name="submit" class="btn btn-primary" value="ENTRAR" />
                             </div>
                         }
 

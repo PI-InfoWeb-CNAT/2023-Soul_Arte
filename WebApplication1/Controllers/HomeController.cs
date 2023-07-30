@@ -9,7 +9,7 @@ namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
-        
+
 
         private EFContext context = new EFContext();
 
@@ -41,16 +41,16 @@ namespace WebApplication1.Controllers
                 Senha = "cliente123",
                 User = "cliente2023"
             };
-            if(context.Clientes.Where(p => p.ClienteId == 1).Count() == 0)
+            if (context.Clientes.Where(p => p.ClienteId == 1).Count() == 0)
             {
                 context.Clientes.Add(c);
                 context.SaveChanges();
 
             }
-            
+
             return View();
         }
-        [HttpPost]
+        /*[HttpPost]
         public ActionResult Login(string email, string senha)
         {
             if (ModelState.IsValid)
@@ -66,19 +66,47 @@ namespace WebApplication1.Controllers
                 }
             }
             return View();
+        }*/
+        [HttpPost]
+        public ActionResult Login(string email, string senha)
+        {
+            // Verifica se os campos de email e senha foram preenchidos
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(senha))
+            {
+                // Adicione uma mensagem de erro à ViewData
+                ViewData["ErrorMessage"] = "Preencha todos os campos.";
+
+                // Retorna para a View de login, exibindo a mensagem de erro
+                return View("Login");
+            }
+
+            var data = context.Clientes.Where(s => s.Email.Equals(email) && s.Senha.Equals(senha)).ToList();
+            if (data.Count() > 0)
+            {
+                return RedirectToAction("Index", "Cliente");
+            }
+            else
+            {
+                // Caso os dados de login estejam incorretos, adicione uma mensagem de erro à ViewData
+                ViewData["ErrorMessage"] = "Email ou senha incorretos.";
+
+                // Retorna para a View de login, exibindo a mensagem de erro
+                return View("Login");
+            }
         }
 
         [HttpPost]
         public ActionResult Denunciar(Denuncia denuncia)
         {
-            
+
             if (ModelState.IsValid)
-            { 
+            {
                 context.Denuncias.Add(denuncia);
                 context.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Produto");
             }
             return View();
         }
+
     }
 }

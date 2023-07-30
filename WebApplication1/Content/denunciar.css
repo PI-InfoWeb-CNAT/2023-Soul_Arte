@@ -1,5 +1,5 @@
 ﻿section#denuncia {
-    background-color: white;
+    background-color: #E9E4D8;
     width: 800px;
     height: fit-content;
     padding: 3em 0;
@@ -84,7 +84,7 @@ textarea {
 }
 
 #comentario-label {
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
 #denuncia-textarea {

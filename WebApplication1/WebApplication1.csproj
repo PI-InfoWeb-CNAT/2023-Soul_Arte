@@ -101,6 +101,7 @@
     <Content Include="Content\imagens\footer\mdi_instagram.svg" />
     <Content Include="Content\imagens\footer\mingcute_facebook-line.svg" />
     <Content Include="Content\imagens\footer\ri_twitter-line.svg" />
+    <Content Include="Content\imagens\header\icon-perfil.png" />
     <Content Include="Content\imagens\log_inbg.png" />
     <Content Include="Content\imagens\produto\add-cart-branco.png" />
     <Content Include="Content\imagens\produto\avaliacao1.png" />
