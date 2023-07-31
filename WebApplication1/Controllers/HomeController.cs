@@ -35,11 +35,11 @@ namespace WebApplication1.Controllers
         {
             Cliente c = new Cliente
             {
+                User = "cliente2023",
                 Nome = "Cliente Um",
                 ClienteId = 1,
                 Email = "cliente@email.com",
-                Senha = "cliente123",
-                User = "cliente2023"
+                Senha = "cliente123"  
             };
             if (context.Clientes.Where(p => p.ClienteId == 1).Count() == 0)
             {
