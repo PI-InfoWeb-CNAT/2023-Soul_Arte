@@ -94,6 +94,10 @@ namespace WebApplication1.Controllers
                 return View("Login");
             }
         }
+        public ActionResult SignIn()
+        {
+            return View();
+        }
 
         [HttpPost]
         public ActionResult Denunciar(Denuncia denuncia)
