@@ -113,9 +113,14 @@
     <Content Include="Content\imagens\produto\ex-produto.png" />
     <Content Include="Content\imagens\produto\fivestar.png" />
     <Content Include="Content\imagens\produto\mouse-click.png" />
+    <Content Include="Content\imagens\signin\cliente.png" />
+    <Content Include="Content\imagens\signin\log_inbg.png" />
+    <Content Include="Content\imagens\signin\sign_inbg.png" />
+    <Content Include="Content\imagens\signin\vendedor.png" />
     <Content Include="Content\log_in.css" />
     <Content Include="Content\principal.css" />
     <Content Include="Content\produto.css" />
+    <Content Include="Content\sign_in.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\imagens\cliente.png" />
@@ -176,11 +181,11 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\ViewPage.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Cliente\Index.cshtml" />
     <Content Include="Views\Home\Produto.cshtml" />
     <Content Include="Views\Home\SignIn.cshtml" />
+    <Content Include="Views\Home\SignInCliente.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

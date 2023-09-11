@@ -1,0 +1,58 @@
+
+main {
+    justify-content: center;
+    display: flex
+}
+
+    main section {
+        background-color: #dcd0b1;
+        height: 36em;
+        width: 80em;
+    }
+
+.cliente {
+    background-image: url('imagens/sign_inbg.png');
+    height: 389px;
+    ;
+    width: 431px;
+}
+
+.vendedor {
+    background-image: url('imagens/sign_inbg.png');
+    height: 389px;
+    width: 431px;
+}
+
+#sign {
+    display: flex;
+    justify-content: space-around;
+}
+
+main img {
+    margin-top: -2em;
+    margin-left: -4em;
+}
+
+.cliente div {
+    margin-top: -6em;
+    text-align: center;
+}
+
+main section div p {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    width: 10em;
+    text-align: center;
+    margin-top: -1.25em;
+    color: #D97B29;
+    margin-left: 2.2em;
+}
+
+main h1 {
+    margin-bottom: 0.5em;
+}
+
+.vendedor div {
+    margin-top: -5em;
+    text-align: center;
+}

@@ -23,10 +23,6 @@ namespace WebApplication1.Controllers
             return View(h);
 
         }
-        public ActionResult ViewPage()
-        {
-            return View();
-        }
         public ActionResult Produto()
         {
             return View();
@@ -98,7 +94,10 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
-
+        public ActionResult SignInCliente()
+        {
+            return View();
+        }
         [HttpPost]
         public ActionResult Denunciar(Denuncia denuncia)
         {
