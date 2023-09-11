@@ -120,6 +120,7 @@
     <Content Include="Content\log_in.css" />
     <Content Include="Content\principal.css" />
     <Content Include="Content\produto.css" />
+    <Content Include="Content\signin_cliente.css" />
     <Content Include="Content\sign_in.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />

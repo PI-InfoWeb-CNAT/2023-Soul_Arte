@@ -14,5 +14,6 @@ namespace WebApplication1.Models
         public int ClienteId { get; set; }
         public int CPF { get; set; }
         public int DataNascimento { get; set; }
+        public int Telefone { get; set; }
     }
 }

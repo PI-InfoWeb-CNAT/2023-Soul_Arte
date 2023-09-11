@@ -1,0 +1,131 @@
+﻿main {
+    justify-content: center;
+    display: flex
+}
+
+    main article {
+        height: 60em;
+        background-color: #dcd0b1;
+        width: 80em;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+#title {
+    background-color: #dcd0b1;
+    margin-bottom: -48px;
+    padding-bottom: 1em;
+}
+
+.dados {
+    background-image: url("../imagens/sign_inclientebg.png");
+    width: 512px;
+    height: 875px;
+}
+
+    .dados h1 {
+        padding-top: 15px;
+        margin-bottom: 0;
+    }
+
+.info {
+    width: 11em;
+    display: block;
+    margin: 0 auto;
+}
+
+.foto {
+    background-image: url("../imagens/sign_inclientefotobg.png");
+    width: 410px;
+    height: 507px;
+}
+
+    .foto h1 {
+        padding-top: 15px;
+        margin: 0;
+    }
+
+#perfil {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+#alterar {
+    display: flex;
+    justify-content: center;
+    color: #F23869;
+    font-size: 22px;
+}
+
+    #alterar a {
+        padding-right: 5px;
+        padding-left: 5px;
+        color: #F23869;
+    }
+
+        #alterar a:hover {
+            text-decoration: underline;
+        }
+
+#assinar {
+    background-image: url("../imagens/sign_intermosbg.png");
+    height: 340px;
+    width: 410px;
+    margin-top: 2em;
+}
+
+.termos {
+    display: flex;
+    width: 20em;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 2em;
+    margin-bottom: 2em;
+}
+
+#termo {
+    width: 20px;
+    height: 20px;
+    padding-right: 1em;
+}
+
+.termos label {
+    margin-left: 1em;
+}
+
+.termos a {
+    color: #F2541B;
+}
+
+    .termos a:hover {
+        color: #D97B29;
+        text-decoration: underline;
+    }
+
+.newsletter {
+    display: flex;
+    width: 20em;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 2em;
+    margin-bottom: 2em;
+}
+
+#news {
+    width: 20px;
+    height: 20px;
+    padding-right: 1em;
+}
+
+.newsletter label {
+    margin-left: 1em;
+}
+
+#enviar {
+    display: flex;
+    margin: 0 auto;
+    justify-content: cen;
+}
