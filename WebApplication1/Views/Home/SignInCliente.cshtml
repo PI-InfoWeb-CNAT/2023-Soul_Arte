@@ -93,79 +93,88 @@
     </div>
     <main>
         <form>
-            <div id="title">
-                <h1>CADASTRAR CLIENTE</h1>
-            </div>
-            <article>
-                <section id="sign">
-                    <div class="dados">
-                        <h1>DADOS PESSOAIS</h1>
-                        <div class="info">
-                            <label for="name">NOME:</label>
-                            <br>
-                            <input type="text" id="name" placeholder="Digite seu nome" required />
-                        </div>
-                        <div class="info">
-                            <label for="email">E-MAIL:</label>
-                            <br>
-                            <input type="text" id="email" placeholder="Digite seu E-mail" required />
-                        </div>
-                        <div class="info">
-                            <label for="text">CPF</label>
-                            <input oninput="mascara(this)" id="cpf" placeholder="000.000.000-00" type="text" required />
-                        </div>
-                        <div class="info">
-                            <label for="date">DATA DE NASCIMENTO:</label>
-                            <br>
-                            <input type="date" id="date" required />
-                        </div>
-                        <div class="info">
-                            <label for="tel">TELEFONE:</label>
-                            <br>
-                            <input type="tel" id="tel" name="telefone" placeholder="(00) 0000-0000" required onkeyup="handlePhone(event)" />
-                            <!-- <input type="text" id = "tel" name="telefone" data-mask="(00) 0000-0000" data-mask-selectonfocus="true" required/> -->
-                            <!-- <input type = "text" id="nickname" placeholder="Digite seu nome" required/> -->
-                        </div>
-                        <div class="info" id="senha">
-                            <label for="password">SENHA:</label>
-                            <br>
-                            <input type="password" id="password" placeholder="Digite sua senha" required />
-                            <!-- <div id = "senhaletra">
-                            <p>*Mínimo 6 digitos tendo pelo menos 1 número.</p>
-                            -->
-                        </div>
-                    </div>
-                    </div>
-                </section>
-                <section id="in">
-                    <div>
-                        <div class="foto">
-                            <h1>FOTO DE PERFIL</h1>
-                            <div id="icon">
-                                <figure id="perfil">
-                                    <img src="../imagens/fotoperfil.png" />
-                                </figure>
+            @using (Html.BeginForm())
+                @Html.AntiForgeryToken()
+                <div class="info">
+                    @Html.LabelFor(m => m.Email)
+                    @Html.TextBoxFor(m => m.Email, "", new { @placeholder = "Email" })
+
+                </div>
+                <div class="info">
+                    @Html.LabelFor(m => m.Senha)
+                    @Html.TextBoxFor(m => m.Senha, new { @placeholder = "Senha" })
+                </div>
+                <div id="title">
+                    <h1>CADASTRAR CLIENTE</h1>
+                </div>
+                <article>
+                    <section id="sign">
+                        <div class="dados">
+                            <h1>DADOS PESSOAIS</h1>
+                            <div class="info">
+                                @Html.LabelFor(m => m.Nome)
+                                @Html.TextBoxFor(m => m.Nome, "", new { @placeholder = "Digite seu Nome" })
+
                             </div>
-                            <div id="alterar">
-                                <a href="1.html">EDITAR</a>
-                                <p>|</p>
-                                <a href="1.html">EXCLUIR</a>
+                            <div class="info">
+                                @Html.LabelFor(m => m.Email)
+                                @Html.TextBoxFor(m => m.Email, "", new { @placeholder = "Digite seu Email" })
+                            </div>
+                            <div class="info">
+                                @Html.LabelFor(m => m.CPF)
+                                @Html.TextBoxFor(m => m.CPF, "", new { @placeholder = "000.000.000-00" })
+                            </div>
+                            <div class="info">
+                                @Html.LabelFor(m => m.DataNascimento)
+                                @Html.TextBox("Data de Nascimento", Model.Date.ToString("dd/MM/yyyy"), new { style = "width: 120px" })
+                            </div>
+                            <div class="info">
+                                <label for="tel">TELEFONE:</label>
+                                <br>
+                                <input type="tel" id="tel" name="telefone" placeholder="(00) 0000-0000" required onkeyup="handlePhone(event)" />
+                                <!-- <input type="text" id = "tel" name="telefone" data-mask="(00) 0000-0000" data-mask-selectonfocus="true" required/> -->
+                                <!-- <input type = "text" id="nickname" placeholder="Digite seu nome" required/> -->
+                            </div>
+                            <div class="info" id="senha">
+                                <label for="password">SENHA:</label>
+                                <br>
+                                <input type="password" id="password" placeholder="Digite sua senha" required />
+                                <!-- <div id = "senhaletra">
+        <p>*Mínimo 6 digitos tendo pelo menos 1 número.</p>
+        -->
                             </div>
                         </div>
-                        <div id="assinar">
-                            <div class="termos">
-                                <input type="checkbox" id="termo" name="termo" checked required>
-                                <label for="termo">*Ao finalizar meu cadastro, confirmo que li e aceitei os <a href=2.html>Termos e Condições.</a></label>
-                            </div>
-                            <div class="newsletter">
-                                <input type="checkbox" id="news" name="news" checked>
-                                <label for="news">*Desejo receber notícias sobre ofertas e novidades em meu e-mail.</label>
-                            </div>
-                            <input id="enviar" type="submit" value="CRIAR" />
                         </div>
-                </section>
-            </article>
-        </form>
+                    </section>
+                    <section id="in">
+                        <div>
+                            <div class="foto">
+                                <h1>FOTO DE PERFIL</h1>
+                                <div id="icon">
+                                    <figure id="perfil">
+                                        <img src="../imagens/fotoperfil.png" />
+                                    </figure>
+                                </div>
+                                <div id="alterar">
+                                    <a href="1.html">EDITAR</a>
+                                    <p>|</p>
+                                    <a href="1.html">EXCLUIR</a>
+                                </div>
+                            </div>
+                            <div id="assinar">
+                                <div class="termos">
+                                    <input type="checkbox" id="termo" name="termo" checked required>
+                                    <label for="termo">*Ao finalizar meu cadastro, confirmo que li e aceitei os <a href=2.html>Termos e Condições.</a></label>
+                                </div>
+                                <div class="newsletter">
+                                    <input type="checkbox" id="news" name="news" checked>
+                                    <label for="news">*Desejo receber notícias sobre ofertas e novidades em meu e-mail.</label>
+                                </div>
+                                <input id="enviar" type="submit" value="CRIAR" />
+                            </div>
+                    </section>
+                </article>
+            </form>
     </main>
     <footer>
         <div class="redes">
