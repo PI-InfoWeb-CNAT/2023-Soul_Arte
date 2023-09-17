@@ -101,6 +101,7 @@
     <Content Include="Content\imagens\footer\mdi_instagram.svg" />
     <Content Include="Content\imagens\footer\mingcute_facebook-line.svg" />
     <Content Include="Content\imagens\footer\ri_twitter-line.svg" />
+    <Content Include="Content\imagens\fotoperfil.png" />
     <Content Include="Content\imagens\header\icon-perfil.png" />
     <Content Include="Content\imagens\log_inbg.png" />
     <Content Include="Content\imagens\produto\add-cart-branco.png" />
@@ -117,6 +118,9 @@
     <Content Include="Content\imagens\signin\log_inbg.png" />
     <Content Include="Content\imagens\signin\sign_inbg.png" />
     <Content Include="Content\imagens\signin\vendedor.png" />
+    <Content Include="Content\imagens\sign_inclientebg.png" />
+    <Content Include="Content\imagens\sign_inclientefotobg.png" />
+    <Content Include="Content\imagens\sign_intermosbg.png" />
     <Content Include="Content\log_in.css" />
     <Content Include="Content\principal.css" />
     <Content Include="Content\produto.css" />

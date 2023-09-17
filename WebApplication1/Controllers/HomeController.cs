@@ -36,7 +36,7 @@ namespace WebApplication1.Controllers
                 ClienteId = 1,
                 Email = "cliente@email.com",
                 Senha = "cliente123",
-                DataNascimento = DateTime.Now
+                DataNascimento = "15/09/2005"
             };
             if (context.Clientes.Where(p => p.ClienteId == 1).Count() == 0)
             {
@@ -98,6 +98,22 @@ namespace WebApplication1.Controllers
         public ActionResult SignInCliente()
         {
             return View();
+        }
+        [HttpPost]
+        public ActionResult SignInCliente(string nome, string email, string CPF, string data, int telefone, string senha)
+        {
+            Cliente c = new Cliente()
+            {
+                Nome = nome,
+                Email = email,
+                CPF = CPF,
+                DataNascimento = data,
+                Telefone = telefone,
+                Senha = senha
+            };
+            context.Clientes.Add(c);
+            context.SaveChanges();
+            return RedirectToAction("Login");
         }
         [HttpPost]
         public ActionResult Denunciar(Denuncia denuncia)
