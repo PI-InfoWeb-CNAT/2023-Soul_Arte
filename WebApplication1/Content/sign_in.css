@@ -6,21 +6,15 @@ main {
 
     main section {
         background-color: #dcd0b1;
-        height: 36em;
-        width: 80em;
+        width: 100%;
+        padding: 4em 3em;
     }
 
-.cliente {
-    background-image: url('imagens/sign_inbg.png');
-    height: 389px;
-    ;
-    width: 431px;
-}
-
-.vendedor {
-    background-image: url('imagens/sign_inbg.png');
-    height: 389px;
-    width: 431px;
+.cliente, .vendedor {
+    background-image: url("imagens/sign_inbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px 80px 100px 80px;
 }
 
 #sign {
@@ -29,30 +23,40 @@ main {
 }
 
 main img {
-    margin-top: -2em;
-    margin-left: -4em;
+    height: 120px;
+    position: absolute;
+    top: 11em;
 }
 
-.cliente div {
-    margin-top: -6em;
+.cliente img {
+    left: 75px;
+}
+
+.vendedor img {
+    right: 430px;
+}
+
+.cliente div, .vendedor {
     text-align: center;
 }
 
 main section div p {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     width: 10em;
     text-align: center;
-    margin-top: -1.25em;
     color: #D97B29;
-    margin-left: 2.2em;
+    margin: 0 auto;
 }
 
 main h1 {
-    margin-bottom: 0.5em;
+    margin-bottom: 2em;
 }
 
-.vendedor div {
-    margin-top: -5em;
+h2 {
     text-align: center;
+    font-family: 'Bahiana', cursive;
+    font-size: 45px;
+    margin-bottom: 0.5em;
+    color: #F2541B;
 }

@@ -11,16 +11,16 @@ p {
     background-image: url(imagens/home/seta-left-cat-index.png);
     position: absolute;
     left: 0em;
-    width: 5em;
-    height: 5em;
+    width: 40px;
+    height: 40px;
 }
 
 #carouselExampleAutoplaying .carousel-control-next-icon {
     background-image: url(imagens/home/seta-right-cat-index.png);
     position: absolute;
     right: 0em;
-    width: 5em;
-    height: 5em;
+    width: 40px;
+    height: 40px;
 }
 
 #imgs-prod {
@@ -32,11 +32,15 @@ p {
 #carouselExampleAutoplaying figure {
     text-align: center;
     margin: 0 auto;
-    width: 335px;
-    height: 444px;
+    width: 400px;
+    height: 400px;
     background-color: #F23869;
     transform: rotate(-2deg);
 }
+
+    #carouselExampleAutoplaying figure img {
+        object-fit: cover;
+    }
 
 .w-100 {
     width: 99% !important;
@@ -55,30 +59,29 @@ p {
     }
 
     #descricao-produto h2 {
-        font-size: 45px;
+        font-size: 35px;
         color: #F2541B;
         font-family: 'Bahiana', cursive;
     }
 
     #descricao-produto h4 {
-        font-size: 30px;
+        font-size: 20px;
         font-family: 'Bebas Neue', sans-serif;
         color: #D97B29;
         border-left: 2px solid #D97B29;
         padding-left: 20px;
-        height: 34px;
         margin-left: 20px;
         margin-bottom: 0;
     }
 
     #descricao-produto h3 {
-        font-size: 60px;
+        font-size: 30px;
         color: #F2541B;
         font-family: 'Bahiana', cursive;
     }
 
     #descricao-produto p, #descricao-produto span {
-        font-size: 25px;
+        font-size: 16px;
         padding: 0 10px;
     }
 
@@ -94,7 +97,7 @@ p {
     border-radius: 5px;
     color: white;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     margin: 10px 1em 0 0;
 }
 
@@ -102,6 +105,11 @@ p {
     display: flex;
     align-items: center;
     margin-top: 20px
+}
+
+.cont {
+    display: flex;
+    justify-content: space-between;
 }
 
 #qnt {
@@ -120,20 +128,20 @@ p {
     }
 
 #detalhes-produto {
-    margin: 10em 0px;
+    margin: 5em 0px;
     padding: 5em 64px 8em 64px;
     background-color: #DCD0B1;
 }
 
     #detalhes-produto h4 {
-        font-size: 30px;
+        font-size: 20px;
         font-family: 'Bebas Neue', sans-serif;
         color: #D97B29;
         margin: 1em 0;
     }
 
     #detalhes-produto p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
 #avaliacao-produto section > div {
@@ -141,26 +149,28 @@ p {
     align-items: center;
     justify-content: space-evenly;
     background-color: #DCD0B1;
-    width: 600px;
-    height: 340px;
+    padding: 2em;
     border-radius: 15px;
 }
 
     #avaliacao-produto section > div > figure img {
-        width: 230px;
-        border-radius: 230px;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 200px;
     }
 
     #avaliacao-produto section > div > figure {
         text-align: center;
         background-color: #F23869;
-        width: 235px;
-        border-radius: 235px;
+        width: 210px;
+        border-radius: 200px;
+        margin-right: 3em;
     }
 
 #avaliacao-produto p {
     max-width: 220px;
-    font-size: 20px;
+    font-size: 16px;
     margin: 10px 0;
 }
 
@@ -169,7 +179,7 @@ p {
 }
 
     #avaliacao-produto a {
-        font-size: 20px;
+        font-size: 16px;
         color: black;
         text-decoration: underline;
         font-style: italic;
@@ -182,7 +192,7 @@ p {
 
 #vermais a {
     color: #D97B29;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -193,7 +203,7 @@ p#vermais, #vermais2 {
 
 #vendedor {
     position: relative;
-    margin: 160px 64px;
+    margin: 5em 64px;
 }
 
     #vendedor .margem {
@@ -211,46 +221,50 @@ p#vermais, #vermais2 {
     }
 
         #vendedor span h2 {
-            font-size: 60px;
+            font-size: 50px;
             color: #f2541b;
             margin: 0 40px 0 0;
         }
 
         #vendedor span .ava {
-            font-size: 40px;
+            font-size: 30px;
         }
 
-    #vendedor .info {
-        font-family: 'Bebas Neue', sans-serif;
-        color: #D97B29;
-        font-size: 25px;
-        margin-bottom: 0;
+p.ava img {
+    width: 25px;
+}
+
+#vendedor .info {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #D97B29;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+    #vendedor .info b {
+        color: black;
+        font-weight: normal;
     }
 
-        #vendedor .info b {
-            color: black;
-            font-weight: normal;
-        }
+#vendedor p {
+    font-size: 16px;
+    max-width: 500px;
+}
 
-    #vendedor p {
-        font-size: 20px;
-        max-width: 500px;
-    }
+#vendedor figure img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 400px;
+}
 
-    #vendedor figure img {
-        width: 400px;
-        height: 400px;
-        object-fit: cover;
-        border-radius: 400px;
-    }
-
-    #vendedor figure {
-        background-image: url(imagens/produto/bg-img-vendedor.png);
-        width: 434px;
-        height: 419px;
-        text-align: center;
-        padding-top: 1em;
-    }
+#vendedor figure {
+    background-image: url(imagens/produto/bg-img-vendedor.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 0 0.8em 0.3em 0.2em;
+}
 
 #mouse {
     position: absolute;
@@ -289,7 +303,7 @@ p#vermais, #vermais2 {
 
 #vermais2 a {
     color: #D97B29;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Bebas Neue', sans-serif;
     text-decoration: underline;
     font-style: italic;

@@ -98,10 +98,17 @@
     <Content Include="Content\categorias-menu.js" />
     <Content Include="Content\categorias.css" />
     <Content Include="Content\denunciar.css" />
+    <Content Include="Content\imagens\categorias\5 estrelas.png" />
+    <Content Include="Content\imagens\categorias\add-car.png" />
+    <Content Include="Content\imagens\categorias\coracao-rosa.png" />
+    <Content Include="Content\imagens\categorias\ex-roupa.png" />
+    <Content Include="Content\imagens\categorias\foto-loja.png" />
+    <Content Include="Content\imagens\categorias\star.png" />
     <Content Include="Content\imagens\footer\mdi_instagram.svg" />
     <Content Include="Content\imagens\footer\mingcute_facebook-line.svg" />
     <Content Include="Content\imagens\footer\ri_twitter-line.svg" />
     <Content Include="Content\imagens\header\icon-perfil.png" />
+    <Content Include="Content\imagens\home\sobre-nos-img.png" />
     <Content Include="Content\imagens\log_inbg.png" />
     <Content Include="Content\imagens\produto\add-cart-branco.png" />
     <Content Include="Content\imagens\produto\avaliacao1.png" />
@@ -187,6 +194,8 @@
     <Content Include="Views\Home\Produto.cshtml" />
     <Content Include="Views\Home\SignIn.cshtml" />
     <Content Include="Views\Home\SignInCliente.cshtml" />
+    <Content Include="Views\Shared\_Layouthomevisitante.cshtml" />
+    <Content Include="Views\Shared\_LayoutVisitante.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
