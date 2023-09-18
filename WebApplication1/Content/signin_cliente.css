@@ -3,24 +3,21 @@
     display: flex
 }
 
-    main article {
-        height: 60em;
-        background-color: #dcd0b1;
-        width: 80em;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: nowrap;
-        align-items: flex-start;
-    }
+h1 {
+    width: 100%;
+}
 
-#title {
+main article {
+    padding: 4em 3em;
     background-color: #dcd0b1;
-    margin-bottom: -48px;
-    padding-bottom: 1em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .dados {
-    background-image: url('imagens/sign_inclientebg.png');
+    background-image: url("imagens/sign_inclientebg.png");
     width: 512px;
     height: 875px;
 }
@@ -37,15 +34,10 @@
 }
 
 .foto {
-    background-image: url('imagens/sign_inclientefotobg.png');
+    background-image: url("imagens/sign_inclientefotobg.png");
     width: 410px;
     height: 507px;
 }
-
-    .foto h1 {
-        padding-top: 15px;
-        margin: 0;
-    }
 
 #perfil {
     margin-top: 2em;
@@ -71,7 +63,7 @@
         }
 
 #assinar {
-    background-image: url('imagens/sign_intermosbg.png');
+    background-image: url("imagens/sign_intermosbg.png");
     height: 340px;
     width: 410px;
     margin-top: 2em;
@@ -127,5 +119,14 @@
 #enviar {
     display: flex;
     margin: 0 auto;
-    justify-content: cen;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Bahiana', cursive;
+    font-size: 45px;
+    margin-bottom: 0.5em;
+    color: #F2541B;
+    padding-top: 1em;
 }

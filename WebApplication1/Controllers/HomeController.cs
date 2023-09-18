@@ -100,7 +100,7 @@ namespace WebApplication1.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult SignInCliente(string nome, string email, string CPF, string data, int telefone, string senha)
+        public ActionResult SignInCliente(string nome, string email, string CPF, string data, string telefone, string senha)
         {
             Cliente c = new Cliente()
             {

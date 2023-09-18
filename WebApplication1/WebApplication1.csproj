@@ -200,6 +200,7 @@
     <Content Include="Views\Home\SignInCliente.cshtml" />
     <Content Include="Views\Shared\_Layouthomevisitante.cshtml" />
     <Content Include="Views\Shared\_LayoutVisitante.cshtml" />
+    <Content Include="Views\Shared\_LayoutHomeCliente.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

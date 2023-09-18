@@ -334,7 +334,7 @@ footer {
     #migalha nav {
         font-size: 20px;
         font-family: 'Bebas Neue', sans-serif;
-        margin: 25px 0 0 0;
+        margin: 1.5em 0 0 0;
     }
 
         #migalha nav ol li a {
@@ -377,7 +377,7 @@ footer {
 
     #cat-escondido > div > p a {
         position: absolute;
-        font-size: 30px;
+        font-size: 25px;
         font-family: 'Bahiana', cursive;
         color: #F2541B;
         right: 45px;

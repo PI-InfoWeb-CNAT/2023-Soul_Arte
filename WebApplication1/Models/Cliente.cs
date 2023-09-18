@@ -15,6 +15,6 @@ namespace WebApplication1.Models
         public string CPF { get; set; }
       
         public string DataNascimento { get; set; }
-        public int Telefone { get; set; }
+        public string Telefone { get; set; }
     }
 }
