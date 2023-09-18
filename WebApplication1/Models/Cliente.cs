@@ -12,9 +12,9 @@ namespace WebApplication1.Models
         public string User { get; set; }
         public string Senha { get; set; }
         public int ClienteId { get; set; }
-        public int CPF { get; set; }
+        public string CPF { get; set; }
       
-        public DateTime DataNascimento { get; set; }
+        public string DataNascimento { get; set; }
         public int Telefone { get; set; }
     }
 }

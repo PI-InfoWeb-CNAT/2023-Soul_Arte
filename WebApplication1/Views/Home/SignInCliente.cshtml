@@ -92,18 +92,9 @@
         </div>
     </div>
     <main>
-        <form>
-            @using (Html.BeginForm())
-                @Html.AntiForgeryToken()
-                <div class="info">
-                    @Html.LabelFor(m => m.Email)
-                    @Html.TextBoxFor(m => m.Email, "", new { @placeholder = "Email" })
+        <form action="/Home/SignInCliente" method="post">
 
-                </div>
-                <div class="info">
-                    @Html.LabelFor(m => m.Senha)
-                    @Html.TextBoxFor(m => m.Senha, new { @placeholder = "Senha" })
-                </div>
+            
                 <div id="title">
                     <h1>CADASTRAR CLIENTE</h1>
                 </div>
@@ -112,33 +103,35 @@
                         <div class="dados">
                             <h1>DADOS PESSOAIS</h1>
                             <div class="info">
-                                @Html.LabelFor(m => m.Nome)
-                                @Html.TextBoxFor(m => m.Nome, "", new { @placeholder = "Digite seu Nome" })
-
-                            </div>
-                            <div class="info">
-                                @Html.LabelFor(m => m.Email)
-                                @Html.TextBoxFor(m => m.Email, "", new { @placeholder = "Digite seu Email" })
-                            </div>
-                            <div class="info">
-                                @Html.LabelFor(m => m.CPF)
-                                @Html.TextBoxFor(m => m.CPF, "", new { @placeholder = "000.000.000-00" })
-                            </div>
-                            <div class="info">
-                                @Html.LabelFor(m => m.DataNascimento)
-                                @Html.TextBox("Data de Nascimento", Model.Date.ToString("dd/MM/yyyy"), new { style = "width: 120px" })
-                            </div>
-                            <div class="info">
-                                <label for="tel">TELEFONE:</label>
+                                <label for="Nome">NOME:</label>
                                 <br>
-                                <input type="tel" id="tel" name="telefone" placeholder="(00) 0000-0000" required onkeyup="handlePhone(event)" />
+                                <input type="text" id="Nome" name="Nome" placeholder="Digite seu nome" required />
+                            </div>
+                            <div class="info">
+                                <label for="Email">E-MAIL:</label>
+                                <br>
+                                <input type="text" id="Email" name="Email" placeholder="Digite seu E-mail" required />
+                            </div>
+                            <div class="info">
+                                <label for="CPF">CPF</label>
+                                <input oninput="mascara(this)" id="CPF" name="CPF" placeholder="000.000.000-00" required type="text">
+                            </div>
+                            <div class="info">
+                                <label for="DataNascimento">DATA DE NASCIMENTO:</label>
+                                <br>
+                                <input type="date" id="DataNascimento" name="DataNascimento" required />
+                            </div>
+                            <div class="info">
+                                <label for="Telefone">TELEFONE:</label>
+                                <br>
+                                <input type="number" id="Telefone" name="Telefone" placeholder="(00) 0000-0000" required onkeyup="handlePhone(event)" />
                                 <!-- <input type="text" id = "tel" name="telefone" data-mask="(00) 0000-0000" data-mask-selectonfocus="true" required/> -->
                                 <!-- <input type = "text" id="nickname" placeholder="Digite seu nome" required/> -->
                             </div>
-                            <div class="info" id="senha">
-                                <label for="password">SENHA:</label>
+                            <div class="info" id="passwd">
+                                <label for="Senha">SENHA:</label>
                                 <br>
-                                <input type="password" id="password" placeholder="Digite sua senha" required />
+                                <input type="text" id="Senha"  name="Senha" placeholder="Digite sua senha" required />
                                 <!-- <div id = "senhaletra">
         <p>*Mínimo 6 digitos tendo pelo menos 1 número.</p>
         -->
@@ -152,7 +145,7 @@
                                 <h1>FOTO DE PERFIL</h1>
                                 <div id="icon">
                                     <figure id="perfil">
-                                        <img src="../imagens/fotoperfil.png" />
+                                        <img src="~/Content/imagens/fotoperfil.png" />
                                     </figure>
                                 </div>
                                 <div id="alterar">
