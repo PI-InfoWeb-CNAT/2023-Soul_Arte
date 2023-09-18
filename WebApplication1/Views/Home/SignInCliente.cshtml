@@ -70,6 +70,8 @@
         <form action="/Home/SignInCliente" method="post" class="margem">
             <article>
                 <h1>CADASTRAR CLIENTE</h1>
+
+
                 <section id="sign">
                     <div class="dados">
                         <h2>DADOS PESSOAIS</h2>
@@ -79,9 +81,9 @@
                             <input type="text" id="Nome" name="Nome" placeholder="Digite seu nome" required />
                         </div>
                         <div class="info">
-                            <label for="Email">E-MAIL:</label>
-                            <br>
-                            <input type="text" id="Email" name="Email" placeholder="Digite seu E-mail" required />
+                            @Html.LabelFor(m => m.Email)
+                            </br>
+                            @Html.TextBoxFor(m => m.Email, "", new { @placeholder = "Email" })
                         </div>
                         <div class="info">
                             <label for="CPF">CPF</label>
@@ -104,8 +106,8 @@
                             <br>
                             <input type="text" id="Senha" name="Senha" placeholder="Digite sua senha" required />
                             <!-- <div id = "senhaletra">
-                            <p>*Mínimo 6 digitos tendo pelo menos 1 número.</p>
-                            -->
+                        <p>*Mínimo 6 digitos tendo pelo menos 1 número.</p>
+                        -->
                         </div>
                     </div>
                 </section>

@@ -96,24 +96,34 @@ namespace WebApplication1.Controllers
             return View();
         }
         public ActionResult SignInCliente()
-        {
+        { 
             return View();
         }
+        
         [HttpPost]
         public ActionResult SignInCliente(string nome, string email, string CPF, string data, string telefone, string senha)
         {
-            Cliente c = new Cliente()
+
+            if(context.Clientes.Any(c => c.Email == email))
             {
-                Nome = nome,
-                Email = email,
-                CPF = CPF,
-                DataNascimento = data,
-                Telefone = telefone,
-                Senha = senha
-            };
-            context.Clientes.Add(c);
-            context.SaveChanges();
-            return RedirectToAction("Login");
+                return View();
+            }
+            else
+            {
+                Cliente c = new Cliente()
+                {
+                    Nome = nome,
+                    Email = email,
+                    CPF = CPF,
+                    DataNascimento = data,
+                    Telefone = telefone,
+                    Senha = senha
+                };
+                context.Clientes.Add(c);
+                context.SaveChanges();
+                return RedirectToAction("Login");
+            }
+            
         }
         [HttpPost]
         public ActionResult Denunciar(Denuncia denuncia)
