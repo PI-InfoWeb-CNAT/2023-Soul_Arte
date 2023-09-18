@@ -67,6 +67,13 @@
         </div>
     </div>
     <main>
+        @if (ViewData["ClienteExistente"] != null && (int)ViewData["ClienteExistente"] == 1)
+        {
+            <div class="alert alert-danger margem">
+                <p>O cliente já está cadastrado.</p>
+            </div>
+        }
+        
         <form action="/Home/SignInCliente" method="post" class="margem">
             <article>
                 <h1>CADASTRAR CLIENTE</h1>

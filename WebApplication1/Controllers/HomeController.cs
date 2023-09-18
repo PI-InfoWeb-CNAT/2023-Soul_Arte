@@ -106,6 +106,7 @@ namespace WebApplication1.Controllers
 
             if(context.Clientes.Any(c => c.Email == email))
             {
+                ViewData["ClienteExistente"] = 1;
                 return View();
             }
             else
