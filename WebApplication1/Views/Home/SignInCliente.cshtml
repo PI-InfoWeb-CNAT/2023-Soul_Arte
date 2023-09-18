@@ -67,18 +67,16 @@
         </div>
     </div>
     <main>
-        @if (ViewData["ClienteExistente"] != null && (int)ViewData["ClienteExistente"] == 1)
-        {
-            <div class="alert alert-danger margem">
-                <p>O cliente já está cadastrado.</p>
-            </div>
-        }
         
         <form action="/Home/SignInCliente" method="post" class="margem">
+            @if (ViewData["ClienteExistente"] != null && (int)ViewData["ClienteExistente"] == 1)
+            {
+                <div class="alert alert-danger margem">
+                    <p>O cliente já está cadastrado.</p>
+                </div>
+            }
             <article>
                 <h1>CADASTRAR CLIENTE</h1>
-
-
                 <section id="sign">
                     <div class="dados">
                         <h2>DADOS PESSOAIS</h2>
@@ -113,8 +111,8 @@
                             <br>
                             <input type="password" id="Senha" name="Senha" placeholder="Digite sua senha" required />
                             <!-- <div id = "senhaletra">
-                        <p>*Mínimo 6 digitos tendo pelo menos 1 número.</p>
-                        -->
+                    <p>*Mínimo 6 digitos tendo pelo menos 1 número.</p>
+                    -->
                         </div>
                     </div>
                 </section>

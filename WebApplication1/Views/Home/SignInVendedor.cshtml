@@ -1,24 +1,14 @@
 ﻿@model WebApplication1.Models.Vendedor
 
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_LayoutVisitante.cshtml";
+    ViewBag.Title = "SIGN IN - VENDEDOR";
 }
 
-<!DOCTYPE html>
-<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soul Arte - Comércio de Artesanato</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <link href="~/Content/principal.css" rel="stylesheet" />
-    <link href="~/Content/categorias.css" rel="stylesheet" />
     <link href="~/Content/log_in.css" rel="stylesheet" />
     <link href="~/Content/signin_cliente.css" rel="stylesheet" />
     <link href="~/Content/sign_invendedor.css" rel="stylesheet" />
-    <script src="js/categorias-menu.js"></script>
     <script>
         function mascara(i) {
 
@@ -48,81 +38,8 @@
             return value
         }</script>
 </head>
-<body>
-    <header>
-        <div class="cabecalho">
-            <div class="cabecalho-margem">
-                <figure>
-                    <a href="/Home/Index"><img src="~/Content/imagens/logo_.png" width="120" alt="logotipo do Soul Arte" /></a>
-                </figure>
-                <form action="resultado.html" method="get">
-                    <div class="busca">
-                        <input type="text" name="busca" id="idbusca" />
-                        <input type="submit" value=" " id="lupa" />
-                    </div>
-                </form>
-                <nav class="menu-user">
-                    <ul>
-                        <li>
-                            <a href="/Home/Login"><img src="~/Content/imagens/header/icon-login.png" alt="entrar ou registrar-se"></a>
-                        </li>
-                        <li>
-                            <a href="favoritos.html"><img src="~/Content/imagens/header/icon-heart.png" alt="ver favoritos"></a>
-                        </li>
-                        <li>
-                            <a href="carrinho.html"><img src="~/Content/imagens/header/icon-carrinho-de-compras.png" alt="ver carrinho de compras"></a>
-                        </li>
-                    </ul>
-                </nav>
-                <nav class="menu-nav">
-                    <ul>
-                        <!-- Aqui a gente pode fazer o scroll para a parte de categorias da própria página com JavaScript -->
-                        <li><a href="#cat-link">CATEGORIAS</a></li>
-                        <li><a href="sac.html">SERVIÇO DE ATENDIMENTO AO CLIENTE</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
 
-    </header>
-
-    <!-- teste de js pro carrossel categorias-->
-    <section id="cat-escondido">
-        <div class="margem"><p><a href="javascript:fechar()">(fechar)</a></p></div>
-        <section id="carousel-cat">
-            <div class="container">
-                <div id="carouselExample" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col"><a href="categorias.html"><img src="imagens/home/categoria-roupas.png" width="180px"><p>Roupas</p></a></div>
-                                <div class="col"><img src="imagens/home/categoria-acessorios.png" width="180px"><p>Acessórios</p></div>
-                                <div class="col"><img src="imagens/home/categoria-ceramicas.png" width="180px"><p>Cerâmica</p></div>
-                                <div class="col"><img src="imagens/home/categoria-aromaticos.png" width="180px"><p>Aromáticos</p></div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col"><img src="imagens/home/categoria-pintura.png" width="180px"><p>Pintura</p></div>
-                                <div class="col"><img src="imagens/home/categoria-beleza.png" width="180px"><p>Beleza</p></div>
-                                <div class="col"><img src="imagens/home/categoria-decoracao.png" width="180px"><p>Decoração</p></div>
-                                <div class="col"><img src="imagens/home/categoria-utensilios.png" width="180px"><p>Utensílios</p></div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </section>
-    </section>
-
+<div>
     <div id="migalha">
         <div id="migalha-margem" class="margem">
             <nav>
@@ -139,13 +56,13 @@
         </div>
     </div>
     <main>
-        @if (ViewData["VendedorExistente"] != null && (int)ViewData["VendedorExistente"] == 1)
-        {
-            <div class="alert alert-danger margem">
-                <p>O vendedor já está cadastrado.</p>
-            </div>
-        }
         <form action="/Home/SignInVendedor" method="post" class="margem">
+            @if (ViewData["VendedorExistente"] != null && (int)ViewData["VendedorExistente"] == 1)
+            {
+                <div class="alert alert-danger margem">
+                    <p>O vendedor já está cadastrado.</p>
+                </div>
+            }
             <article class="margem">
                 <h1>CADASTRAR VENDEDOR</h1>
                 <section id="sign">
@@ -192,61 +109,32 @@
                     </div>
                 </section>
                 <section id="in">
-                    <div>
-                        <div class="foto">
-                            <h2>FOTO DE PERFIL</h2>
-                            <div id="icon">
-                                <figure id="perfil">
-                                    <img src="~/Content/imagens/fotoperfil.png" />
-                                </figure>
-                            </div>
-                            <div id="alterar">
-                                <a href="1.html">EDITAR</a>
-                                <p>|</p>
-                                <a href="1.html">EXCLUIR</a>
-                            </div>
+                    <div class="foto">
+                        <h2>FOTO DE PERFIL</h2>
+                        <div id="icon">
+                            <figure id="perfil">
+                                <img src="~/Content/imagens/fotoperfil.png" />
+                            </figure>
                         </div>
-                        <div id="assinar">
-                            <div class="termos">
-                                <input type="checkbox" id="termo" name="termo" checked required>
-                                <label for="termo">*Ao finalizar meu cadastro, confirmo que li e aceitei os <a href=2.html>Termos e Condições.</a></label>
-                            </div>
-                            <div class="newsletter">
-                                <input type="checkbox" id="news" name="news" checked>
-                                <label for="news">*Desejo receber notícias sobre ofertas e novidades em meu e-mail.</label>
-                            </div>
-                            <input id="enviar" type="submit" value="CRIAR" />
+                        <div id="alterar">
+                            <a href="1.html">EDITAR</a>
+                            <p>|</p>
+                            <a href="1.html">EXCLUIR</a>
                         </div>
+                    </div>
+                    <div id="assinar">
+                        <div class="termos">
+                            <input type="checkbox" id="termo" name="termo" checked required>
+                            <label for="termo">*Ao finalizar meu cadastro, confirmo que li e aceitei os <a href=2.html>Termos e Condições.</a></label>
+                        </div>
+                        <div class="newsletter">
+                            <input type="checkbox" id="news" name="news" checked>
+                            <label for="news">*Desejo receber notícias sobre ofertas e novidades em meu e-mail.</label>
+                        </div>
+                        <input id="enviar" type="submit" value="CRIAR" />
+                    </div>
                 </section>
             </article>
         </form>
     </main>
-    <footer>
-        <div class="cabecalho-margem">
-            <div class="redes">
-                <p>REDES SOCIAIS</p>
-                <figure>
-                    <a href="#"><img src="~/Content/imagens/footer/mdi_instagram.svg" /></a>
-                    <a href="#"><img src="~/Content/imagens/footer/mingcute_facebook-line.svg" /></a>
-                    <a href="#"><img src="~/Content/imagens/footer/ri_twitter-line.svg" /></a>
-                </figure>
-            </div>
-            <div class="ajuda">
-                <p>Ajuda</p>
-                <a href="sac.html">Serviço de atendimento ao cliente</a>
-                </br>
-                <a href="sac.html">Perguntas frequentes</a>
-            </div>
-            <div>
-                <p>NOS CONTACTE</p>
-                <address>soul.arte@gmail.com</address>
-                <address>+55 (84) 9 9999-9999</address>
-            </div>
-            <div class="copyright">
-                <p>© Desenvolvido por Iara Monyke, Iraikare Rodrigues, Luiza Varella e Renan Balbino.</p>
-            </div>
-        </div>
-
-    </footer>
-</body>
-</html>
+</div>  

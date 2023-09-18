@@ -165,7 +165,7 @@ namespace WebApplication1.Controllers
                 };
                 context.Vendedores.Add(v);
                 context.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Login");
             }
 
         }
