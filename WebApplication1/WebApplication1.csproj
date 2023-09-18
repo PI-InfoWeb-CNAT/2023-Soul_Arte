@@ -128,11 +128,13 @@
     <Content Include="Content\imagens\sign_inclientebg.png" />
     <Content Include="Content\imagens\sign_inclientefotobg.png" />
     <Content Include="Content\imagens\sign_intermosbg.png" />
+    <Content Include="Content\imagens\sign_invendedorbg.png" />
     <Content Include="Content\log_in.css" />
     <Content Include="Content\principal.css" />
     <Content Include="Content\produto.css" />
     <Content Include="Content\signin_cliente.css" />
     <Content Include="Content\sign_in.css" />
+    <Content Include="Content\sign_invendedor.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\imagens\cliente.png" />
@@ -177,6 +179,7 @@
     <Compile Include="Context\EFContext.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\VendedorController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -185,6 +188,7 @@
     <Compile Include="Models\Denuncia.cs" />
     <Compile Include="Models\Home.cs" />
     <Compile Include="Models\Produto.cs" />
+    <Compile Include="Models\Vendedor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -201,6 +205,8 @@
     <Content Include="Views\Shared\_Layouthomevisitante.cshtml" />
     <Content Include="Views\Shared\_LayoutVisitante.cshtml" />
     <Content Include="Views\Shared\_LayoutHomeCliente.cshtml" />
+    <Content Include="Views\Vendedor\Index.cshtml" />
+    <Content Include="Views\Home\SignInVendedor.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

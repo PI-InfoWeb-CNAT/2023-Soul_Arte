@@ -1,0 +1,295 @@
+﻿@model WebApplication1.Models.Home
+
+@{
+    Layout = "~/Views/Shared/_LayoutHomeCliente.cshtml";
+    ViewBag.Title = "HOME PAGE";
+}
+
+<div>
+    <main>
+        <h1 id="cat-link">CATEGORIAS</h1>
+
+        <!-- Categorias carousel -->
+        <section id="carousel-cat">
+            <div class="container">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col"><a href="categorias.html"><img src="~/Content/imagens/home/categoria-roupas.png" width="180"><p>Roupas</p></a></div>
+                                <div class="col"><img src="~/Content/imagens/home/categoria-acessorios.png" width="180"><p>Acessórios</p></div>
+                                <div class="col"><img src="~/Content/imagens/home/categoria-ceramicas.png" width="180"><p>Cerâmica</p></div>
+                                <div class="col"><img src="~/Content/imagens/home/categoria-aromaticos.png" width="180"><p>Aromáticos</p></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col"><img src="~/Content/imagens/home/categoria-pintura.png" width="180"><p>Pintura</p></div>
+                                <div class="col"><img src="~/Content/imagens/home/categoria-beleza.png" width="180"><p>Beleza</p></div>
+                                <div class="col"><img src="~/Content/imagens/home/categoria-decoracao.png" width="180"><p>Decoração</p></div>
+                                <div class="col"><img src="~/Content/imagens/home/categoria-utensilios.png" width="180"><p>Utensílios</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+        </section>
+        <h1>Destaques</h1>
+        <section class="cards-prod">
+            <div class="margem">
+                <!--copiem o card dos produtos daqui-->
+                <div class="card-produto">
+                    <a href="/Home/Produto">
+                        <figure class="img-prod">
+                            <img src="~/Content/imagens/home/item1.png" />
+                        </figure>
+                        <div>
+                            <h3>Nome do Produto</h3>
+                            <h4>R$ 25,00</h4>
+                        </div>
+                        <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
+                        <div>
+                            <figure>
+                                <img src="~/Content/imagens/categorias/5 estrelas.png" />
+                            </figure>
+                            <div>
+                                <img src="~/Content/imagens/categorias/coracao-rosa.png" />
+                                <img src="~/Content/imagens/categorias/add-car.png" />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-produto">
+                    <a href="produto.html">
+                        <figure class="img-prod">
+                            <img src="imagens/home/item2.png" />
+                        </figure>
+                        <div>
+                            <h3>Nome do Produto</h3>
+                            <h4>R$ 25,00</h4>
+                        </div>
+                        <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
+                        <div>
+                            <figure>
+                                <img src="imagens/categorias/5 estrelas.png" />
+                            </figure>
+                            <div>
+                                <img src="imagens/categorias/coracao-rosa.png" />
+                                <img src="imagens/categorias/add-car.png" />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-produto">
+                    <a href="produto.html">
+                        <figure class="img-prod">
+                            <img src="imagens/home/item3.png" />
+                        </figure>
+                        <div>
+                            <h3>Nome do Produto</h3>
+                            <h4>R$ 25,00</h4>
+                        </div>
+                        <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
+                        <div>
+                            <figure>
+                                <img src="imagens/categorias/5 estrelas.png" />
+                            </figure>
+                            <div>
+                                <img src="imagens/categorias/coracao-rosa.png" />
+                                <img src="imagens/categorias/add-car.png" />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-produto">
+                    <a href="produto.html">
+                        <figure class="img-prod">
+                            <img src="imagens/home/item4.png" />
+                        </figure>
+                        <div>
+                            <h3>Nome do Produto</h3>
+                            <h4>R$ 25,00</h4>
+                        </div>
+                        <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
+                        <div>
+                            <figure>
+                                <img src="imagens/categorias/5 estrelas.png" />
+                            </figure>
+                            <div>
+                                <img src="imagens/categorias/coracao-rosa.png" />
+                                <img src="imagens/categorias/add-car.png" />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-produto">
+                    <a href="produto.html">
+                        <figure class="img-prod">
+                            <img src="imagens/home/item5.png" />
+                        </figure>
+                        <div>
+                            <h3>Nome do Produto</h3>
+                            <h4>R$ 25,00</h4>
+                        </div>
+                        <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
+                        <div>
+                            <figure>
+                                <img src="imagens/categorias/5 estrelas.png" />
+                            </figure>
+                            <div>
+                                <img src="imagens/categorias/coracao-rosa.png" />
+                                <img src="imagens/categorias/add-car.png" />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-produto">
+                    <a href="produto.html">
+                        <figure class="img-prod">
+                            <img src="imagens/home/item6.png" />
+                        </figure>
+                        <div>
+                            <h3>Nome do Produto</h3>
+                            <h4>R$ 25,00</h4>
+                        </div>
+                        <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
+                        <div>
+                            <figure>
+                                <img src="imagens/categorias/5 estrelas.png" />
+                            </figure>
+                            <div>
+                                <img src="imagens/categorias/coracao-rosa.png" />
+                                <img src="imagens/categorias/add-car.png" />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-produto">
+                    <a href="produto.html">
+                        <figure class="img-prod">
+                            <img src="imagens/home/item7.png" />
+                        </figure>
+                        <div>
+                            <h3>Nome do Produto</h3>
+                            <h4>R$ 25,00</h4>
+                        </div>
+                        <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
+                        <div>
+                            <figure>
+                                <img src="imagens/categorias/5 estrelas.png" />
+                            </figure>
+                            <div>
+                                <img src="imagens/categorias/coracao-rosa.png" />
+                                <img src="imagens/categorias/add-car.png" />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-produto">
+                    <a href="produto.html">
+                        <figure class="img-prod">
+                            <img src="imagens/home/item7.png" />
+                        </figure>
+                        <div>
+                            <h3>Nome do Produto</h3>
+                            <h4>R$ 25,00</h4>
+                        </div>
+                        <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
+                        <div>
+                            <figure>
+                                <img src="imagens/categorias/5 estrelas.png" />
+                            </figure>
+                            <div>
+                                <img src="imagens/categorias/coracao-rosa.png" />
+                                <img src="imagens/categorias/add-car.png" />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-produto">
+                    <a href="produto.html">
+                        <figure class="img-prod">
+                            <img src="imagens/home/item7.png" />
+                        </figure>
+                        <div>
+                            <h3>Nome do Produto</h3>
+                            <h4>R$ 25,00</h4>
+                        </div>
+                        <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
+                        <div>
+                            <figure>
+                                <img src="imagens/categorias/5 estrelas.png" />
+                            </figure>
+                            <div>
+                                <img src="imagens/categorias/coracao-rosa.png" />
+                                <img src="imagens/categorias/add-car.png" />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-produto">
+                    <a href="produto.html">
+                        <figure class="img-prod">
+                            <img src="imagens/home/item8.png" />
+                        </figure>
+                        <div>
+                            <h3>Nome do Produto</h3>
+                            <h4>R$ 25,00</h4>
+                        </div>
+                        <p>descrição pipipi popopo hcabhhhhhhhhhhh</p>
+                        <div>
+                            <figure>
+                                <img src="imagens/categorias/5 estrelas.png" />
+                            </figure>
+                            <div>
+                                <img src="imagens/categorias/coracao-rosa.png" />
+                                <img src="imagens/categorias/add-car.png" />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre-nos">
+            <div class="sobre-margem">
+                <div class="margem">
+                    <div class="sobre">
+                        <h2>Sobre nós</h2>
+                        <p>Coloquei os lero lero q tavam no doc de visão --> nosso projeto consiste em um ambiente virtual específico para venda de itens confeccionados por pequenos negócios ou artesãos próximos a localidade dos possíveis compradores, contando então com um filtro de localidade, mecanismos de buscas e de chats, em um ambiente acessível onde também será possível acompanhar e avaliar os produtos após a compra. Também prezamos pelo reconhecimento dos artistas então cada loja terá um perfil específico visando isto.</p>
+                    </div>
+                    <figure>
+                        <img src="~/Content/imagens/home/sobre-nos-img.png" />
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="explorar">
+            <div class="margem">
+                <h5>EXPLORAR</h5>
+                <ul>
+                    <li>item pesquisado</li>
+                    <li>item pesquisado</li>
+                    <li>item pesquisado</li>
+                    <li>item pesquisado</li>
+                    <li>item pesquisado</li>
+                    <li>item pesquisado</li>
+                    <li>item pesquisado</li>
+                    <li>item pesquisado</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</div>  

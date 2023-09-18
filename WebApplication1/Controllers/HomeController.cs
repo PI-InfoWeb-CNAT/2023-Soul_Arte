@@ -126,6 +126,49 @@ namespace WebApplication1.Controllers
             }
             
         }
+        public ActionResult SignInVendedor()
+        {
+            Vendedor v = new Vendedor()
+            {
+                Nome = "Vendedor 1",
+                NomeLoja = "Loja 1",
+                Email = "vendedor@email.com",
+                Senha = "vendedor123"
+            };
+            if (context.Vendedores.Where(p => p.VendedorId == 1).Count() == 0)
+            {
+                context.Vendedores.Add(v);
+                context.SaveChanges();
+            }
+                return View();
+        }
+        [HttpPost]
+        public ActionResult SignInVendedor(string nomeloja, string email, string telefone, string nome, string CPF, string data, string senha)
+        {
+
+            if (context.Vendedores.Any(c => c.Email == email))
+            {
+                ViewData["VendedorExistente"] = 1;
+                return View();
+            }
+            else
+            {
+                Vendedor v = new Vendedor()
+                {
+                    Nome = nome,
+                    NomeLoja = nomeloja,
+                    Email = email,
+                    CPF = CPF,
+                    DataNascimento = data,
+                    Telefone = telefone,
+                    Senha = senha
+                };
+                context.Vendedores.Add(v);
+                context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+        }
         [HttpPost]
         public ActionResult Denunciar(Denuncia denuncia)
         {
