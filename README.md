@@ -26,7 +26,9 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
   2. [Avaliar produtos](./docs/casos_de_uso/cdu_Avaliar_produtos.md)
   3. [Realizar login](./docs/casos_de_uso/cdu_Realizar_login.md)
   4. [Denunciar produto](./docs/casos_de_uso/cdu_Denunciar_produto.md)
-  5. continua...
+  5. [Cadastro de cliente](./docs/casos_de_uso/cdu_Realizar_cadastro-cliente.md)
+  6. [Cadastro de vendedor](./docs/casos_de_uso/cdu_Realizar_cadastro-vendedor.md)
+  7. continua...
 * [Diagrama de casos de uso](./docs/imagens/dcu-soul_arte.png)
 * [Diagrama de classes de domínio](./docs/diagramas/Diagrama_Entidades_e_Relacionamentos.png)
 * Documentação da arquitetura
