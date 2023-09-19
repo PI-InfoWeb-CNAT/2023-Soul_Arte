@@ -4,7 +4,7 @@
 ### Histórico da Revisão
 |  Data  | Versão | Descrição | Autor |
 |:-------|:-------|:----------|:------|
-| 18/09/2023 | **1.00** | Realizar cadastro como cliente | Iraikare Rodrigues |
+| 18/09/2023 | **1.00** | Realizar cadastro como cliente | Iara Monyke e Iraikare Rodrigues |
 
 
 ### 1. Resumo 
