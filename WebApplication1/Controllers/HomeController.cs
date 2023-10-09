@@ -38,9 +38,24 @@ namespace WebApplication1.Controllers
                 Senha = "cliente123",
                 DataNascimento = "15/09/2005"
             };
+            Vendedor v = new Vendedor
+            {
+                User = "cliente2023",
+                Nome = "Cliente Um",
+                VendedorId = 1,
+                Email = "cliente@email.com",
+                Senha = "cliente123",
+                DataNascimento = "15/09/2005"
+            };
             if (context.Clientes.Where(p => p.ClienteId == 1).Count() == 0)
             {
                 context.Clientes.Add(c);
+                context.SaveChanges();
+
+            }
+            if (context.Vendedores.Where(p => p.VendedorId == 1).Count() == 0)
+            {
+                context.Vendedores.Add(v);
                 context.SaveChanges();
 
             }
@@ -65,7 +80,7 @@ namespace WebApplication1.Controllers
             return View();
         }*/
         [HttpPost]
-        public ActionResult Login(string email, string senha)
+        public ActionResult Login(string email, string senha, bool? IsVendedor)
         {
             // Verifica se os campos de email e senha foram preenchidos
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(senha))
@@ -76,20 +91,41 @@ namespace WebApplication1.Controllers
                 // Retorna para a View de login, exibindo a mensagem de erro
                 return View("Login");
             }
-
-            var data = context.Clientes.Where(s => s.Email.Equals(email) && s.Senha.Equals(senha)).ToList();
-            if (data.Count() > 0)
+            
+            if (IsVendedor is null)
             {
-                return RedirectToAction("Index", "Cliente");
+                var data = context.Clientes.Where(s => s.Email.Equals(email) && s.Senha.Equals(senha)).ToList();
+                if (data.Count() > 0)
+                {
+                    return RedirectToAction("Index", "Cliente");
+                }
+                else
+                {
+                    // Caso os dados de login estejam incorretos, adicione uma mensagem de erro à ViewData
+                    ViewData["ErrorMessage"] = "Email ou senha incorretos.";
+
+                    // Retorna para a View de login, exibindo a mensagem de erro
+                    return View("Login");
+                }
+                
             }
             else
             {
-                // Caso os dados de login estejam incorretos, adicione uma mensagem de erro à ViewData
-                ViewData["ErrorMessage"] = "Email ou senha incorretos.";
+                var data = context.Vendedores.Where(s => s.Email.Equals(email) && s.Senha.Equals(senha)).ToList();
+                if (data.Count() > 0)
+                {
+                    return RedirectToAction("Index", "Vendedor");
+                }
+                else
+                {
+                    // Caso os dados de login estejam incorretos, adicione uma mensagem de erro à ViewData
+                    ViewData["ErrorMessage"] = "Email ou senha incorretos.";
 
-                // Retorna para a View de login, exibindo a mensagem de erro
-                return View("Login");
+                    // Retorna para a View de login, exibindo a mensagem de erro
+                    return View("Login");
+                }
             }
+            
         }
         public ActionResult SignIn()
         {
