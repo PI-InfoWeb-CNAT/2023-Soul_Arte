@@ -101,3 +101,8 @@ input[type="checkbox"] {
     height: 20px;
     margin-right: 10px;
 }
+.tipo-log {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+}

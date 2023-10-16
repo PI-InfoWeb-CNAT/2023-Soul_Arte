@@ -35,15 +35,7 @@
                         @using (Html.BeginForm())
                         {
                             @Html.AntiForgeryToken()
-                            <div class="info">
-                                <label name="IsVendedor">És vendedor? *</label>
-                                <input checked="checked"
-                                       id="IsVendedor"
-                                       name="IsVendedor"
-                                       type="checkbox"
-                                       value="false"/>
-
-                            </div>
+               
                             <div class="info">
                                 @Html.LabelFor(m => m.Email)
                                 @Html.TextBoxFor(m => m.Email, "", new { @placeholder = "Email" })
@@ -56,6 +48,13 @@
 
                             <p>* Não tenho uma conta - <br> <a href="/Home/SignIn">CRIAR CONTA</a></p>
                             <p>* <a href="senha.html">Esqueci minha senha</a></p>
+                            <p class="tipo-log">
+                                * Sou vendedor  <input checked="checked"
+                                                       id="IsVendedor"
+                                                       name="IsVendedor"
+                                                       type="checkbox"
+                                                       value="false" />
+                            </p>
 
                             <div class="info" id="input-enviar">
                                 <input id="enviar" type="submit" name="submit" class="btn btn-primary" value="ENTRAR" />
