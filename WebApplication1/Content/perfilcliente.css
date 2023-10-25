@@ -1,0 +1,90 @@
+h1 a{
+text-decoration: none;
+color: #F2541B;
+font-size: 50px;
+}
+h2{
+  color: #F2541B;
+  font-family: Bahiana;
+  font-size: 45px;
+  margin-bottom: 45px;
+}
+h4{
+  color: #F23869;
+  font-family: Bebas Neue;
+  font-size: 20px;
+}
+.botao input[type="submit"]{
+  background-color: #F2541B;
+  padding: 0.2em 0.7em;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  margin: 10px 1em 0 0;
+  margin-top: 45px;
+}
+.escrever input[type=text] {
+  border: none;
+  outline: none;
+  background-color: #e9e4d8;
+  height: 45px;
+  font-size: 20px;
+  border-radius: 12px;
+  padding:1em;
+}
+.info input {
+  background-color: #e9e4d8;
+  border: #e9e4d8;
+  height: 45px;
+  margin-bottom: 1em;
+  font-size: 20px;
+  font-family: calibri;
+  padding: 0 25px;
+  border-radius: 12px;    
+}
+ol li{
+  color:#F23869;
+  text-decoration: none;
+  font-family: Bebas Neue;
+  font-size: 20px;
+}
+
+section{
+  display: flex;
+  justify-content: space-between;
+}
+section>div{
+  border-right: 2px solid #F2541B;
+  padding-right: 3em;
+}
+main nav ol li{
+  margin-bottom: 1em;
+}
+fieldset>div{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1em;
+}
+input[type=email]{
+  width: 550px;
+}
+input[type="date"]{
+    width: 250px;
+}
+#botao{
+  font-size: 20px;
+  background-color: #F2541B;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Bebas Neue', sans-serif;
+}
+.opcoes{
+  border-right: none;
+}
+a {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #F23869;
+    font-size: 20px;
+}

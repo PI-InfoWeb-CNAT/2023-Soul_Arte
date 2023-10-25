@@ -1,0 +1,48 @@
+﻿@model WebApplication1.Models.Cliente
+
+@{
+    Layout = "~/Views/Shared/_LayoutCliente.cshtml";
+    ViewBag.Title = "Trocar senha";
+}
+<head>
+    <link rel="stylesheet" href="~/Content/categorias.css" />
+    <link rel="stylesheet" href="~/Content/senha.css" />
+</head>
+
+<main class="margem">
+    <section class="bege">
+        <h1>REDEFINIR SENHA:</h1>
+        @if (!string.IsNullOrEmpty(ViewData["ErrorMessage"] as string))
+        {
+            <div class="alert alert-danger">
+                @ViewData["ErrorMessage"]
+            </div>
+        }
+        @if (!string.IsNullOrEmpty(ViewData["OkMessage"] as string))
+        {
+            <div class="alert alert-danger">
+                @ViewData["OkMessage"]
+            </div>
+        }
+        <div class="senha">
+            <figure><img src="~/Content/imagens/redefinirsenha.png"><img /></figure>
+            <div id="form">
+                <form method="post">
+                    <div id="space">
+                        <div class="info">
+                            <label for="senha">NOVA SENHA:</label>
+                            <br>
+                            <input type="password" id="senha" name="senha" required />
+                        </div>
+                        <div class="info">
+                            <label for="confirmacao">CONFIRME NOVA SENHA:</label>
+                            <br>
+                            <input type="password" id="confirmacao" name="confirmacao" required />
+                        </div>
+                    </div>
+                    <div><input id="enviar" type="submit" value="ALTERAR" /></div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>

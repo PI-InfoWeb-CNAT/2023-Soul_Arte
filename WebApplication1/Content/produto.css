@@ -130,7 +130,7 @@ p {
 #detalhes-produto {
     margin: 5em 0px;
     padding: 5em 64px 8em 64px;
-    background-color: #DCD0B1;
+    background-color: #e9e4d8;
 }
 
     #detalhes-produto h4 {
@@ -148,7 +148,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #DCD0B1;
+    background-color: #e9e4d8;
     padding: 2em;
     border-radius: 15px;
 }

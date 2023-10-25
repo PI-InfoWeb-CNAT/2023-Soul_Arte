@@ -29,40 +29,47 @@
                         @ViewData["ErrorMessage"]
                     </div>
                 }
-                <section class="log">
-                    <div class="logbox">
-                        <h1 id="entrar">ENTRAR</h1>
-                        @using (Html.BeginForm())
-                        {
-                            @Html.AntiForgeryToken()
-               
-                            <div class="info">
-                                @Html.LabelFor(m => m.Email)
-                                @Html.TextBoxFor(m => m.Email, "", new { @placeholder = "Email" })
+            <section class="log">
+                <div class="tracejada">
+                    <div class="fundo-rosa">
 
-                            </div>
-                            <div class="info">
-                                @Html.LabelFor(m => m.Senha)
-                                @Html.TextBoxFor(m => m.Senha, new { @placeholder = "Senha" })
-                            </div>
 
-                            <p>* Não tenho uma conta - <br> <a href="/Home/SignIn">CRIAR CONTA</a></p>
-                            <p>* <a href="senha.html">Esqueci minha senha</a></p>
-                            <p class="tipo-log">
-                                * Sou vendedor  <input checked="checked"
-                                                       id="IsVendedor"
-                                                       name="IsVendedor"
-                                                       type="checkbox"
-                                                       value="false" />
-                            </p>
+                        <div class="logbox">
+                            <h1 id="entrar">ENTRAR</h1>
+                            @using (Html.BeginForm())
+                            {
+                                @Html.AntiForgeryToken()
 
-                            <div class="info" id="input-enviar">
-                                <input id="enviar" type="submit" name="submit" class="btn btn-primary" value="ENTRAR" />
-                            </div>
-                        }
+                                <div class="info">
+                                    @Html.LabelFor(m => m.Email)
+                                    @Html.TextBoxFor(m => m.Email, "", new { @placeholder = "Email" })
 
+                                </div>
+                                <div class="info">
+                                    @Html.LabelFor(m => m.Senha)
+                                    @Html.TextBoxFor(m => m.Senha, new { @placeholder = "Senha" })
+                                </div>
+
+                                <p>* Não tenho uma conta - <br> <a href="/Home/SignIn">CRIAR CONTA</a></p>
+                                <p>* <a href="senha.html">Esqueci minha senha</a></p>
+                                <p class="tipo-log">
+                                    * Sou vendedor  <input checked="checked"
+                                                           id="IsVendedor"
+                                                           name="IsVendedor"
+                                                           type="checkbox"
+                                                           value="false" />
+                                </p>
+
+                                <div class="info" id="input-enviar">
+                                    <input id="enviar" type="submit" name="submit" class="btn btn-primary" value="ENTRAR" />
+                                </div>
+                            }
+
+                        </div>
                     </div>
-                </section>
+                </div>
+                        
+            </section>
             </div>
 
         </div>

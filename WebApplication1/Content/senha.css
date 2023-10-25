@@ -1,0 +1,74 @@
+main{
+  justify-content: center;
+  display: flex
+}
+
+.senha{
+  background-image: url("imagens/senhabg.png");
+  width: 1000px;
+  height: 389px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  position: relative;
+}
+
+main section{
+  justify-content: center;
+}
+
+.bege{
+  background-color: #e9e4d8;
+  width: 100%;
+  padding: 4em;
+}
+main {
+    margin: 4em auto !important;
+}
+.senha figure{
+  position: absolute;
+  top: -20%;
+  left: -3%;
+}
+.info{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    color: #D97B29;
+    text-align: left;
+}
+
+.info input{
+    background-color: #DCD0B1;
+    width: 100%;
+    border: #dcd0b1;
+    height: 50px;
+    margin-bottom: 1em;
+    font-size: 20px;
+  font-family: calibri;
+  padding: 0 25px;
+  opacity: 70%;
+}
+input:focus{
+    outline: none;
+}
+#enviar{
+    background-color: #F2541B;
+    font-family: calibri;
+    border: 1px solid #F2541B;
+    font-size: 20px;
+    padding: 2px 10px;
+    margin-top: 25px;
+    color: white;
+}
+
+#enviar:hover{
+    font-style: bold;
+    background-color: #dcd0b1;
+    border: 1px solid #dcd0b1;
+    color: #F2541B;
+}
+div#space {
+    display: flex;
+    column-gap: 4em;
+}

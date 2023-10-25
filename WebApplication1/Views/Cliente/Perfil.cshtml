@@ -1,0 +1,90 @@
+﻿@model WebApplication1.Models.Cliente
+
+@{
+    Layout = "~/Views/Shared/_LayoutCliente.cshtml";
+    ViewBag.Title = "Meu perfil";
+}
+<head>
+    <link href="~/Content/perfilcliente.css" rel="stylesheet" />
+</head>
+<main class="margem">
+    <h2>EDITAR</h2>
+    <section class="dados">
+        <div class="foto">
+            <img src="imagens/fotoperfil.png" alt="foto-perfil">
+            <div class="botao">
+                <input type="submit" value="selecionar imagem" id="botao" />
+            </div>
+        </div>
+
+        <!-- <div class="line">
+             </div>   -->
+
+        <div class="info">
+            @if (!string.IsNullOrEmpty(ViewData["ErrorMessage"] as string))
+            {
+                <div class="alert alert-danger">
+                    @ViewData["ErrorMessage"]
+                </div>
+            }
+            @if (!string.IsNullOrEmpty(ViewData["OkMessage"] as string))
+            {
+                <div class="alert alert-success">
+                    @ViewData["OkMessage"]
+                </div>
+            }
+            <form method="post" action="AlterarDados">
+                <fieldset>
+                    <div>
+                        <div>
+                            <h4>NICKNAME:</h4>
+                            <input id="user" type="text" name="user"/>
+                        </div>
+
+                        <div>
+                            <h4>NOME:</h4>
+                            <input id="nome" type="text" name="nome" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <h4>CPF:</h4>
+                            <input oninput="mascara(this)" id="cpf" name="cpf"type="text">
+                        </div>
+
+                        <div class="info">
+                            <h4> DATA DE NASCIMENTO:</h4>
+                            <input type="date" id="datanascimento" name="datanascimento" />
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h4>E-MAIL:</h4>
+                            <input id="email" type="email" name="email"/>
+                        </div>
+                    </div>
+                </fieldset>
+                <input type="submit" value="GRAVAR" id="botao" />
+            </form>
+        </div>
+        <!-- <div class="line">
+          </div> -->
+
+        <div class="opcoes">
+            <nav id="menu-duv">
+                <ol>
+                    <a href="Redefinir_senha"> <img src="imagens/perfilcliente/iconsenha.png" />
+                    <li>Trocar Senha</li></a>
+                    <a href="#"><img src="imagens/perfilcliente/iconpedidos.png">
+                    <li>Meus Pedidos</li></a>
+                    <a href="carrinho.html"><img src="imagens/perfilcliente/iconcarrinho.png">
+                    <li>Carrinho</li></a>
+                    <a href="favoritos.html"><img src="imagens/perfilcliente/iconfav.png">
+                    <li>Favoritos</li></a>
+                    @Html.ActionLink("Sair", "Logout", "Cliente")
+                </ol>
+            </nav>
+        </div>
+    </section>
+</main>

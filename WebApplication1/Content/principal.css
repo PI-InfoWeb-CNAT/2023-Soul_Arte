@@ -33,11 +33,8 @@ header {
 }
 
 .cabecalho {
-    background-color: rgba(242, 84, 27, 0.76);
+    background-color: #F2541B;
     z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -54,16 +51,16 @@ header {
 }
 
 header .carousel-control-prev-icon {
-    background-image: url(imagens/header/setaLeft-header.png);
-    width: 65px;
-    height: 65px;
+    background-image: url("imagens/header/setaLeft-header.png");
+    width: 45px;
+    height: 45px;
     margin-left: 0px;
 }
 
 header .carousel-control-next-icon {
-    background-image: url(imagens/header/setaRight-header.png);
-    width: 65px;
-    height: 65px;
+    background-image: url("imagens/header/setaRight-header.png");
+    width: 45px;
+    height: 45px;
     margin-right: 0px;
 }
 
@@ -171,7 +168,7 @@ ul, ol {
 
 /* MAIN */
 main {
-    margin: 4em auto;
+    margin: 4em auto !important;
 }
 
 #carousel-cat {
@@ -334,7 +331,7 @@ footer {
     #migalha nav {
         font-size: 20px;
         font-family: 'Bebas Neue', sans-serif;
-        margin: 1.5em 0 0 0;
+        margin: 25px 0 0 0;
     }
 
         #migalha nav ol li a {
@@ -377,7 +374,7 @@ footer {
 
     #cat-escondido > div > p a {
         position: absolute;
-        font-size: 25px;
+        font-size: 30px;
         font-family: 'Bahiana', cursive;
         color: #F2541B;
         right: 45px;
@@ -461,4 +458,12 @@ footer {
 
 .explorar {
     margin: 0 64px;
+}
+
+#carouselExampleAutoplaying .carousel-item img {
+    width: 100%;
+}
+
+#carouselExampleAutoplaying {
+    margin-top: 64px;
 }

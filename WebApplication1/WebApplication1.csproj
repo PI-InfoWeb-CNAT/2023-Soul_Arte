@@ -95,6 +95,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\imagens\borda.png" />
     <Content Include="Content\categorias-menu.js" />
     <Content Include="Content\categorias.css" />
     <Content Include="Content\denunciar.css" />
@@ -108,6 +109,9 @@
     <Content Include="Content\imagens\footer\mingcute_facebook-line.svg" />
     <Content Include="Content\imagens\footer\ri_twitter-line.svg" />
     <Content Include="Content\imagens\fotoperfil.png" />
+    <Content Include="Content\imagens\header\anuncio1.png" />
+    <Content Include="Content\imagens\header\anuncio2.png" />
+    <Content Include="Content\imagens\header\anuncio3.png" />
     <Content Include="Content\imagens\header\icon-perfil.png" />
     <Content Include="Content\imagens\home\sobre-nos-img.png" />
     <Content Include="Content\imagens\log_inbg.png" />
@@ -121,6 +125,8 @@
     <Content Include="Content\imagens\produto\ex-produto.png" />
     <Content Include="Content\imagens\produto\fivestar.png" />
     <Content Include="Content\imagens\produto\mouse-click.png" />
+    <Content Include="Content\imagens\redefinirsenha.png" />
+    <Content Include="Content\imagens\senhabg.png" />
     <Content Include="Content\imagens\signin\cliente.png" />
     <Content Include="Content\imagens\signin\log_inbg.png" />
     <Content Include="Content\imagens\signin\sign_inbg.png" />
@@ -130,8 +136,10 @@
     <Content Include="Content\imagens\sign_intermosbg.png" />
     <Content Include="Content\imagens\sign_invendedorbg.png" />
     <Content Include="Content\log_in.css" />
+    <Content Include="Content\perfilcliente.css" />
     <Content Include="Content\principal.css" />
     <Content Include="Content\produto.css" />
+    <Content Include="Content\senha.css" />
     <Content Include="Content\signin_cliente.css" />
     <Content Include="Content\sign_in.css" />
     <Content Include="Content\sign_invendedor.css" />
@@ -207,6 +215,9 @@
     <Content Include="Views\Shared\_LayoutHomeCliente.cshtml" />
     <Content Include="Views\Vendedor\Index.cshtml" />
     <Content Include="Views\Home\SignInVendedor.cshtml" />
+    <Content Include="Views\Cliente\Perfil.cshtml" />
+    <Content Include="Views\Cliente\Redefinir_senha.cshtml" />
+    <Content Include="Views\Shared\_LayoutCliente.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
