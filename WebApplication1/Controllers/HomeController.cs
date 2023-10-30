@@ -91,12 +91,13 @@ namespace WebApplication1.Controllers
                 // Retorna para a View de login, exibindo a mensagem de erro
                 return View("Login");
             }
-            
+
             if (IsVendedor is null)
             {
                 var data = context.Clientes.Where(s => s.Email.Equals(email) && s.Senha.Equals(senha)).ToList();
                 if (data.Count() > 0)
                 {
+                    Session["Cliente"] = email;
                     return RedirectToAction("Index", "Cliente");
                 }
                 else
@@ -107,7 +108,7 @@ namespace WebApplication1.Controllers
                     // Retorna para a View de login, exibindo a mensagem de erro
                     return View("Login");
                 }
-                
+
             }
             else
             {
@@ -125,22 +126,22 @@ namespace WebApplication1.Controllers
                     return View("Login");
                 }
             }
-            
+
         }
         public ActionResult SignIn()
         {
             return View();
         }
         public ActionResult SignInCliente()
-        { 
+        {
             return View();
         }
-        
+
         [HttpPost]
         public ActionResult SignInCliente(string nome, string email, string CPF, string data, string telefone, string senha)
         {
 
-            if(context.Clientes.Any(c => c.Email == email))
+            if (context.Clientes.Any(c => c.Email == email))
             {
                 ViewData["ClienteExistente"] = 1;
                 return View();
@@ -160,7 +161,7 @@ namespace WebApplication1.Controllers
                 context.SaveChanges();
                 return RedirectToAction("Login");
             }
-            
+
         }
         public ActionResult SignInVendedor()
         {
@@ -176,7 +177,7 @@ namespace WebApplication1.Controllers
                 context.Vendedores.Add(v);
                 context.SaveChanges();
             }
-                return View();
+            return View();
         }
         [HttpPost]
         public ActionResult SignInVendedor(string nomeloja, string email, string telefone, string nome, string CPF, string data, string senha)
