@@ -19,7 +19,20 @@ namespace WebApplication1.Controllers
 
         public ActionResult Perfil()
         {
-            return View();
+            Cliente data = null;
+            string cliente = Session["Cliente"].ToString();
+            if ((cliente==null)||(cliente != ""))
+            {
+                data = context.Clientes.Where(s => s.Email.Equals(cliente)).First();
+            }
+            if (data != null)
+            {
+                return View(data);
+            }
+            else
+            {
+                return View();
+            }
         }
         public ActionResult Redefinir_senha()
         {
