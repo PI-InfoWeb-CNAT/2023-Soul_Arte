@@ -23,8 +23,8 @@ namespace WebApplication1.Models
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             //Database.SetInitializer<demoEntities>(null);
-            modelBuilder.Entity<Cliente>().ToTable("Clientes");
-            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            //modelBuilder.Entity<Cliente>().ToTable("Clientes");
+            //modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
             base.OnModelCreating(modelBuilder);
 

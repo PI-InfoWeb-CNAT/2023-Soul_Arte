@@ -22,34 +22,30 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
-
+        private byte[] SetLogotipo(HttpPostedFileBase logotipo)
+        {
+            var bytesLogotipo = new byte[logotipo.ContentLength];
+            logotipo.InputStream.Read(bytesLogotipo, 0, logotipo.ContentLength);
+            return bytesLogotipo;
+        }
         [HttpPost] // Adicione o atributo [HttpPost] para indicar que este método responde a solicitações POST
-        public ActionResult Adicionar_produto(Produto produto)
+        public ActionResult Adicionar_produto(Produto produto, HttpPostedFileBase ImagemArquivo)
         {
             if (ModelState.IsValid)
             {
-                var novoProduto = new Produto
-                {
-                    Nome = produto.Nome,
-                    Preco = produto.Preco,
-                    Estoque = produto.Estoque,
-                    Descricao = produto.Descricao
-                    // Mapeie outras propriedades conforme necessário
-                };
+                Produto novoProduto = new Produto();
+                novoProduto.Nome = produto.Nome;
+                novoProduto.Preco = produto.Preco;
+                novoProduto.Estoque = produto.Estoque;
+                novoProduto.Descricao = produto.Descricao;
+                novoProduto.Imagem = SetLogotipo(ImagemArquivo);
 
                 // Verifique se a imagem foi enviada e tem dados
-                if (produto.ImagemArquivo != null && produto.ImagemArquivo.ContentLength > 0)
-                {
-                    // Converta a imagem para um array de bytes
-                    using (BinaryReader reader = new BinaryReader(produto.ImagemArquivo.InputStream))
-                    {
-                        novoProduto.Imagem = reader.ReadBytes(produto.ImagemArquivo.ContentLength);
-                    }
-                }
+                
 
 
                 // Adicione o novo produto ao contexto do Entity Framework
-                context.Produtos.Add(novoProduto);
+               context.Produtos.Add(novoProduto);
 
                 // Salve as alterações no banco de dados
                 context.SaveChanges();
