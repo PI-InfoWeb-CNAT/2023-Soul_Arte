@@ -33,27 +33,31 @@ namespace WebApplication1.Controllers
         {
             if (ModelState.IsValid)
             {
-                Produto novoProduto = new Produto();
-                novoProduto.Nome = produto.Nome;
-                novoProduto.Preco = produto.Preco;
-                novoProduto.Estoque = produto.Estoque;
-                novoProduto.Descricao = produto.Descricao;
-                novoProduto.Imagem = SetLogotipo(ImagemArquivo);
+                try
+                {
+                    Produto novoProduto = new Produto();
+                    novoProduto.Nome = produto.Nome;
+                    novoProduto.Preco = produto.Preco;
+                    novoProduto.Estoque = produto.Estoque;
+                    novoProduto.Descricao = produto.Descricao;
+                    novoProduto.Imagem = SetLogotipo(ImagemArquivo);
 
-                // Verifique se a imagem foi enviada e tem dados
-                
+                    context.Produtos.Add(novoProduto);
+                    context.SaveChanges();
 
+                    // Adicione mensagens de sucesso usando TempData
+                    TempData["SuccessMessage"] = "Produto adicionado com sucesso!";
+                }
+                catch (Exception ex)
+                {
+                    // Adicione mensagens de erro usando TempData
+                    TempData["ErrorMessage"] = $"Erro ao adicionar o produto: {ex.Message}";
+                }
 
-                // Adicione o novo produto ao contexto do Entity Framework
-               context.Produtos.Add(novoProduto);
-
-                // Salve as alterações no banco de dados
-                context.SaveChanges();
-
-                return View();
+                return RedirectToAction("Adicionar_produto");
             }
 
-            // Se o modelo não for válido, retorne para a página de adicionar produto com mensagens de erro, falta ajeitar
+            // Se o modelo não for válido, retorne para a página de adicionar produto com mensagens de erro
             return View();
         }
     }

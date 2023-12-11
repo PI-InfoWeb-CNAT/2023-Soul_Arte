@@ -27,10 +27,30 @@
         }
     </style>
 </head>
+
 <div>
     <main class="margem">
+        @{
+            var successMessage = TempData["SuccessMessage"] as string;
+            var errorMessage = TempData["ErrorMessage"] as string;
+        }
+
+        @if (!string.IsNullOrEmpty(successMessage))
+        {
+            <div class="alert alert-success margem">
+                @successMessage
+            </div>
+        }
+
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <div class="alert alert-danger margem">
+                @errorMessage
+            </div>
+        }
+        </br>
         <h3>SELECIONE A CATEGORIA:</h3>
-        <form action="/Vendedor/Adicionar_produto" method="post"  enctype="multipart/form-data">
+        <form action="/Vendedor/Adicionar_produto" method="post" enctype="multipart/form-data">
             <nav id="menu-duvi">
                 <div class="escolher">
 
@@ -87,24 +107,24 @@
                             <img id="preview" alt="Visualização da imagem" style="display:none;" />
 
                             <script>
-        function previewImage(input) {
-            var preview = document.getElementById('preview');
-            var file = input.files[0];
+                                function previewImage(input) {
+                                    var preview = document.getElementById('preview');
+                                    var file = input.files[0];
 
-            if (file) {
-                var reader = new FileReader();
+                                    if (file) {
+                                        var reader = new FileReader();
 
-                reader.onload = function (e) {
-                    // Atualiza a visualização da imagem com o conteúdo da imagem
-                    preview.src = e.target.result;
-                    preview.style.display = 'block'; // Exibe a visualização da imagem
-                };
+                                        reader.onload = function (e) {
+                                            // Atualiza a visualização da imagem com o conteúdo da imagem
+                                            preview.src = e.target.result;
+                                            preview.style.display = 'block'; // Exibe a visualização da imagem
+                                        };
 
-                reader.readAsDataURL(file); // Lê o arquivo como uma URL de dados
-            } else {
-                // Se nenhum arquivo for selecionado, oculta a visualização da imagem
-                preview.style.display = 'none';
-            }
+                                        reader.readAsDataURL(file); // Lê o arquivo como uma URL de dados
+                                    } else {
+                                        // Se nenhum arquivo for selecionado, oculta a visualização da imagem
+                                        preview.style.display = 'none';
+                                    }
                                 }
                                 function cancelSelection() {
                                     // Limpa a seleção de arquivo
@@ -127,6 +147,6 @@
                 <!-- Botão de submit para adicionar produto -->
                 <input type="submit" value="ADICIONAR PRODUTO" />
             </div>
-            </form>
+        </form>
     </main>
 </div>
