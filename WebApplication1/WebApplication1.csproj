@@ -95,6 +95,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\adc_produtos.css" />
     <Content Include="Content\imagens\borda.png" />
     <Content Include="Content\categorias-menu.js" />
     <Content Include="Content\categorias.css" />
@@ -105,6 +106,7 @@
     <Content Include="Content\imagens\categorias\ex-roupa.png" />
     <Content Include="Content\imagens\categorias\foto-loja.png" />
     <Content Include="Content\imagens\categorias\star.png" />
+    <Content Include="Content\imagens\fa_remove.png" />
     <Content Include="Content\imagens\footer\mdi_instagram.svg" />
     <Content Include="Content\imagens\footer\mingcute_facebook-line.svg" />
     <Content Include="Content\imagens\footer\ri_twitter-line.svg" />
@@ -115,6 +117,8 @@
     <Content Include="Content\imagens\header\icon-perfil.png" />
     <Content Include="Content\imagens\home\sobre-nos-img.png" />
     <Content Include="Content\imagens\log_inbg.png" />
+    <Content Include="Content\imagens\loja\perfilvendedor.png" />
+    <Content Include="Content\imagens\loja\starperfil.png" />
     <Content Include="Content\imagens\produto\add-cart-branco.png" />
     <Content Include="Content\imagens\produto\avaliacao1.png" />
     <Content Include="Content\imagens\produto\bg-form-denuncia.png" />
@@ -136,6 +140,7 @@
     <Content Include="Content\imagens\sign_intermosbg.png" />
     <Content Include="Content\imagens\sign_invendedorbg.png" />
     <Content Include="Content\log_in.css" />
+    <Content Include="Content\loja.css" />
     <Content Include="Content\perfilcliente.css" />
     <Content Include="Content\principal.css" />
     <Content Include="Content\produto.css" />
@@ -218,6 +223,8 @@
     <Content Include="Views\Cliente\Perfil.cshtml" />
     <Content Include="Views\Cliente\Redefinir_senha.cshtml" />
     <Content Include="Views\Shared\_LayoutCliente.cshtml" />
+    <Content Include="Views\Shared\_LayoutHomeVendedor.cshtml" />
+    <Content Include="Views\Vendedor\Adicionar_produto.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

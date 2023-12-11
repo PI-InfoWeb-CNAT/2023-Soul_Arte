@@ -1,0 +1,91 @@
+﻿.perfil {
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6em;
+}
+
+#vendedor {
+    text-align: left;
+    margin-right: 1em;
+}
+
+.descricaoperfil h2 {
+    font-family: bebas neue;
+    color: #D97B29;
+}
+
+.descricaoperfil p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#ft {
+    margin-right: 3em;
+}
+
+.detalhesperfil {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+#descricao h5 {
+    color: #D97B29;
+}
+
+.mudarcor {
+    color: black;
+}
+
+#nota h1 {
+    color: black;
+}
+
+#nota {
+    display: flex;
+    align-items: center;
+}
+
+    #nota h1 {
+        margin-bottom: 0;
+    }
+
+    #nota img {
+        height: 43px;
+    }
+
+#curtida img {
+    height: 45px;
+    width: 45px;
+    margin-top: 10px;
+}
+
+#chat a {
+    color: black;
+    font-size: 18px;
+}
+
+    #chat a:hover {
+        color: #D97B29;
+    }
+
+#curtida {
+    margin-bottom: 1em;
+}
+
+#edicao {
+    display: flex;
+}
+
+.botao input[type="submit"] {
+    background-color: #F2541B;
+    padding: 0.2em 0.7em;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    margin: 10px 1em 0 0;
+}

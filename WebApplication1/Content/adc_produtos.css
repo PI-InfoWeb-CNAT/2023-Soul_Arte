@@ -1,0 +1,220 @@
+﻿h1 {
+    text-align: left;
+    margin-left: 64px;
+}
+
+    h1 a {
+        text-decoration: none;
+        color: #F2541B;
+        font-size: 50px;
+    }
+
+h3,
+h4 {
+    font-size: 20px;
+    font-family: Bebas Neue;
+    margin-bottom: 35px;
+}
+
+#menu-duvi a {
+    text-decoration: none;
+    padding: 0px;
+    color: white;
+    font-family: Bebas Neue;
+}
+
+#menu-duvi li:hover {
+    background-color: #E9E4D8;
+    color: #F23869;
+}
+
+#menu-duvi ol {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main {
+    margin: 0 auto;
+}
+
+.escrever div {
+    width: 30%;
+}
+
+.escrever input[type=text] {
+    border: none;
+    outline: none;
+    background-color: #e9e4d8;
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 1em;
+}
+
+.escrever {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+textarea {
+    background-color: #e9e4d8;
+    border: none;
+    border-radius: 12px;
+    width: 1140px;
+    height: 230px;
+    font-size: 20px;
+    margin-bottom: 35px;
+    padding: 1em;
+}
+
+    textarea:focus {
+        outline: none;
+    }
+
+.img input[type="button"] {
+    font-family: Bebas Neue;
+    color: white;
+    background-color: #F23869;
+    border: none;
+    height: 170px;
+    width: 170px;
+    transform: rotate(-3deg);
+    font-size: 100px;
+}
+
+.botao input[type="submit"] {
+    background-color: #F2541B;
+    padding: 0.2em 0.7em;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+
+.botao {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.informar {
+    display: flex;
+}
+
+.escolher {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+    row-gap: 1em;
+    margin-bottom: 35px;
+}
+
+input[type="checkbox"] {
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 150px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0;
+    background-color: #F23869;
+}
+
+input[type="image"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+[value=roupas]::before {
+    content: 'Roupas';
+}
+
+[value=acessorio]::before {
+    content: 'Acessórios';
+}
+
+[value=ceramica]::before {
+    content: 'Cerâmica';
+}
+
+[value=aromaticos]::before {
+    content: 'Aromáticos';
+}
+
+[value=pintura]::before {
+    content: 'Pintura';
+}
+
+[value=decoracao]::before {
+    content: 'Decorações';
+}
+
+[value=beleza]::before {
+    content: 'Beleza';
+}
+
+[value=utensilios]::before {
+    content: 'Utensílios';
+}
+
+input[type="checkbox"]::before {
+    color: white;
+}
+
+input[type="checkbox"]:checked:after {
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: #e9e4d8;
+    color: #F23869;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(0);
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 10px;
+}
+
+#roupas:checked:after {
+    content: 'Roupas';
+}
+
+#acessorio:checked:after {
+    content: 'Acessórios';
+}
+
+#ceramica:checked:after {
+    content: 'Cerâmica';
+}
+
+#aromaticos:checked:after {
+    content: 'Aromáticos';
+}
+
+#pintura:checked:after {
+    content: 'Pintura';
+}
+
+#decoracao:checked:after {
+    content: 'Decorações';
+}
+
+#beleza:checked:after {
+    content: 'Beleza';
+}
+
+#utensilios:checked:after {
+    content: 'Utensílios';
+}

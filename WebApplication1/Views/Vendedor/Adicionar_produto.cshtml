@@ -1,0 +1,132 @@
+﻿
+@{
+    ViewBag.Title = "Adicionar_produto";
+    Layout = "~/Views/Shared/_LayoutHomeVendedor.cshtml";
+}
+
+<head>
+    <link rel="stylesheet" href="~/Content/categorias.css" />
+    <link rel="stylesheet" href="~/Content/adc_produtos.css" />
+    <style>
+        /* Estilo para o rótulo personalizado */
+        .custom-file-upload {
+            display: inline-block;
+            padding: 0.5em 15px;
+            cursor: pointer;
+            background-color: #F23869;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        /* Estilo para a visualização da imagem */
+        #preview {
+            max-width: 100%;
+            max-height: 200px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<div>
+    <main class="margem">
+        <h3>SELECIONE A CATEGORIA:</h3>
+        <form action="/Vendedor/Adicionar_produto" method="post"  enctype="multipart/form-data">
+            <nav id="menu-duvi">
+                <div class="escolher">
+
+                    <input type="checkbox" name="categorias" value="roupas" id="roupas" />
+                    <input type="checkbox" name="categorias" value="acessorio" id="acessorio" />
+                    <input type="checkbox" name="categorias" value="ceramica" id="ceramica" />
+                    <input type="checkbox" name="categorias" value="aromaticos" id="aromaticos" />
+                    <input type="checkbox" name="categorias" value="pintura" id="pintura" />
+                    <input type="checkbox" name="categorias" value="decoracao" id="decoracao" />
+                    <input type="checkbox" name="categorias" value="beleza" id="beleza" />
+                    <input type="checkbox" name="categorias" value="utensilios" id="utensilios" />
+
+
+                </div>
+            </nav>
+            <section class="informar">
+                <fieldset>
+                    <div class="escrever">
+                        <div>
+                            <h4>NOME:</h4>
+                            <input id="Nome" type="text" name="Nome" placeholder="" />
+                        </div>
+
+                        <div>
+                            <h4>PREÇO ($):</h4>
+                            <input id="Preco" type="text" name="Preco" placeholder="" />
+                        </div>
+
+                        <div>
+                            <h4>QUANTIDADE EM ESTOQUE:</h4>
+                            <input id="Estoque" type="text" name="Estoque" placeholder="" />
+                        </div>
+                    </div>
+
+                    <div class="desc">
+                        <h4>DESCRIÇÃO:</h4>
+                        <textarea id="Descricao" name="Descricao"></textarea>
+                    </div>
+
+                    <div>
+                        <h4>ADICIONAR IMAGEM</h4>
+                        <div>
+                            <div>
+                                <!-- Rótulo personalizado -->
+                                <label for="upload" class="custom-file-upload">
+                                    Selecione um arquivo
+                                </label>
+                                <!-- Input de arquivo real -->
+                                <input id="upload" type="file" name="ImagemArquivo" accept="image/*" onchange="previewImage(this)" style="display:none;" />
+                                <a id="cancelButton" href="#" onclick="cancelSelection()" style="color: #F23869; font-size: 1.5em; font-weight: 600; margin-left: 0.5em; ">X</a>
+                            </div>
+
+                            <!-- Visualização da imagem -->
+                            <img id="preview" alt="Visualização da imagem" style="display:none;" />
+
+                            <script>
+        function previewImage(input) {
+            var preview = document.getElementById('preview');
+            var file = input.files[0];
+
+            if (file) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    // Atualiza a visualização da imagem com o conteúdo da imagem
+                    preview.src = e.target.result;
+                    preview.style.display = 'block'; // Exibe a visualização da imagem
+                };
+
+                reader.readAsDataURL(file); // Lê o arquivo como uma URL de dados
+            } else {
+                // Se nenhum arquivo for selecionado, oculta a visualização da imagem
+                preview.style.display = 'none';
+            }
+                                }
+                                function cancelSelection() {
+                                    // Limpa a seleção de arquivo
+                                    var input = document.getElementById('upload');
+                                    input.value = '';
+
+                                    // Oculta a visualização da imagem
+                                    var preview = document.getElementById('preview');
+                                    preview.style.display = 'none';
+                                }
+                            </script>
+
+                        </div>
+                    </div>
+                </fieldset>
+            </section>
+
+
+            <div class="botao">
+                <!-- Botão de submit para adicionar produto -->
+                <input type="submit" value="ADICIONAR PRODUTO" />
+            </div>
+            </form>
+    </main>
+</div>
