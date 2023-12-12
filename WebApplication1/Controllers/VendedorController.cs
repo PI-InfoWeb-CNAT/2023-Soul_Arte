@@ -56,6 +56,11 @@ namespace WebApplication1.Controllers
 
                 return RedirectToAction("Adicionar_produto");
             }
+            else
+            {
+                TempData["ErrorMessage"] = $"Erro ao adicionar o produto";
+
+            }
 
             // Se o modelo não for válido, retorne para a página de adicionar produto com mensagens de erro
             return View();
