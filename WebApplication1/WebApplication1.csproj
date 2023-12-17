@@ -119,6 +119,13 @@
     <Content Include="Content\imagens\log_inbg.png" />
     <Content Include="Content\imagens\loja\perfilvendedor.png" />
     <Content Include="Content\imagens\loja\starperfil.png" />
+    <Content Include="Content\imagens\perfilcliente\fotoperfil.png" />
+    <Content Include="Content\imagens\perfilcliente\iconbanco.png" />
+    <Content Include="Content\imagens\perfilcliente\iconcarrinho.png" />
+    <Content Include="Content\imagens\perfilcliente\iconcasa.png" />
+    <Content Include="Content\imagens\perfilcliente\iconfav.png" />
+    <Content Include="Content\imagens\perfilcliente\iconpedidos.png" />
+    <Content Include="Content\imagens\perfilcliente\iconsenha.png" />
     <Content Include="Content\imagens\produto\add-cart-branco.png" />
     <Content Include="Content\imagens\produto\avaliacao1.png" />
     <Content Include="Content\imagens\produto\bg-form-denuncia.png" />

@@ -11,9 +11,9 @@
     <h2>EDITAR</h2>
     <section class="dados">
         <div class="foto">
-            <img src="imagens/fotoperfil.png" alt="foto-perfil">
-            <div class="botao">
-                <input type="submit" value="selecionar imagem" id="botao" />
+            <img src="~/Content/imagens/perfilcliente/fotoperfil.png" alt="foto-perfil">
+            <div class="botao" style="display: flex; justify-content: center;">
+                <input type="submit" value="selecionar imagem" id="botao" style="margin-right: 0;" />
             </div>
         </div>
 
@@ -74,13 +74,13 @@
         <div class="opcoes">
             <nav id="menu-duv">
                 <ol>
-                    <a href="Redefinir_senha"> <img src="imagens/perfilcliente/iconsenha.png" />
-                    <li>Trocar Senha</li></a>
-                    <a href="#"><img src="imagens/perfilcliente/iconpedidos.png">
+                    <a href="Redefinir_senha"> <img src="~/Content/imagens/perfilcliente/iconsenha.png" />
+                    <li>Trocar Senha</li> </a>
+                    <a href="#"><img src="~/Content/imagens/perfilcliente/iconpedidos.png">
                     <li>Meus Pedidos</li></a>
-                    <a href="carrinho.html"><img src="imagens/perfilcliente/iconcarrinho.png">
+                    <a href="carrinho.html"><img src="~/Content/imagens/perfilcliente/iconcarrinho.png">
                     <li>Carrinho</li></a>
-                    <a href="favoritos.html"><img src="imagens/perfilcliente/iconfav.png">
+                    <a href="favoritos.html"><img src="~/Content/imagens/perfilcliente/iconfav.png">
                     <li>Favoritos</li></a>
                     @Html.ActionLink("Sair", "Logout", "Cliente")
                 </ol>
