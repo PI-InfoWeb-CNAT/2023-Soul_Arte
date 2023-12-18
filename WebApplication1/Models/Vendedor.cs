@@ -17,5 +17,6 @@ namespace WebApplication1.Models
 
         public string DataNascimento { get; set; }
         public string Telefone { get; set; }
+        public IQueryable<Produto> produtos;
     }
 }

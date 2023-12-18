@@ -17,7 +17,7 @@ namespace WebApplication1.Controllers
         public ActionResult Index()
         {
             Home h = new Home();
-            h.produtos = context.Produtos.OrderBy(c => c.Nome);
+            h.produtos = context.Produto.OrderBy(c => c.Nome);
             h.categorias = context.Categorias.OrderBy(c => c.Nome);
             h.clientes = context.Clientes.OrderBy(c => c.Nome);
             return View(h);

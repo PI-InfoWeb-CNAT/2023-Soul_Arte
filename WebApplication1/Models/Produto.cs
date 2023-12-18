@@ -13,5 +13,9 @@ namespace WebApplication1.Models
         public string Descricao { get; set; }
         public int Estoque { get; set; }
         public byte[] Imagem { get; set; }
+        public string LogotipoMimeType { get; set; }
+        public string NomeArquivo { get; set; }
+        public long TamanhoArquivo { get; set; }
+
     }
 }

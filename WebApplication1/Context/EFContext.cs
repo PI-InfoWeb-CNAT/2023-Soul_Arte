@@ -14,7 +14,7 @@ namespace WebApplication1.Models
             Database.SetInitializer<EFContext>(new DropCreateDatabaseIfModelChanges<EFContext>());
         }
         public DbSet<Categoria> Categorias { get; set; }
-        public DbSet<Produto> Produtos { get; set; }
+        public DbSet<Produto> Produto { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Vendedor> Vendedores { get; set; }
         public DbSet<Denuncia> Denuncias { get; set; }
