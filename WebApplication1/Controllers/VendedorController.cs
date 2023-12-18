@@ -36,21 +36,8 @@ namespace WebApplication1.Controllers
             Produto produto = ObterProdutoPorId(id);
             if (produto != null)
             {
-                if (produto.NomeArquivo != null)
-                {
-                    string filePath = Path.Combine(Server.MapPath("~/Uploads/"), produto.NomeArquivo);
-
-                    // Lógica para recuperar os bytes da imagem usando o caminho do arquivo
-                    byte[] imageBytes = System.IO.File.ReadAllBytes(filePath);
-
-                    // Determine o tipo de conteúdo da imagem (por exemplo, image/jpeg)
-                    string contentType = MimeMapping.GetMimeMapping(filePath);
-
-                    // Retorne a imagem como FileContentResult
-                    return new FileContentResult(imageBytes, contentType);
-                }
+                return File(produto.Imagem, produto.LogotipoMimeType);
             }
-
             return null;
         }
         private Produto ObterProdutoPorId(long id)
@@ -71,8 +58,8 @@ namespace WebApplication1.Controllers
                     novoProduto.Estoque = produto.Estoque;
                     novoProduto.Descricao = produto.Descricao;
                     novoProduto.Imagem = SetLogotipo(ImagemArquivo);
-                    produto.LogotipoMimeType = ImagemArquivo.ContentType;
-                    produto.TamanhoArquivo = ImagemArquivo.ContentLength;
+                    novoProduto.LogotipoMimeType = ImagemArquivo.ContentType;
+                    novoProduto.TamanhoArquivo = ImagemArquivo.ContentLength;
 
                     context.Produto.Add(novoProduto);
                     context.SaveChanges();

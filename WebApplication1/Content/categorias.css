@@ -326,3 +326,8 @@ input[type=checkbox]:checked:after {
 .cards-prod {
     margin: 0;
 }
+.card-prod .img-prod img{
+    object-fit:cover;
+    width:140px;
+    height:140px;
+}
