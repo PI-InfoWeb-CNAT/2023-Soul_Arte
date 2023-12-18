@@ -85,5 +85,9 @@ namespace WebApplication1.Controllers
             Session["Cliente"] = "";
             return RedirectToAction("Index", "Home");
         }
+        public ActionResult Produto()
+        {
+            return View();
+        }
     }
 }

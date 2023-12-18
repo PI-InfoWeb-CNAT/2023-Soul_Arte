@@ -31,16 +31,16 @@ namespace WebApplication1.Controllers
             List<ItemCarrinho>;
             var produto2 = ObterProdutoPorId(
             Convert.ToInt32(collection.Get("ItemCarrinhoId")));
-            var qtd = Convert.ToInt32(collection.Get("Quantidade"));
+            //var qtd = Convert.ToInt32(collection.Get("Quantidade"));
             var itemCarrinho = new ItemCarrinho()
             {
                 Produto = produto2,
-                Quantidade = qtd,
+                Quantidade = 1,
                 ValorUnitario = 1
             };
             carrinho.Add(itemCarrinho);
             HttpContext.Session["carrinho"] = carrinho;
-            return RedirectToAction("Create");
+            return RedirectToAction("Index");
         }
         private Produto ObterProdutoPorId(long id)
         {

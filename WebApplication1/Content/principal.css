@@ -431,11 +431,15 @@ footer {
     background-color: #F23869;
     padding: 3px;
     transform: rotate(-1.2deg);
+
 }
 
     .img-prod img {
         width: 140px;
         transform: rotate(1.2deg);
+        object-fit: cover;
+        width: 140px;
+        height: 140px;
     }
 
 .margem {
