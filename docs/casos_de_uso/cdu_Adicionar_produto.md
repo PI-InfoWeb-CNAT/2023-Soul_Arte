@@ -8,7 +8,7 @@
 
 
 ### 1. Resumo 
-Vendedor adiciona novo produto ao seu mural de produtos.
+- Vendedor adiciona novo produto ao seu mural de produtos.
 
 ### 2. Atores 
 - Vendedores.
