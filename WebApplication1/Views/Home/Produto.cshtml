@@ -1,5 +1,6 @@
 ﻿@model WebApplication1.Models.Denuncia
 
+
 @{
     Layout = "~/Views/Shared/_LayoutVisitante.cshtml";
     ViewBag.Title = "PRODUTO";
@@ -54,7 +55,9 @@
                 </div>
 
                 <section>
-                    <h2>PRODUTO NÃO SEI OQ NÃO SEI OQ LÁ</h2>
+                    @using (Html.BeginForm())
+                    {
+                    <h2>@Html.TextBoxFor(m => m.Nome, "", new { @placeholder = "Nome" })</h2>
                     <div>
                         <figure><img src="~/Content/imagens/produto/fivestar.png" width="160" /></figure>
                         <h4>3 vendidos</h4>
@@ -87,6 +90,7 @@
                             <input type="submit" value="Adicionar ao carrinho" />
                         </div>
                     </div>
+                    }
                 </section>
             </div>
         </section>
