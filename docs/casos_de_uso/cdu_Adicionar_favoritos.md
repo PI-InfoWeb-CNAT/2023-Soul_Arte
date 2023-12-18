@@ -28,7 +28,7 @@
 |:-------|:------- |
 |1. [IN] O usuário seleciona a opção "Adicionar aos Favoritos" na página do produto ou loja. | --- |
 | --- |2. [OUT] O sistema adiciona o item em questão à lista de favoritos do usuário. | --- |
-| --- |4.  [OUT] O sistema exibe uma confirmação de que o produto foi adicionado com sucesso aos favoritos. | --- |
+| --- |3.  [OUT] O sistema exibe uma confirmação de que o produto foi adicionado com sucesso aos favoritos. | --- |
 
 
 #### 5.2. Fluxo de excessão
