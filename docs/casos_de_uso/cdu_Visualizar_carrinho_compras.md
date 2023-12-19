@@ -36,6 +36,7 @@
 
 ### 6. Prototipos de Interface
 #### 6.1. prototipo de VISUALIZAR CARINHO DE COMPRAS
+![CARRINHO](https://github.com/PI-InfoWeb-CNAT/2023-Soul_Arte/assets/99852137/6274a140-b540-410a-b1c5-cb5fea3d660b)
 
 
 ### 7. Diagrama de classe de domínio usados neste caso de uso
