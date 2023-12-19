@@ -39,6 +39,7 @@
 
 ### 6. Prototipos de Interface
 #### 6.1. prototipo de ADICIONAR NOVO PRODUTO
+![ADICIONAR PRODUTOS](https://github.com/PI-InfoWeb-CNAT/2023-Soul_Arte/assets/99852137/1d953f7f-7b48-48f7-a635-6b4789979ad4)
 
 
 ### 7. Diagrama de classe de domínio usados neste caso de uso
