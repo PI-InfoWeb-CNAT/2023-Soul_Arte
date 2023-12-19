@@ -39,6 +39,7 @@
 
 ### 6. Prototipos de Interface
 #### 6.1. prototipo de REDEFINIR SENHA
+![REDEFINIR SENHA](https://github.com/PI-InfoWeb-CNAT/2023-Soul_Arte/assets/99852137/4c4ef5a6-0cbd-48eb-a3d8-25cbef5f1a44)
 
 
 ### 7. Diagrama de classe de domínio usados neste caso de uso
