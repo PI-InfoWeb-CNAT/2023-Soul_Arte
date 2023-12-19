@@ -32,10 +32,10 @@
 #### 5.2. Fluxo de excessão
 - inexistente.
 
-
 ### 6. Prototipos de Interface
 #### 6.1. prototipo de VISUALIZAR LISTA DE FAVORITOS
 
+![FAVORITOS](https://github.com/PI-InfoWeb-CNAT/2023-Soul_Arte/assets/99852137/66bc59b0-cf58-483f-bd3b-830b7516074e)
 
 ### 7. Diagrama de classe de domínio usados neste caso de uso
 --
